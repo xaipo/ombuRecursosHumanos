@@ -12,7 +12,6 @@ const config = require('./config/database');
 // Or `createConnection`
 //var promise = mongoose.connect(db2, {
 var promise = mongoose.connect(config.database, {
-
     useMongoClient: true,
 });
 
