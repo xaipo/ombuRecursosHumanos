@@ -52,6 +52,29 @@ app.get('/', function (req, res) {
     res.send('Hello World!');
 });
 app.use('/api', require('./Routes/login'));
+app.use('/api', require('./Routes/RolRoute'));
+app.use('/api', require('./Routes/EmpresaRoute'));
+app.use('/api', require('./Routes/DepartamentoRoute'));
+app.use('/api', require('./Routes/HorarioTrabajoRoute'));
+app.use('/api', require('./Routes/CategoriaTrabajoRoute'));
+app.use('/api', require('./Routes/ModalidadTrabajoRoute'));
+app.use('/api', require('./Routes/BancoPreguntasPerfilRoute'));
+app.use('/api', require('./Routes/PerfilTrabajoRoute'));
+app.use('/api', require('./Routes/EmpleadoRoute'));
+app.use('/api', require('./Routes/CurriculoRoute'));
+app.use('/api', require('./Routes/VacanteRoute'));
+app.use('/api', require('./Routes/AspiranteRoute'));
+app.use('/api', require('./Routes/AplicacionVacanteRoute'));
+app.use('/api', require('./Routes/EtapaRoute'));
+app.use('/api', require('./Routes/BancoPreguntasAPTRoute'));
+app.use('/api', require('./Routes/BancoPreguntasTECRoute'));
+app.use('/api', require('./Routes/InduccionRoute'));
+app.use('/api', require('./Routes/EvaluacionDesempenoRoute'));
+app.use('/api', require('./Routes/PlanCapacitacionRoute'));
+app.use('/api', require('./Routes/AplicacionInduccionRoute'));
+app.use('/api', require('./Routes/AplicacionDesempenoRoute'));
+app.use('/api', require('./Routes/AplicacionCapacitacionRoute'));
+
 
 //start server
 app.listen(port, function()  {

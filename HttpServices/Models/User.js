@@ -1,24 +1,41 @@
+
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const config = require('../config/database');
 var restful = require("node-restful");
 
+
+
+// copiar all*********************************************************************
+//var restful = require('node-restful');
+//var mongoose = restful.mongoose;
+
+
+
 //User schema
 const UserSchema = mongoose.Schema({
-    name: {
-        type: String
+    id: {
+        type: mongoose.Schema.ObjectId
     },
-    tipoUsuario: {
+    id_empleado: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        required : false
     },
-    email: {
+    id_rol: {
+        type: mongoose.Schema.ObjectId,
+        required : true
+    },
+    id_empresa: {
+        type: mongoose.Schema.ObjectId,
+        required : true
+    },
+    nombres_usuario: {
         type: String,
-        required: true
+        required:true
     },
     username: {
         type: String,
-        required: true
+        required:true
     },
     password: {
         type: String,
@@ -28,7 +45,12 @@ const UserSchema = mongoose.Schema({
         type: String,
         required: true
     }
+
 });
+
+//module.exports = restful.model('User', categoriaSchema);
+
+// fin copiar  all ************************************************************
 
 const User = module.exports = mongoose.model('User', UserSchema);
 
@@ -54,12 +76,6 @@ module.exports.addUser = function (newUser, callback) {
         });
     });
 }
-
-
-
-
-
-
 
 
 module.exports.comparePass = function (candidatePassword, hash, callback) {
