@@ -1,8 +1,11 @@
 /**
  * Created by VICTOR OQUENDO on 10/31/2017.
  */
+
+'use strict'
 var restful = require('node-restful');
 var mongoose = restful.mongoose;
+
 
 //BancoPreguntasPerfil schema
 const BancoPreguntasPerfilSchema = mongoose.Schema({
@@ -18,7 +21,7 @@ const BancoPreguntasPerfilSchema = mongoose.Schema({
         required: true
     },
     respuesta: {
-        type: mongoose.object,
+        type: Array,
         required: true
     }
 
