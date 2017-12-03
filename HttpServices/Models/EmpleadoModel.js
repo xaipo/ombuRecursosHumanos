@@ -43,7 +43,7 @@ const EmpleadoSchema = mongoose.Schema({
         required: true
     },
     fecha_nacimiento: {
-        type: date,
+        type: Date,
         required: true
     },
     lugar_nacimiento: {
@@ -79,11 +79,11 @@ const EmpleadoSchema = mongoose.Schema({
         required: true
     },
     contacto_emergencia:{
-        type: mongoose.object,
+        type: Array,
         required: true
     },
     dependientes:{
-        type: mongoose.object,
+        type: Array,
         required: true
     }
 

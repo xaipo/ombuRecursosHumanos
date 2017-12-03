@@ -54,7 +54,7 @@ const AspiranteSchema = mongoose.Schema({
         required: false
     },
     estado: {
-        type: Uint8Array,//0:aspirante - 1:elegible. 2:contratado, 3:finfunciones
+        type: Number,//0:aspirante - 1:elegible. 2:contratado, 3:finfunciones
         required: true
     },
     direccion: {

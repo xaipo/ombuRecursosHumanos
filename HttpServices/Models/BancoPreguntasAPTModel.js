@@ -23,7 +23,7 @@ const BancoPreguntasAPTSchema = mongoose.Schema({
         required: true
     },
     respuestas: {
-        type: mongoose.object,
+        type: Array,
         required: false
     }
 

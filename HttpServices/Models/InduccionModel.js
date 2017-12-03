@@ -18,7 +18,7 @@ const InduccionSchema = mongoose.Schema({
         required: true
     },
     parametro:{
-        type: mongoose.object,
+        type: Array,
         required: true
     }
 

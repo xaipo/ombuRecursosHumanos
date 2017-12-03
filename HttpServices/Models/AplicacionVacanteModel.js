@@ -30,11 +30,11 @@ const AplicacionVacanteSchema = mongoose.Schema({
         required: false
     },
     estado: {
-        type: Uint8Array,//0:rechazado - 1:aceptado
+        type: Number,//0:rechazado - 1:aceptado
         required: false
     },
     publicacion: {
-        type: mongoose.object,
+        type: Array,
         required: false
     }
 
