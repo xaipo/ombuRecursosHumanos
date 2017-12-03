@@ -11,38 +11,28 @@ const PerfilTrabajoSchema = mongoose.Schema({
         type: mongoose.Schema.ObjectId
     },
     nombre: {
-        type: String,
-        required: true
+        type: String
     },
     descripcion: {
-        type: String,
-        required: false
-    },
-    destrezas:{
-        type: Array,
-        required: true
+        type: String
     },
     escala_salarial: {
-        type: String,
-        required: true
+        type: String
     },
     limite_minimo: {
-        type: Number,
-        required: true
+        type: Number
     },
     limite_maximo: {
-        type: Number,
-        required: true
+        type: Number
+    },
+    destrezas:{
+        type: Array
     },
     funciones:{
-        type: Array,
-        required: true
-    },
-    escala_salarial:{
-        type: Array,
-        required: true
+        type: Array
     }
 
-});
 
-module.exports = restful.model('PerfilTrabajoModel', PerfilTrabajoSchema);
+},{collection: 'perfiltrabajo'});
+
+module.exports = restful.model('PerfilTrabajo', PerfilTrabajoSchema);
