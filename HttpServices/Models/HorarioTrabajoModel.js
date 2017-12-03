@@ -19,11 +19,11 @@ const HorarioTrabajoSchema = mongoose.Schema({
         required: true
     },
     hora_entrada: {
-        type: time,
+        type: String,
         required: true
     },
     hora_salida: {
-        type: time,
+        type: String,
         required: true
     }
 

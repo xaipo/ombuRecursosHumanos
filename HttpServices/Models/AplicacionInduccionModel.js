@@ -22,7 +22,7 @@ const AplicacionInduccionSchema = mongoose.Schema({
         required: true
     },
     parametro_respuesta:{
-        type: mongoose.object,
+        type: Array,
         required: true
     }
 

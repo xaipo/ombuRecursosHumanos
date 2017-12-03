@@ -18,7 +18,7 @@ const BancoPreguntasPerfilSchema = mongoose.Schema({
         required: true
     },
     respuesta: {
-        type: mongoose.object,
+        type: Array,
         required: true
     }
 

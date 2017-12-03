@@ -19,7 +19,7 @@ const PerfilTrabajoSchema = mongoose.Schema({
         required: false
     },
     destrezas:{
-        type: mongoose.object,
+        type: Array,
         required: true
     },
     escala_salarial: {
@@ -27,19 +27,19 @@ const PerfilTrabajoSchema = mongoose.Schema({
         required: true
     },
     limite_minimo: {
-        type: number,
+        type: Number,
         required: true
     },
     limite_maximo: {
-        type: number,
+        type: Number,
         required: true
     },
     funciones:{
-        type: mongoose.object,
+        type: Array,
         required: true
     },
     escala_salarial:{
-        type: mongoose.object,
+        type: Array,
         required: true
     }
 

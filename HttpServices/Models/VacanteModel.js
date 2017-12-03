@@ -23,19 +23,19 @@ const VacanteSchema = mongoose.Schema({
         required: false
     },
     cantidad: {
-        type: Uint8Array,
+        type: Number,
         required: true
     },
     fecha_contratacion: {
-        type: date,
+        type: Date,
         required: true
     },
     estado: { //0: cerrado - 1: vigente
-        type: Uint8Array,
+        type: Number,
         required: true
     },
     publicacion:{
-        type: mongoose.object,
+        type: Array,
         required: true
     }
 });

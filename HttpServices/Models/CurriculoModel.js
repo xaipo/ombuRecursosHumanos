@@ -15,23 +15,23 @@ const CurriculoSchema = mongoose.Schema({
         required: true
     },
     trabajo: {
-        type: mongoose.object,
+        type: Array,
         required: false
     },
     salario: {
-        type: mongoose.object,
+        type:Array,
         required: false
     },
     personal_cargo: {
-        type: mongoose.object,
+        type: Array,
         required: false
     },
     experiencia_laboral: {
-        type: mongoose.object,
+        type: Array,
         required: false
     },
     educacion: {
-        type: mongoose.object,
+        type: Array,
         required: false
     }
 
