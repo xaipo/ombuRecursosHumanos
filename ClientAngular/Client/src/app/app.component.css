@@ -1,0 +1,8 @@
+.dark-primary-color    { background: #1A237E; }
+.default-primary-color { background: #303F9F; }
+.light-primary-color   { background: #7986CB; }
+.accent-color          { background: #303F9F; }
+.accent-light          { background: #00B0FF; }
+.accent-tint           { background: #33A7EE; }
+.accent-shade          { background: #0085DA; }
+.accent-button       { background: #303F9F; box-shadow: 0px 1px 0px #33A7EE inset, 0px -1px 0px #0085DA inset, 0px 0px 5px rgba(0, 0, 0, 0.5); }
