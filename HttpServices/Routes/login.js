@@ -14,7 +14,7 @@ router.post('/register', function (req, res, next)  {
         tipoUsuario: req.body.tipoUsuario,
         username: req.body.username,
         password: req.body.password,
-        estado:req.body.estado,
+        estado:req.body.estado
     });
     User.addUser(newUser, function(err, user)  {
         if (err) {
