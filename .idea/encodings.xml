@@ -3,13 +3,16 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/.angular-cli.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/node_modules/primeng/components/selectbutton/selectbutton.d.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ClientAngular/Client/package.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/dash-board/dash-board.component.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/inicial/inicial.component.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/login/login.component.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/perfil-trabajo/perfil-trabajo.component.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/perfil-trabajo/perfil-trabajo.component.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/app.module.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/app.router.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/models/perfil-trabajo.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/services/global.ts" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/services/perfil-trabajo.service.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/services/perfil-trabajo.service.ts" charset="UTF-8" />
   </component>
 </project>

@@ -18,27 +18,28 @@ import {DataTableModule,SharedModule} from 'primeng/primeng';
 
 export class PerfilTrabajoComponent implements OnInit {
 
-  public perfilTrabajo : PerfilTrabajo;
-  public perfilesTrabajo : any;
-  public status : string;
+  public perfilTrabajo:PerfilTrabajo;
+  public perfilesTrabajo:any;
+  public destrezas:any=[];
+  public status:string;
+
+  display:boolean = false;
 
 
-  constructor(
-    private _route: ActivatedRoute,
-    private _router: Router,
-    private _perfilTrabajoService: PerfilTrabajoService
-  ) {
-    this.perfilTrabajo = new PerfilTrabajo('','','','','','',[],[]);
+  constructor(private _route:ActivatedRoute,
+              private _router:Router,
+              private _perfilTrabajoService:PerfilTrabajoService) {
+    this.perfilTrabajo = new PerfilTrabajo('', '', '', '', '', '', [], []);
 
-    this.perfilesTrabajo=[] ;
+    this.perfilesTrabajo = [];
 
-    this._perfilTrabajoService.getAll().subscribe(response =>{
+    this._perfilTrabajoService.getAll().subscribe(response => {
         this.perfilesTrabajo = response;
         console.log(this.perfilesTrabajo);
       },
-      error=>{
+        error=> {
         var errorMessage = <any>error;
-        if(errorMessage != null){
+        if (errorMessage != null) {
           this.status = 'error';
         }
       }
@@ -49,6 +50,11 @@ export class PerfilTrabajoComponent implements OnInit {
   ngOnInit() {
   }
 
+  add() {
+    this.destrezas.push({descripcion: "ladjflasdjf"});
+  }
 
-
+  showDialog() {
+    this.display = true;
+  }
 }

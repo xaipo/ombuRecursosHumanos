@@ -1,9 +1,23 @@
-<p>
-  perfil-trabajo works!
-</p>
+<div class="col-lg-12">
+  <h4>PERFIL DE TRABAJO</h4>
+</div>
 
-<p-dataTable [value]="perfilesTrabajo">
-  <p-column field="nombre" header="Vin"></p-column>
-  <p-column field="descripcion" header="Year"></p-column>
 
-</p-dataTable>
+
+<div class="col-lg-12">
+  <p-dialog header="Title" [(visible)]="display">
+    Content
+  </p-dialog>
+  <button type="button" (click)="showDialog()" pButton icon="fa-external-link-square" label="Show"></button>
+
+</div>
+
+
+<div class="col-lg-12">
+  <p-dataTable [value]="perfilesTrabajo">
+    <p-column field="nombre" header="Nombre"></p-column>
+    <p-column field="descripcion" header="Descripción"></p-column>
+
+  </p-dataTable>
+</div>
+

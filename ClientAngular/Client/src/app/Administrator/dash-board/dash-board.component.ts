@@ -12,16 +12,6 @@ export class DashBoardComponent implements OnInit {
 
   ngOnInit() {
 
-    $( document ).ready(function() {
-      $(".dropdown-button").dropdown({
-
-      }
-
-      );
-      $(".button-collapse").sideNav();
-
-
-    });
 
 
   }

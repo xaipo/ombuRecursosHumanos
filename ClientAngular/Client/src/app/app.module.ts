@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {routing,appRoutingProviders}from './app.router';
 import {DataTableModule,SharedModule} from 'primeng/primeng';
+import {ButtonModule} from 'primeng/primeng';
+import {DialogModule} from 'primeng/primeng';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 // Componentes
@@ -12,7 +15,7 @@ import { LoginComponent } from './Administrator/login/login.component';
 import { DashBoardComponent } from './Administrator/dash-board/dash-board.component';
 import { TestComponent } from './Administrator/test/test.component';
 import { InicialComponent } from './Administrator/inicial/inicial.component';
-import { MaterializeModule } from 'angular2-materialize';
+
 import { PerfilTrabajoComponent } from './Administrator/perfil-trabajo/perfil-trabajo.component';
 
 
@@ -30,11 +33,12 @@ import { PerfilTrabajoComponent } from './Administrator/perfil-trabajo/perfil-tr
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterializeModule,
     routing,
-    FormsModule,
     DataTableModule,
-    SharedModule
+    SharedModule,
+    ButtonModule,
+    DialogModule,
+    BrowserAnimationsModule
   ],
   providers: [
     appRoutingProviders
