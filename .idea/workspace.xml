@@ -2,567 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdc44e69-be45-4c41-a413-9e2ad38ceef7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/assets/download.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/assets/imagen.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/app.router.ts" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/Administrator/indexAdmin.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/Administrator/partials/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/Administrator/partials/test2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/Controllers/LoginController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/css/OverrideComponents.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/@angular/router.es5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/@angular/router.es5.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/@angular/router.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/@angular/router.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/@angular/router/testing.es5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/@angular/router/testing.es5.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/@angular/router/testing.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/@angular/router/testing.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/@angular/router/upgrade.es5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/@angular/router/upgrade.es5.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/@angular/router/upgrade.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/@angular/router/upgrade.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/bundles/router-testing.umd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/bundles/router-testing.umd.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/bundles/router-testing.umd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/bundles/router-testing.umd.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/bundles/router-upgrade.umd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/bundles/router-upgrade.umd.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/bundles/router-upgrade.umd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/bundles/router-upgrade.umd.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/bundles/router.umd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/bundles/router.umd.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/bundles/router.umd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/bundles/router.umd.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/public_api.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/router.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/router.metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/apply_redirects.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/config.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/create_router_state.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/create_url_tree.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/directives/router_link.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/directives/router_link_active.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/directives/router_outlet.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/events.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/interfaces.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/private_export.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/recognize.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/route_reuse_strategy.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/router.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/router_config_loader.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/router_module.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/router_outlet_context.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/router_preloader.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/router_state.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/shared.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/url_handling_strategy.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/url_tree.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/utils/collection.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/utils/tree.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/src/version.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/testing.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/testing.metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/testing/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/testing/index.metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/testing/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/testing/src/router_testing_module.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/testing/src/router_testing_module.metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/testing/src/testing.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/testing/src/testing.metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/upgrade.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/upgrade.metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/upgrade/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/upgrade/index.metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/upgrade/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/upgrade/src/upgrade.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/@angular/router/upgrade/src/upgrade.metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular-route/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular-route/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular-route/angular-route.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular-route/angular-route.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular-route/angular-route.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular-route/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular-route/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular-route/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular/angular-csp.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular/angular-route.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular/angular.min.js.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular/angular.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/angular/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/dist/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/dist/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/dist/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/dist/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/dist/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/dist/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/dist/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/dist/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/dist/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/dist/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/dist/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/grunt/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/grunt/bs-commonjs-generator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/grunt/bs-glyphicons-data-generator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/grunt/bs-lessdoc-parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/grunt/bs-raw-files-generator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/grunt/change-version.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/grunt/configBridge.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/grunt/npm-shrinkwrap.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/grunt/sauce_browsers.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/js/affix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/js/alert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/js/button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/js/carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/js/collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/js/dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/js/modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/js/popover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/js/scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/js/tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/js/tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/js/transition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/alerts.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/badges.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/bootstrap.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/breadcrumbs.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/button-groups.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/carousel.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/close.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/code.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/component-animations.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/dropdowns.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/forms.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/glyphicons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/grid.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/input-groups.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/jumbotron.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/labels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/list-group.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/media.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/alerts.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/background-variant.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/border-radius.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/center-block.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/clearfix.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/forms.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/gradients.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/grid-framework.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/grid.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/hide-text.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/image.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/labels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/list-group.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/nav-divider.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/nav-vertical-align.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/opacity.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/pagination.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/panels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/progress-bar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/reset-filter.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/reset-text.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/resize.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/responsive-visibility.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/size.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/tab-focus.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/table-row.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/text-emphasis.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/text-overflow.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/mixins/vendor-prefixes.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/modals.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/navbar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/navs.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/normalize.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/pager.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/pagination.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/panels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/popovers.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/print.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/progress-bars.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/responsive-embed.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/responsive-utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/scaffolding.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/tables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/theme.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/thumbnails.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/tooltip.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/type.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/less/wells.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/bootstrap/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/HELP-US-OUT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/css/font-awesome.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/less/animated.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/less/bordered-pulled.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/less/core.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/less/fixed-width.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/less/font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/less/icons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/less/larger.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/less/list.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/less/path.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/less/rotated-flipped.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/less/screen-reader.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/less/stacked.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/scss/_animated.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/scss/_bordered-pulled.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/scss/_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/scss/_fixed-width.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/scss/_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/scss/_larger.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/scss/_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/scss/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/scss/_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/scss/_rotated-flipped.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/scss/_screen-reader.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/scss/_stacked.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/scss/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/font-awesome/scss/font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/.bowerrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/.jscsrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/Gruntfile.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/changelog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/component.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/hammer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/hammer.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/hammer.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/hammer.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/expose.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/hammer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/hammer.prefix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/hammer.suffix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/input.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/input/mouse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/input/pointerevent.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/input/singletouch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/input/touch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/input/touchmouse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/manager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/recognizer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/recognizers/attribute.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/recognizers/pan.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/recognizers/pinch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/recognizers/press.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/recognizers/rotate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/recognizers/swipe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/recognizers/tap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/touchaction.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/src/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/manual/assets/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/manual/compute_touch_action.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/manual/input.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/manual/log.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/manual/multiple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/manual/nested.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/manual/simulator-googlemaps.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/manual/simulator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/manual/touchaction.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/manual/visual.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/assets/blanket.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/assets/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/assets/lodash.compat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/assets/qunit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/assets/qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/assets/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/gestures/test_pan.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/gestures/test_pinch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/gestures/test_swipe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/test_enable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/test_events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/test_gestures.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/test_hammer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/test_jquery_plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/test_multiple_taps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/test_nested_gesture_recognizers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/test_propagation_bubble.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/test_require_failure.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/test_simultaneous_recognition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/hammerjs/tests/unit/test_utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/AUTHORS.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/dist/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/dist/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/dist/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/dist/jquery.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/dist/jquery.slim.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/dist/jquery.slim.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/dist/jquery.slim.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/external/sizzle/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/external/sizzle/dist/sizzle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/external/sizzle/dist/sizzle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/external/sizzle/dist/sizzle.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/.eslintrc.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/ajax/jsonp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/ajax/load.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/ajax/parseXML.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/ajax/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/ajax/var/location.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/ajax/var/nonce.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/ajax/var/rquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/ajax/xhr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/attributes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/attributes/attr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/attributes/classes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/attributes/prop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/attributes/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/attributes/val.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/callbacks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/core/DOMEval.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/core/access.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/core/init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/core/nodeName.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/core/parseHTML.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/core/ready-no-deferred.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/core/ready.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/core/readyException.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/core/stripAndCollapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/core/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/core/var/rsingleTag.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/css.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/css/addGetHookIf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/css/adjustCSS.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/css/curCSS.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/css/hiddenVisibleSelectors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/css/showHide.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/css/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/css/var/cssExpand.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/css/var/getStyles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/css/var/isHiddenWithinTree.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/css/var/rmargin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/css/var/rnumnonpx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/css/var/swap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/data/Data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/data/var/acceptData.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/data/var/dataPriv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/data/var/dataUser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/deferred.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/deferred/exceptionHook.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/deprecated.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/dimensions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/effects.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/effects/Tween.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/effects/animatedSelector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/event.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/event/ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/event/alias.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/event/focusin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/event/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/event/trigger.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/exports/amd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/exports/global.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/manipulation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/manipulation/_evalUrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/manipulation/buildFragment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/manipulation/getAll.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/manipulation/setGlobalEval.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/manipulation/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/manipulation/var/rcheckableType.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/manipulation/var/rscriptType.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/manipulation/var/rtagName.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/manipulation/wrapMap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/offset.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/queue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/queue/delay.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/selector-native.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/selector-sizzle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/selector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/serialize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/traversing.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/traversing/findFilter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/traversing/var/dir.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/traversing/var/rneedsContext.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/traversing/var/siblings.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/var/ObjectFunctionString.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/var/arr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/var/class2type.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/var/concat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/var/document.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/var/documentElement.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/var/fnToString.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/var/getProto.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/var/hasOwn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/var/indexOf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/var/pnum.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/var/push.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/var/rcssNum.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/var/rnothtmlwhite.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/var/slice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/var/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/var/toString.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/jquery/src/wrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/dist/css/materialize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/dist/css/materialize.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/dist/fonts/roboto/Roboto-Bold.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/dist/fonts/roboto/Roboto-Bold.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/dist/fonts/roboto/Roboto-Light.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/dist/fonts/roboto/Roboto-Light.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/dist/fonts/roboto/Roboto-Medium.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/dist/fonts/roboto/Roboto-Medium.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/dist/fonts/roboto/Roboto-Regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/dist/fonts/roboto/Roboto-Regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/dist/fonts/roboto/Roboto-Thin.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/dist/fonts/roboto/Roboto-Thin.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/dist/js/materialize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/dist/js/materialize.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/extras/noUiSlider/nouislider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/extras/noUiSlider/nouislider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/extras/noUiSlider/nouislider.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/animation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/buttons.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/cards.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/character_counter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/chips.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/collapsible.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/date_picker/picker.date.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/date_picker/picker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/date_picker/picker.time.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/forms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/global.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/hammer.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/initial.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/jquery.easing.1.4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/jquery.hammer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/materialbox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/parallax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/pushpin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/scrollFire.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/sideNav.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/slider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/tabs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/tapTarget.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/toasts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/transitions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/velocity.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/js/waves.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_badges.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_cards.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_carousel.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_chips.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_collapsible.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_color.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_dropdown.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_global.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_icons-material-design.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_materialbox.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_modal.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_navbar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_normalize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_preloader.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_pulse.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_roboto.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_sideNav.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_slider.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_table_of_contents.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_tabs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_tapTarget.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_toast.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_tooltip.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_transitions.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_typography.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/_waves.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/date_picker/_default.date.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/date_picker/_default.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/date_picker/_default.time.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/forms/_checkboxes.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/forms/_file-input.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/forms/_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/forms/_input-fields.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/forms/_radio-buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/forms/_range.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/forms/_select.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/components/forms/_switches.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize-css/sass/materialize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/materialize/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/tslib/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/tslib/CopyrightNotice.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/tslib/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/tslib/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/tslib/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/tslib/docs/generator.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/tslib/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/tslib/tslib.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/tslib/tslib.es6.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/tslib/tslib.es6.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/tslib/tslib.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Client/node_modules/tslib/tslib.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ClientAngular/src/app/Administrator/inicial/inicial.component.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Routes/login.js" afterPath="$PROJECT_DIR$/HttpServices/Routes/login.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -577,46 +18,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AplicacionVacanteModel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HttpServices/Models/AplicacionVacanteModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BancoPreguntasAPTModel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HttpServices/Models/BancoPreguntasAPTModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BancoPreguntasTECModel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HttpServices/Models/BancoPreguntasTECModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InduccionModel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HttpServices/Models/InduccionModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EvaluacionDesempenoModel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HttpServices/Models/EvaluacionDesempenoModel.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -667,12 +68,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ClientAngular/Client/.gitignore">
+      <file leaf-file-name="RolRoute.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HttpServices/Routes/RolRoute.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+            <state relative-caret-position="306">
+              <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+              <folding>
+                <element signature="e#53#114#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HttpServices/Routes/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="67" column="19" lean-forward="true" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HttpServices/Models/User.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HttpServices/node_modules/mongoose/lib/model.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="310" column="0" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EtapaRoute.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HttpServices/Routes/EtapaRoute.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <element signature="e#197#253#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -711,8 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HttpServices/server.js" />
-        <option value="$PROJECT_DIR$/Client/index.html" />
         <option value="$PROJECT_DIR$/Client/node_modules/angular/angular-route.js" />
         <option value="$PROJECT_DIR$/Client/Administrator/routes/test2.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/routes/index.html" />
@@ -762,6 +205,8 @@
         <option value="$PROJECT_DIR$/HttpServices/Models/AplicacionDesempenoModel.js" />
         <option value="$PROJECT_DIR$/HttpServices/Models/AplicacionCapacitacionModel.js" />
         <option value="$PROJECT_DIR$/ClientAngular/Client/.gitignore" />
+        <option value="$PROJECT_DIR$/HttpServices/Models/User.js" />
+        <option value="$PROJECT_DIR$/HttpServices/Routes/login.js" />
       </list>
     </option>
   </component>
@@ -776,10 +221,9 @@
     <handled-path value="$PROJECT_DIR$/HttpServices/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -827,6 +271,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ombuRecursosHumanos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ombuRecursosHumanos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HttpServices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1002,7 +464,7 @@
       <workItem from="1511556851576" duration="2087000" />
       <workItem from="1511641712532" duration="710000" />
       <workItem from="1512081111002" duration="1637000" />
-      <workItem from="1512311803547" duration="3204000" />
+      <workItem from="1512311803547" duration="4944000" />
     </task>
     <task id="LOCAL-00001" summary="first app.js with ng view">
       <created>1509120600180</created>
@@ -1029,21 +491,22 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66409000" />
+    <option name="totallyTimeSpent" value="68149000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29662803" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60149574" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997833" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3261105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32603937" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24920969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34019503" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997833" sideWeight="0.49789253" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4037199" sideWeight="0.49789253" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1061,15 +524,15 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34354487" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34019503" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2767094" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.60149574" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24920969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997833" sideWeight="0.49789253" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4037199" sideWeight="0.49789253" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1088,23 +551,29 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/HttpServices/Routes/login.js</url>
-          <line>10</line>
+          <url>file://$PROJECT_DIR$/HttpServices/Models/User.js</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/HttpServices/Routes/EtapaRoute.js</url>
-          <line>20</line>
+          <url>file://$PROJECT_DIR$/HttpServices/Models/User.js</url>
+          <line>71</line>
           <properties />
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/HttpServices/Routes/login.js</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Client2/Projecto/src/app/adminsitrator/adminsitrator.component.html" />
-    <entry file="file://$PROJECT_DIR$/Client2/Projecto/src/app/app.module.ts" />
     <entry file="file://$PROJECT_DIR$/Client2/Projecto/src/app/app.routing.ts" />
     <entry file="file://$PROJECT_DIR$/Client2/Projecto/src/app/app.component.html" />
     <entry file="file://$PROJECT_DIR$/Client/css/OverrideComponents.css" />
@@ -1235,39 +704,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/Routes/RolRoute.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-          <folding>
-            <element signature="e#53#114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HttpServices/Models/RolModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/Routes/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1014">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/Routes/EtapaRoute.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-          <folding>
-            <element signature="e#357#423#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1383,6 +824,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HttpServices/Models/AplicacionInduccionModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClientAngular/Client/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HttpServices/Routes/EtapaRoute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#197#253#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HttpServices/node_modules/mongoose/lib/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="310" column="0" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HttpServices/Models/PlanCapacitacionModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1391,10 +866,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/Models/AplicacionInduccionModel.js">
+    <entry file="file://$PROJECT_DIR$/HttpServices/Routes/RolRoute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding>
+            <element signature="e#53#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HttpServices/Models/AplicacionCapacitacionModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1407,18 +892,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/Models/AplicacionCapacitacionModel.js">
+    <entry file="file://$PROJECT_DIR$/HttpServices/Routes/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="326">
+          <caret line="67" column="19" lean-forward="true" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClientAngular/Client/.gitignore">
+    <entry file="file://$PROJECT_DIR$/HttpServices/Models/User.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state relative-caret-position="340">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -9,9 +9,10 @@ const bCrypt = require('bcryptjs');
 //Register
 router.post('/register', function (req, res, next)  {
     var newUser = new User({
-        name: req.body.name,
-        email: req.body.email,
-        tipoUsuario: req.body.tipoUsuario,
+        id_empleado: req.body.id_empleado,
+        id_rol: req.body.id_rol,
+        id_empresa: req.body.id_empresa,
+        nombres_usuario: req.body.nombres_usuario,
         username: req.body.username,
         password: req.body.password,
         estado:req.body.estado,
