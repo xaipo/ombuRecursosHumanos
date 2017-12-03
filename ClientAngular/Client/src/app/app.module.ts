@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {routing,appRoutingProviders}from './app.router';
+import {DataTableModule,SharedModule} from 'primeng/primeng';
 
 
 // Componentes
@@ -31,7 +32,9 @@ import { PerfilTrabajoComponent } from './Administrator/perfil-trabajo/perfil-tr
     HttpModule,
     MaterializeModule,
     routing,
-    FormsModule
+    FormsModule,
+    DataTableModule,
+    SharedModule
   ],
   providers: [
     appRoutingProviders

@@ -3,6 +3,7 @@ import {Router, ActivatedRoute, Params} from '@angular/router';
 import {GLOBAL} from '../../services/global';
 import {PerfilTrabajoService} from '../../services/perfil-trabajo.service';
 import {PerfilTrabajo} from '../../models/perfil-trabajo';
+import {DataTableModule,SharedModule} from 'primeng/primeng';
 
 
 @Component({
@@ -12,6 +13,9 @@ import {PerfilTrabajo} from '../../models/perfil-trabajo';
   providers : [PerfilTrabajoService]
 
 })
+
+
+
 export class PerfilTrabajoComponent implements OnInit {
 
   public perfilTrabajo : PerfilTrabajo;
