@@ -1,2 +1,48 @@
-<p>dashboard</p>
-<app-root></app-root>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+
+    <ul class="nav navbar-nav  " style="text-align: center;">
+
+      <a class="navbar-brand " style="text-align: center" href="/dashboard">Recursos Humanos</a>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Perfil</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Loguot</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a href="/dashboard"><img src="assets/download.png" height="50px" width="50px" class="center-block"></a>
+  <br>
+  <br>
+  <br>
+  <a href="/dashboard">Dashboard</a>
+  <a href="#">Usuarios</a>
+  <a href="/dashboard/perfilTrabajo">Perfil Trabajo</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+  <li class="dropdown navbar-inverse">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+      <span class="caret"></span></a>
+    <ul class="dropdown-menu navbar-inverse">
+      <li><a href="#">Page 1-1</a></li>
+      <li><a href="#">Page 1-2</a></li>
+      <li><a href="#">Page 1-3</a></li>
+    </ul>
+  </li>
+</div>
+
+
+<span class="brand" style="font-size:30px;cursor:pointer" (click)="openNav()">&#10095; Menú</span>
+<div class="container">
+  <app-root></app-root>
+</div>
+

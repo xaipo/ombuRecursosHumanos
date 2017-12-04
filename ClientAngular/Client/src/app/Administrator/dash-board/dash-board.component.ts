@@ -13,7 +13,13 @@ export class DashBoardComponent implements OnInit {
   ngOnInit() {
 
 
-
+    document.getElementById("mySidenav").style.width = "200px";
+  }
+  public  openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
   }
 
+  public  closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
 }

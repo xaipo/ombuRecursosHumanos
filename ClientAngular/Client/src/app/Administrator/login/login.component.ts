@@ -7,12 +7,16 @@ import {Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
+
+
   constructor(private router: Router) {
 
 
   }
 
   ngOnInit() {
+
+    document.getElementById("mySidenav").style.width = "200px";
   }
 
   public login(){
@@ -20,4 +24,7 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['dashboard']);
 
   }
+
+
+
 }

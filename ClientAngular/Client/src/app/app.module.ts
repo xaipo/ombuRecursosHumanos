@@ -17,8 +17,7 @@ import { TestComponent } from './Administrator/test/test.component';
 import { InicialComponent } from './Administrator/inicial/inicial.component';
 
 import { PerfilTrabajoComponent } from './Administrator/perfil-trabajo/perfil-trabajo.component';
-
-
+import {PanelMenuModule,MenuItem} from 'primeng/primeng';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +37,10 @@ import { PerfilTrabajoComponent } from './Administrator/perfil-trabajo/perfil-tr
     SharedModule,
     ButtonModule,
     DialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
+    PanelMenuModule,
+
   ],
   providers: [
     appRoutingProviders
