@@ -9,22 +9,20 @@ var mongoose = restful.mongoose;
 
 //BancoPreguntasPerfil schema
 const BancoPreguntasPerfilSchema = mongoose.Schema({
-    id: {
+    /*id: {
         type: mongoose.Schema.ObjectId
-    },
-    id_perfil: {
+    },*/
+    perfil: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        ref:'PerfilTrabajo'
     },
     pregunta: {
-        type: String,
-        required: true
+        type: String
     },
-    respuesta: {
-        type: Array,
-        required: true
+    respuestas: {
+        type: Array
+
     }
+},{collection: 'bancopreguntasperfil'});
 
-});
-
-module.exports = restful.model('BancoPreguntasPerfilModel', BancoPreguntasPerfilSchema);
+module.exports = restful.model('BancoPreguntasPerfil', BancoPreguntasPerfilSchema);

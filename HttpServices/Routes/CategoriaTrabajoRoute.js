@@ -13,16 +13,8 @@ var routeExample = require('../Models/CategoriaTrabajoModel'); //copiar el model
 
 // </editor-fold>
 
-// <editor-fold defaultstate="collapsed" desc="Obtener Productos">
-/*router.get('/productos',function(req,res){
- res.send("ingresa api");
- });*/
-
-
 routeExample.methods(['get','put','post','delete','search']);
 routeExample.register(router,'/categoriaTrabajo'); //nombre ruta para acceder por web
-
-
 
 // </editor-fold>
 

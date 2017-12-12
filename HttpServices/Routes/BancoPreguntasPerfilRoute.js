@@ -13,13 +13,14 @@ var routeExample = require('../Models/BancoPreguntasPerfilModel'); //copiar el m
 // </editor-fold>
 
 // <editor-fold defaultstate="collapsed" desc="Obtener Productos">
-/*router.get('/productos',function(req,res){
- res.send("ingresa api");
- });*/
-
 
 routeExample.methods(['get','put','post','delete','search']);
-routeExample.register(router,'/bancoPreguntasPerfil'); //nombre ruta para acceder por web
+
+routeExample.before('get', function(req, res, next) {
+ req.query.populate = 'perfil';   // you could delegate to restful
+ next()
+});
+routeExample.register(router,'/bancopreguntasPerfil'); //nombre ruta para acceder por web
 
 
 

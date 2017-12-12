@@ -1,15 +1,16 @@
 /**
  * Created by VICTOR OQUENDO on 10/31/2017.
  */
-
+'use strict'
 var restful = require('node-restful');
 var mongoose = restful.mongoose;
 
 //PerfilTrabajo schema
-const PerfilTrabajoSchema = mongoose.Schema({
-    id: {
+var PerfilTrabajoSchema = mongoose.Schema({
+
+   /* _id:{
         type: mongoose.Schema.ObjectId
-    },
+    },*/
     nombre: {
         type: String
     },

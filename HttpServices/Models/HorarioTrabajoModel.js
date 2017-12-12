@@ -7,26 +7,23 @@ var mongoose = restful.mongoose;
 
 //HorarioTrabajo schema
 const HorarioTrabajoSchema = mongoose.Schema({
-    id: {
+    /*id: {
         type: mongoose.Schema.ObjectId
-    },
+    },*/
     nombre: {
-        type: String,
-        required: true
+        type: String
     },
     descripcion: {
-        type: String,
-        required: true
+        type: String
     },
     hora_entrada: {
-        type:String,
-        required: true
+        type:Date
     },
     hora_salida: {
-        type:  String,
-        required: true
+        type:  Date
+
     }
 
-});
+},{collection: 'horariotrabajo'});
 
-module.exports = restful.model('HorarioTrabajoModel', HorarioTrabajoSchema);
+module.exports = restful.model('HorarioTrabajo', HorarioTrabajoSchema);

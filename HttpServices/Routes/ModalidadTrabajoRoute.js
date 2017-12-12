@@ -13,16 +13,10 @@ var routeExample = require('../Models/ModalidadTrabajoModel'); //copiar el model
 
 // </editor-fold>
 
-// <editor-fold defaultstate="collapsed" desc="Obtener Productos">
-/*router.get('/productos',function(req,res){
- res.send("ingresa api");
- });*/
-
+// <editor-fold defaultstate="collapsed" desc="Obtener metodos">
 
 routeExample.methods(['get','put','post','delete','search']);
 routeExample.register(router,'/modalidadTrabajo'); //nombre ruta para acceder por web
-
-
 
 // </editor-fold>
 

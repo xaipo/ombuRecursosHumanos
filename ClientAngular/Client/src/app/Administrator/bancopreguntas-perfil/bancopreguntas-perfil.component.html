@@ -1,0 +1,100 @@
+<div class="ui-g">
+  <div class="ui-g-12">
+    <h4>BANCO DE PREGUNTAS PERFIL</h4>
+  </div>
+</div>
+
+
+<div class="ui-g">
+  <div class="ui-g-12">
+    <div class="ui-widget-header" style="padding:4px 10px;border-bottom: 0 none">
+      <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
+      <input #gb type="text" pInputText size="100%" placeholder="Global Filter">
+    </div>
+    <p-dataTable [value]="listado" selectionMode="single" [(selection)]="selected" (onRowSelect)="onRowSelect($event)"
+                 [paginator]="true" rows="10" [responsive]="true" [globalFilter]="gb" #dt>
+      <p-header>
+        <div class="ui-helper-clearfix" style="width:100%">
+          <button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAdd()"
+                  label="Nuevo"></button>
+          LISTADO PREGUNTAS PERFIL
+        </div>
+      </p-header>
+
+      <p-column field="perfil.nombre" header="Perfil" [sortable]="true" [filter]="true" filterPlaceholder="Search"
+                filterMatchMode="contains"></p-column>
+      <p-column field="pregunta" header="Pregunta" [sortable]="true" [filter]="true" filterPlaceholder="Search"
+                filterMatchMode="contains"></p-column>
+
+
+    </p-dataTable>
+  </div>
+</div>
+
+<p-dialog header="BANCO PREGUNTAS PERFIL Detalles" [(visible)]="displayDialog" [responsive]="true" showEffect="fade"
+          [modal]="true" width="1000">
+  <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="actual">
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-2"><label>Perfil</label></div>
+      <div class="ui-grid-col-8">
+      <p-autoComplete [(ngModel)]="perfil" [suggestions]="filteredObjSingle" (completeMethod)="filterSingle($event)" field="nombre" [size]="30"
+                      placeholder="Perfiles" [minLength]="1"></p-autoComplete>
+     </div>
+    </div>
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-2"><label for="pregunta">Pregunta</label></div>
+      <div class="ui-grid-col-8"><input pInputText id="pregunta" [(ngModel)]="actual.pregunta"/></div>
+    </div>
+
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-6">
+        <p-dataTable [value]="listadoResp" selectionMode="single" [(selection)]="selectedResp"
+                     (onRowSelect)="onRowSelectResp($event)" [paginator]="true" rows="5" [responsive]="true">
+          <p-header>
+            RESPUESTAS
+            <div class="ui-helper-clearfix" style="width:25%">
+              <button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAddResp()"
+                      label="Nuevo"></button>
+            </div>
+          </p-header>
+
+          <p-column field="respuesta" header="Respuesta" [sortable]="true" ></p-column>
+          <p-column field="correcta" header="Correcta" [sortable]="true" ></p-column>
+
+
+
+        </p-dataTable>
+      </div>
+
+    </div>
+
+  </div>
+  <p-footer>
+    <div class="ui-dialog-buttonpane ui-helper-clearfix">
+      <button type="button" pButton icon="fa-close" (click)="close()" label="Cerrar"></button>
+      <button type="button" pButton icon="fa-check" (click)="save()" label="Guardar"></button>
+    </div>
+  </p-footer>
+</p-dialog>
+
+<p-dialog header="RESPUESTA Detalle" [(visible)]="displayDialogResp" [responsive]="true" showEffect="fade"
+          [modal]="true" width="500">
+  <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="respuesta">
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-3"><label for="descripcionResp">Respuesta</label></div>
+      <div class="ui-grid-col-9"><input pInputText id="descripcionResp" [(ngModel)]="respuesta.respuesta"/></div>
+    </div>
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-3"><label >Correcta</label></div>
+      <div class="ui-grid-col-9">
+        <p-inputSwitch onLabel="Sí" offLabel="No" [(ngModel)]="respuesta.correcta"></p-inputSwitch>
+      </div>
+    </div>
+  </div>
+  <p-footer>
+    <div class="ui-dialog-buttonpane ui-helper-clearfix">
+      <button type="button" pButton icon="fa-close" (click)="deleteResp()" label="Eliminar"></button>
+      <button type="button" pButton icon="fa-check" (click)="saveResp()" label="Guardar"></button>
+    </div>
+  </p-footer>
+</p-dialog>

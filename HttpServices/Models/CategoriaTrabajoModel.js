@@ -7,14 +7,14 @@ var mongoose = restful.mongoose;
 
 //CategoriaTrabajo schema
 const CategoriaTrabajoSchema = mongoose.Schema({
-    id: {
+    /*id: {
         type: mongoose.Schema.ObjectId
-    },
+    },*/
     nombre: {
         type: String,
         required: true
     }
 
-});
+},{collection: 'categoriatrabajo'});
 
-module.exports = restful.model('CategoriaTrabajoModel', CategoriaTrabajoSchema);
+module.exports = restful.model('CategoriaTrabajo', CategoriaTrabajoSchema);

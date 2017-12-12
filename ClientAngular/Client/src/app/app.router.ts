@@ -8,6 +8,10 @@ import {LoginComponent} from "./Administrator/login/login.component";
 import {TestComponent} from "./Administrator/test/test.component";
 import {InicialComponent} from "./Administrator/inicial/inicial.component";
 import {PerfilTrabajoComponent} from "./Administrator/perfil-trabajo/perfil-trabajo.component";
+import {ModalidadTrabajoComponent} from "./Administrator/modalidad-trabajo/modalidad-trabajo.component";
+import {CategoriaTrabajoComponent} from "./Administrator/categoria-trabajo/categoria-trabajo.component";
+import {HorarioTrabajoComponent} from "./Administrator/horario-trabajo/horario-trabajo.component";
+import {BancopreguntasPerfilComponent} from "./Administrator/bancopreguntas-perfil/bancopreguntas-perfil.component";
 
 
 const appRoutes:Routes = [
@@ -21,6 +25,22 @@ const appRoutes:Routes = [
       {
         path: 'perfilTrabajo',
         component: PerfilTrabajoComponent
+      },
+      {
+        path: 'modalidadTrabajo',
+        component: ModalidadTrabajoComponent
+      },
+      {
+        path: 'categoriaTrabajo',
+        component: CategoriaTrabajoComponent
+      },
+      {
+        path: 'horarioTrabajo',
+        component: HorarioTrabajoComponent
+      },
+      {
+        path: 'bancopreguntasPerfil',
+        component: BancopreguntasPerfilComponent
       },
       {
         path: '**',
