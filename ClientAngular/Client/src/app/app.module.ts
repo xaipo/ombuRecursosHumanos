@@ -7,6 +7,9 @@ import {DataTableModule,SharedModule} from 'primeng/primeng';
 import {ButtonModule} from 'primeng/primeng';
 import {DialogModule} from 'primeng/primeng';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MessagesModule} from 'primeng/primeng';
+import {MessageModule} from 'primeng/primeng';
+import {GrowlModule} from 'primeng/primeng';
 
 
 // Componentes
@@ -38,9 +41,10 @@ import {PanelMenuModule,MenuItem} from 'primeng/primeng';
     ButtonModule,
     DialogModule,
     BrowserAnimationsModule,
-
+    MessagesModule,
+    GrowlModule,
     PanelMenuModule,
-
+    MessageModule
   ],
   providers: [
     appRoutingProviders

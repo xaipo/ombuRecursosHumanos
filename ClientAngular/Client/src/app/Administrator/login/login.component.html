@@ -1,4 +1,4 @@
-
+<p-growl [(value)]="message"></p-growl>
 <br>
 <br>
 <br>
@@ -12,10 +12,10 @@
 
 
       <label for="user">Nombre de Usuario:</label>
-      <input id="user" type="text" class="form-control" placeholder="Nombre de Usuario">
+      <input id="user" type="text" class="form-control" placeholder="Nombre de Usuario" [(ngModel)]="user.username">
       <label for="password">Contraseña:</label>
-      <input id="password" type="password" class="form-control" placeholder="Contraseña"><br>
-      <input id="submit" type="submit" class="form-control btn-success" >
+      <input id="password" type="password" class="form-control" placeholder="Contraseña" [(ngModel)]="user.password"><br>
+      <input id="submit" type="submit" class="form-control btn-success" (click)="login()" >
     </div>
   </div>
 </div>
