@@ -14,9 +14,7 @@ var restful = require("node-restful");
 
 //User schema
 const UserSchema = mongoose.Schema({
-    id: {
-        type: mongoose.Schema.ObjectId
-    },
+
     id_empleado: {
         type: mongoose.Schema.ObjectId,
         required : false

@@ -8,11 +8,12 @@ declare var $ :any;
 })
 export class DashBoardComponent implements OnInit {
 
+  user:any;
   constructor() { }
 
   ngOnInit() {
 
-
+    this.user=JSON.parse(localStorage.getItem('user'));
     document.getElementById("mySidenav").style.width = "200px";
   }
   public  openNav() {
