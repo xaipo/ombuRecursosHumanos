@@ -13,7 +13,6 @@ import {PerfilTrabajo} from '../../models/perfil-trabajo';
   providers: [
     PerfilTrabajoService
   ]
-
 })
 
 
@@ -30,14 +29,15 @@ export class PerfilTrabajoComponent implements OnInit {
 
 
   public destreza:DescripObj;
-  public funcion:DescripObj;
   public selectedDest:DescripObj;
-  public selectedFunc:DescripObj;
   public listadoDest :any =[];
-  public listadoFunc :any =[];
   displayDialogDest:boolean;
-  displayDialogFunc:boolean;
   newObjDest:boolean;
+
+  public funcion:DescripObj;
+  public selectedFunc:DescripObj;
+  public listadoFunc :any =[];
+  displayDialogFunc:boolean;
   newObjFunc:boolean;
 
 

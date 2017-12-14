@@ -14,12 +14,16 @@ var routeExample = require('../Models/DepartamentoModel'); //copiar el modelo de
 // </editor-fold>
 
 // <editor-fold defaultstate="collapsed" desc="Obtener Productos">
-/*router.get('/productos',function(req,res){
- res.send("ingresa api");
- });*/
+
 
 
 routeExample.methods(['get','put','post','delete','search']);
+
+routeExample.before('get', function(req, res, next) {
+ req.query.populate = 'responsable';   // you could delegate to restful
+ next();
+});
+
 routeExample.register(router,'/departamento'); //nombre ruta para acceder por web
 
 

@@ -29,6 +29,10 @@ import { ModalidadTrabajoComponent } from './Administrator/modalidad-trabajo/mod
 import { CategoriaTrabajoComponent } from './Administrator/categoria-trabajo/categoria-trabajo.component';
 import { HorarioTrabajoComponent } from './Administrator/horario-trabajo/horario-trabajo.component';
 import { BancopreguntasPerfilComponent } from './Administrator/bancopreguntas-perfil/bancopreguntas-perfil.component';
+import { RolComponent } from './Administrator/rol/rol.component';
+import { EmpleadoComponent } from './Administrator/empleado/empleado.component';
+import { EmpresaComponent } from './Administrator/empresa/empresa.component';
+import { DepartamentoComponent } from './Administrator/departamento/departamento.component';
 
 
 @NgModule({
@@ -42,7 +46,11 @@ import { BancopreguntasPerfilComponent } from './Administrator/bancopreguntas-pe
     ModalidadTrabajoComponent,
     CategoriaTrabajoComponent,
     HorarioTrabajoComponent,
-    BancopreguntasPerfilComponent
+    BancopreguntasPerfilComponent,
+    RolComponent,
+    EmpleadoComponent,
+    EmpresaComponent,
+    DepartamentoComponent
 
 
   ],

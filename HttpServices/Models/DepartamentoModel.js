@@ -20,9 +20,9 @@ const DepartamentoSchema = mongoose.Schema({
     },
     responsable: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        ref:'Empleado' //se referencia al modelo a popular
     }
 
-});
+},{collection: 'departamento'});
 
-module.exports = restful.model('DepartamentoModel', DepartamentoSchema);
+module.exports = restful.model('Departamento', DepartamentoSchema);

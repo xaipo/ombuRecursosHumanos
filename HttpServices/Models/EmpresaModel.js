@@ -24,7 +24,7 @@ const EmpresaSchema = mongoose.Schema({
     },
     gerente: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        ref:'Empleado' //se referencia al modelo a popular
     },
     ciudad: {
         type: String,
@@ -43,6 +43,6 @@ const EmpresaSchema = mongoose.Schema({
         required: false
     }
 
-});
+},{collection: 'empresa'});
 
-module.exports = restful.model('EmpresaModel', EmpresaSchema);
+module.exports = restful.model('Empresa', EmpresaSchema);

@@ -7,86 +7,61 @@ var mongoose = restful.mongoose;
 
 //Empleado schema
 const EmpleadoSchema = mongoose.Schema({
-    id: {
+    /*id: {
         type: mongoose.Schema.ObjectId
+    },*/
+    nombre: {
+        type: String
     },
-    primer_nombre: {
-        type: String,
-        required: true
-    },
-    segundo_nombre: {
-        type: String,
-        required: false
-    },
-    primer_apellido: {
-        type: String,
-        required: true
-    },
-    segundo_apellido: {
-        type: String,
-        required: true
+    apellido: {
+        type: String
     },
     cedula: {
-        type: String,
-        required: true
+        type: String
     },
     genero: {
-        type: String,
-        required: true
+        type: String
     },
     estado_civil: {
-        type: String,
-        required: true
+        type: String
     },
     nacionalidad: {
-        type: String,
-        required: true
+        type: String
     },
     fecha_nacimiento: {
-        type: Date,
-        required: true
+        type: Date
     },
     lugar_nacimiento: {
-        type: String,
-        required: true
+        type: String
     },
     fotografia: {
-        type: String,
-        required: true
+        type: String
     },
     direccion: {
-        type: String,
-        required: true
+        type: String
     },
     ciudad: {
-        type: String,
-        required: true
+        type: String
     },
     provincia: {
-        type: String,
-        required: true
+        type: String
     },
     telefono_domicilio: {
-        type: String,
-        required: false
+        type: String
     },
     telefono_celular: {
-        type: String,
-        required: true
+        type: String
     },
     email: {
-        type: String,
-        required: true
+        type: String
     },
     contacto_emergencia:{
-        type: Array,
-        required: true
+        type: Array
     },
     dependientes:{
-        type: Array,
-        required: true
+        type: Array
     }
 
-});
+},{collection: 'empleado'});
 
-module.exports = restful.model('EmpleadoModel', EmpleadoSchema);
+module.exports = restful.model('Empleado', EmpleadoSchema);

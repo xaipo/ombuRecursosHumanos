@@ -7,18 +7,16 @@ var mongoose = restful.mongoose;
 
 //Rol schema
 const RolSchema = mongoose.Schema({
-    id: {
+    /*id: {
         type: mongoose.Schema.ObjectId
-    },
+    },*/
     nombre: {
-        type: String,
-        required: true
+        type: String
     },
     descripcion: {
-        type: String,
-        required: false
+        type: String
     }
 
-});
+},{collection: 'rol'});
 
-module.exports = restful.model('RolModel', RolSchema);
+module.exports = restful.model('Rol', RolSchema);

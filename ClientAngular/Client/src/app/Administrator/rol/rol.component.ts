@@ -1,22 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import {Router, ActivatedRoute, Params} from '@angular/router';
 import {GLOBAL} from '../../services/global';
-import {ModalidadTrabajoService} from '../../services/modalidad-trabajo.service';
-import {ModalidadTrabajo} from '../../models/modalidad-trabajo';
+import {RolService} from '../../services/rol.service';
+import {Rol} from '../../models/rol';
 
 
 @Component({
-  selector: 'app-modalidad-trabajo',
-  templateUrl: './modalidad-trabajo.component.html',
-  styleUrls: ['./modalidad-trabajo.component.css'],
+  selector: 'app-rol',
+  templateUrl: './rol.component.html',
+  styleUrls: ['./rol.component.css'],
   providers: [
-    ModalidadTrabajoService
+    RolService
   ]
 })
-export class ModalidadTrabajoComponent implements OnInit {
+export class RolComponent implements OnInit {
 
-  public actual:ModalidadTrabajo;
-  public selected:ModalidadTrabajo;
+  public actual:Rol;
+  public selected:Rol;
   public listado:any;
   public status:string;
   displayDialog:boolean;
@@ -25,18 +25,17 @@ export class ModalidadTrabajoComponent implements OnInit {
 
   constructor(private _route:ActivatedRoute,
               private _router:Router,
-              private _modalidadTrabajoService:ModalidadTrabajoService) {
-    this.actual = new ModalidadTrabajo(this.any, '');
+              private _rolService:RolService) {
+    this.actual = new Rol(this.any, '','');
     this.listado = [];
     this.getAll();
-
   }
 
   ngOnInit() {
   }
 
   getAll() {
-    this._modalidadTrabajoService.getAll().subscribe(response => {
+    this._rolService.getAll().subscribe(response => {
         this.listado = response;
         console.log(this.listado);
       },
@@ -51,7 +50,7 @@ export class ModalidadTrabajoComponent implements OnInit {
 
   showDialogToAdd() {
     this.newObj = true;
-    this.actual = new ModalidadTrabajo(this.any, '');
+    this.actual = new Rol(this.any, '','');
     this.displayDialog = true;
 
   }
@@ -61,11 +60,11 @@ export class ModalidadTrabajoComponent implements OnInit {
     //let listado = [...this.listado];
     if (this.newObj) {
       // funcion save
-      this._modalidadTrabajoService.save(this.actual).subscribe(
+      this._rolService.save(this.actual).subscribe(
           response => {
           if (response) {
             this.status = "success";
-            this.actual = new ModalidadTrabajo(this.any, '');
+            this.actual = new Rol(this.any, '','');
             this.getAll();
             //listado.push(this.actual);
           } else {
@@ -78,13 +77,13 @@ export class ModalidadTrabajoComponent implements OnInit {
       );
     } else {
       //funcion update
-      this._modalidadTrabajoService.update(this.actual).subscribe(
+      this._rolService.update(this.actual).subscribe(
           response => {
           if (response) {
             this.status = "success";
             this.getAll()
             //listado[this.findSelectedIndex()] = this.actual;
-            this.actual = new ModalidadTrabajo(this.any, '');
+            this.actual = new Rol(this.any, '','');
           } else {
             console.log("OBJ _id: error" + JSON.stringify(response));
             this.status = "error";
@@ -96,7 +95,7 @@ export class ModalidadTrabajoComponent implements OnInit {
       );
 
     }
-    this.actual = new ModalidadTrabajo(this.any, '');
+    this.actual = new Rol(this.any, '','');
     this.displayDialog = false;
   }
 
@@ -107,7 +106,7 @@ export class ModalidadTrabajoComponent implements OnInit {
     this.displayDialog = false;
   }
   close() {
-    this.actual =new ModalidadTrabajo(this.any, '');
+    this.actual =new Rol(this.any, '','');
     this.displayDialog = false;
   }
 
@@ -117,8 +116,8 @@ export class ModalidadTrabajoComponent implements OnInit {
     this.displayDialog = true;
   }
 
-  cloneObj(obj:ModalidadTrabajo):ModalidadTrabajo {
-    let actual = new PrimeObj('', '');
+  cloneObj(obj:Rol):Rol {
+    let actual = new PrimeObj('', '','');
     for (let prop in obj) {
       actual[prop] = obj[prop];
     }
@@ -130,8 +129,8 @@ export class ModalidadTrabajoComponent implements OnInit {
   }
 }
 
-class PrimeObj implements ModalidadTrabajo {
+class PrimeObj implements Rol {
 
-  constructor(public _id, public nombre) {
+  constructor(public _id, public nombre, public descripcion) {
   }
 }

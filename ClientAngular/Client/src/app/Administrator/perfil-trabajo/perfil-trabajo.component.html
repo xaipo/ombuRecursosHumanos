@@ -12,12 +12,15 @@
       <input #gb type="text" pInputText size="100%" placeholder="Global Filter">
     </div>
     <p-dataTable [value]="listado" selectionMode="single" [(selection)]="selected" (onRowSelect)="onRowSelect($event)"
-                 [paginator]="true" rows="10" [responsive]="true" [globalFilter]="gb" #dt>
+                 [paginator]="true" rows="10" [responsive]="true" [globalFilter]="gb" #dt
+                 [rowsPerPageOptions]="[5,10,20]" exportFilename="roles">
       <p-header>
         <div class="ui-helper-clearfix" style="width:100%">
           <button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAdd()"
                   label="Nuevo"></button>
           LISTADO PERFILES DE TRABAJO
+          <button type="button" pButton icon="fa-file-o" iconPos="left" label="All Data" (click)="dt.exportCSV()"
+                  style="float:right"></button>
         </div>
       </p-header>
 
