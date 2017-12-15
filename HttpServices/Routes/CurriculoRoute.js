@@ -20,6 +20,12 @@ var routeExample = require('../Models/CurriculoModel'); //copiar el modelo de la
 
 
 routeExample.methods(['get','put','post','delete','search']);
+
+routeExample.before('get', function(req, res, next) {
+ req.query.populate = 'empleado';   // you could delegate to restful
+ //req.query.populate = 'trabajo';
+ next();
+});
 routeExample.register(router,'/curriculo'); //nombre ruta para acceder por web
 
 

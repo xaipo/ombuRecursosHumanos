@@ -84,7 +84,7 @@ export class EmpresaComponent implements OnInit {
 
     } else {
       //funcion update
-
+      this.actual.gerente = this.empleado._id;
       this._empresaService.update(this.actual).subscribe(
           response => {
           if (response) {

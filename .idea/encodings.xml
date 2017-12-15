@@ -8,6 +8,8 @@
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/bancopreguntas-perfil/bancopreguntas-perfil.component.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/categoria-trabajo/categoria-trabajo.component.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/categoria-trabajo/categoria-trabajo.component.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/curriculo/curriculo.component.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/curriculo/curriculo.component.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/dash-board/dash-board.component.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/departamento/departamento.component.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/departamento/departamento.component.ts" charset="UTF-8" />
@@ -28,6 +30,7 @@
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/app.module.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/app.router.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/models/categoria-trabajo.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/models/curriculo.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/models/departamento.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/models/empleado.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/models/empresa.ts" charset="UTF-8" />
@@ -38,6 +41,7 @@
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/pipes/datePipe.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/services/bancopreguntas-perfil.service.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/services/categoria-trabajo.service.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/services/curriculo.service.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/services/departamento.service.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/services/empleado.service.ts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ClientAngular/Client/src/app/services/empresa.service.ts" charset="UTF-8" />

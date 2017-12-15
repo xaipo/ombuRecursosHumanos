@@ -6,39 +6,35 @@ var mongoose = restful.mongoose;
 
 //SubTrabajoCurriculo schema
 const SubTrabajoCurriculoSchema = mongoose.Schema({
-    id_perfil: {
+    perfil: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        ref:'Perfil' //se referencia al modelo a popular
     },
-    id_modalidad: {
+    modalidad: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        ref:'ModalidadTrabajo' //se referencia al modelo a popular
     },
-    id_categoriatrabajo: {
+    categoriatrabajo: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        ref:'CategoriaTrabajo' //se referencia al modelo a popular
     },
-    id_departamento: {
+    departamento: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        ref:'Departamento' //se referencia al modelo a popular
     },
     fecha_registro: {
-        type: date,
-        required: true
+        type: Date
     },
     fecha_iniciocontrato: {
-        type: date,
-        required: true
+        type: Date
     },
     fecha_fincontrato: {
-        type: date,
-        required: false
+        type: Date
     },
     carga_contratofirmado: {
-        type: String,
-        required: false
+        type: String
     }
 
 });
 
-module.exports = restful.model('SubTrabajoCurriculoModel', SubTrabajoCurriculoSchema);
+module.exports = restful.model('SubTrabajoCurriculo', SubTrabajoCurriculoSchema);

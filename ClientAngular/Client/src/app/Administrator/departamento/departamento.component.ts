@@ -84,7 +84,7 @@ export class DepartamentoComponent implements OnInit {
 
     } else {
       //funcion update
-
+      this.actual.responsable = this.empleado._id;
       this._empresaService.update(this.actual).subscribe(
           response => {
           if (response) {

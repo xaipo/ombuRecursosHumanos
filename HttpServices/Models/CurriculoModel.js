@@ -1,7 +1,7 @@
 /**
  * Created by VICTOR OQUENDO on 10/31/2017.
  */
-
+var SubTrabajoCurriculoSchema =require('./SubTrabajoCurriculoModel');
 var restful = require('node-restful');
 var mongoose = restful.mongoose;
 
@@ -10,31 +10,28 @@ const CurriculoSchema = mongoose.Schema({
     id: {
         type: mongoose.Schema.ObjectId
     },
-    id_empleado: {
+    empleado: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        ref:'Empleado' //se referencia al modelo a popular
     },
     trabajo: {
-        type: Array,
-        required: false
+        type:Array
+        //type: [SubTrabajoCurriculoSchema]
+        //ref:'SubTrabajoCurriculoModel'
     },
     salario: {
-        type:Array,
-        required: false
+        type:Array
     },
     personal_cargo: {
-        type: Array,
-        required: false
+        type: Array
     },
     experiencia_laboral: {
-        type: Array,
-        required: false
+        type: Array
     },
     educacion: {
-        type: Array,
-        required: false
+        type: Array
     }
 
-});
+},{collection: 'curriculo'});
 
-module.exports = restful.model('CurriculoModel', CurriculoSchema);
+module.exports = restful.model('Curriculo', CurriculoSchema);

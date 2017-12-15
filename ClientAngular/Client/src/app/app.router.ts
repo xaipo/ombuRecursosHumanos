@@ -16,6 +16,7 @@ import {RolComponent} from "./Administrator/rol/rol.component";
 import {EmpleadoComponent} from "./Administrator/empleado/empleado.component";
 import {EmpresaComponent} from "./Administrator/empresa/empresa.component";
 import {DepartamentoComponent} from "./Administrator/departamento/departamento.component";
+import {CurriculoComponent} from "./Administrator/curriculo/curriculo.component";
 
 
 const appRoutes:Routes = [
@@ -61,6 +62,10 @@ const appRoutes:Routes = [
       {
         path: 'departamento',
         component: DepartamentoComponent
+      },
+      {
+        path: 'curriculo',
+        component: CurriculoComponent
       },
       {
         path: '**',
