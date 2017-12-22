@@ -37,6 +37,8 @@ import { DepartamentoComponent } from './Administrator/departamento/departamento
 import { CurriculoComponent } from './Administrator/curriculo/curriculo.component';
 import { VacanteComponent } from './Administrator/vacante/vacante.component';
 import {DropdownModule} from 'primeng/primeng';
+import { AspiranteComponent } from './Administrator/aspirante/aspirante.component';
+import { EtapaComponent } from './Administrator/etapa/etapa.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +56,9 @@ import {DropdownModule} from 'primeng/primeng';
     EmpresaComponent,
     DepartamentoComponent,
     CurriculoComponent,
-    VacanteComponent
+    VacanteComponent,
+    AspiranteComponent,
+    EtapaComponent
 
 
   ],

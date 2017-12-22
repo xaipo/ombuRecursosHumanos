@@ -18,6 +18,8 @@ import {EmpresaComponent} from "./Administrator/empresa/empresa.component";
 import {DepartamentoComponent} from "./Administrator/departamento/departamento.component";
 import {CurriculoComponent} from "./Administrator/curriculo/curriculo.component";
 import {VacanteComponent} from "./Administrator/vacante/vacante.component";
+import {AspiranteComponent} from "./Administrator/aspirante/aspirante.component";
+import {EtapaComponent} from "./Administrator/etapa/etapa.component";
 
 
 const appRoutes:Routes = [
@@ -71,6 +73,13 @@ const appRoutes:Routes = [
       {
         path: 'vacante',
         component: VacanteComponent
+      }, {
+        path: 'aspirante',
+        component: AspiranteComponent
+      },
+      {
+        path: 'etapa',
+        component: EtapaComponent
       },
       {
         path: '**',

@@ -3,24 +3,24 @@
  */
 export class Aspirante{
   constructor(
-    public _id: any,
-    public primernombre: string,
-    public segundonombre: string,
-    public primerapellido: string,
-    public segundoapellido: string,
+
+    public primer_nombre: string,
+    public segundo_nombre: string,
+    public primer_apellido: string,
+    public segundo_apellido: string,
     public cedula: string,
     public genero: string,
-    public estadocivil: string,
+    public estado_civil: string,
     public nacionalidad: string,
-    public fechanacimiento: Date,
-    public lugarnacimiento: string,
+    public fecha_nacimiento: Date,
+    public lugar_nacimiento: string,
     public fotografia: string,
-    public estado: number,
+    public estado: any,
     public direccion: string,
     public ciudad: string,
     public provincia: string,
-    public telefonodomicilio: string,
-    public telefonocelular: string,
-    public correoelectronico: string,
+    public telefono_domicilio: string,
+    public telefono_celular: string,
+    public correo_electronico: string,
   ){}
 }

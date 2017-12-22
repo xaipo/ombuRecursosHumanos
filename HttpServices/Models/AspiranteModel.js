@@ -6,9 +6,7 @@ var mongoose = restful.mongoose;
 
 //Aspirante schema
 const AspiranteSchema = mongoose.Schema({
-    id: {
-        type: mongoose.Schema.ObjectId
-    },
+
     primer_nombre: {
         type: String,
         required: true
@@ -54,7 +52,7 @@ const AspiranteSchema = mongoose.Schema({
         required: false
     },
     estado: {
-        type: Number,//0:aspirante - 1:elegible. 2:contratado, 3:finfunciones
+        type: Object,//0:aspirante - 1:elegible. 2:contratado, 3:finfunciones
         required: true
     },
     direccion: {
@@ -84,4 +82,4 @@ const AspiranteSchema = mongoose.Schema({
 
 });
 
-module.exports = restful.model('AspiranteModel', AspiranteSchema);
+module.exports = restful.model('Aspirante', AspiranteSchema);
