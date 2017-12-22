@@ -35,13 +35,14 @@
           [modal]="true" width="70%">
   <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="actual">
     <div class="ui-grid-row">
-      <div class="ui-grid-col-2"><label style="padding-left: 5%" for="cedula">Cédula Identidad</label></div>
-      <div class="ui-grid-col-4"><input pInputText id="cedula" [(ngModel)]="actual.descripcion" maxlength="10"/></div>
+      <div class="ui-grid-col-2"><label style="padding-left: 5%" for="descripcion">Descripcon</label></div>
+
 
 
     </div>
-
-
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-10"><input pInputText id="descripcion" [(ngModel)]="actual.descripcion" maxlength="10"/></div>
+    </div>
 
   </div>
   <p-footer>

@@ -3,8 +3,6 @@
  */
 export class Etapa{
   constructor(
-
     public descripcion: string
-
   ){}
 }
