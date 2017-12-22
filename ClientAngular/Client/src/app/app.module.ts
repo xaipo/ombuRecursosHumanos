@@ -36,8 +36,7 @@ import { EmpresaComponent } from './Administrator/empresa/empresa.component';
 import { DepartamentoComponent } from './Administrator/departamento/departamento.component';
 import { CurriculoComponent } from './Administrator/curriculo/curriculo.component';
 import { VacanteComponent } from './Administrator/vacante/vacante.component';
-
-
+import {DropdownModule} from 'primeng/primeng';
 @NgModule({
   declarations: [
     AppComponent,
@@ -78,7 +77,8 @@ import { VacanteComponent } from './Administrator/vacante/vacante.component';
     SharedModule,
     AutoCompleteModule,
     InputSwitchModule,
-    GrowlModule
+    GrowlModule,
+    DropdownModule
   ],
   providers: [
     appRoutingProviders

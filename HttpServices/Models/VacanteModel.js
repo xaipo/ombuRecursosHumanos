@@ -7,9 +7,7 @@ var mongoose = restful.mongoose;
 
 //Vacante schema
 const VacanteSchema = mongoose.Schema({
-    id: {
-        type: mongoose.Schema.ObjectId
-    },
+
     id_perfil: {
         type: mongoose.Schema.ObjectId,
         ref:'PerfilTrabajo',
@@ -32,7 +30,7 @@ const VacanteSchema = mongoose.Schema({
         type: Date,
         required: true
     },
-    estado: { //0: cerrado - 1: vigente
+    estado_vacante: { //0: cerrado - 1: vigente
         type: Number,
         required: true
     },

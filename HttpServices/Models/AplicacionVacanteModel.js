@@ -11,11 +11,13 @@ const AplicacionVacanteSchema = mongoose.Schema({
     },
     id_vacante: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        required: true,
+        ref:'vacantes'
     },
     id_aspirante: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        required: true,
+        ref:'aspirante'
     },
     descripcion: {
         type: String,

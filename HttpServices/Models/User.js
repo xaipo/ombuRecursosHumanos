@@ -52,7 +52,7 @@ const UserSchema = mongoose.Schema({
 
 const User = module.exports = mongoose.model('User', UserSchema);
 
-module.exports = restful.model('user', UserSchema);
+module.exports = restful.model('User', UserSchema);
 
 
 
