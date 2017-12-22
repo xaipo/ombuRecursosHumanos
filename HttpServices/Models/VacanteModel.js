@@ -12,10 +12,12 @@ const VacanteSchema = mongoose.Schema({
     },
     id_perfil: {
         type: mongoose.Schema.ObjectId,
+        ref:'PerfilTrabajo',
         required: true
     },
     responsable: {
         type: mongoose.Schema.ObjectId,
+        ref:'Empleado',
         required: true
     },
     descripcion: {
@@ -40,4 +42,4 @@ const VacanteSchema = mongoose.Schema({
     }
 });
 
-module.exports = restful.model('VacanteModel', VacanteSchema);
+module.exports = restful.model('Vacante', VacanteSchema);

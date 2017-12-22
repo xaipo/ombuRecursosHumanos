@@ -35,6 +35,7 @@ import { EmpleadoComponent } from './Administrator/empleado/empleado.component';
 import { EmpresaComponent } from './Administrator/empresa/empresa.component';
 import { DepartamentoComponent } from './Administrator/departamento/departamento.component';
 import { CurriculoComponent } from './Administrator/curriculo/curriculo.component';
+import { VacanteComponent } from './Administrator/vacante/vacante.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { CurriculoComponent } from './Administrator/curriculo/curriculo.componen
     EmpleadoComponent,
     EmpresaComponent,
     DepartamentoComponent,
-    CurriculoComponent
+    CurriculoComponent,
+    VacanteComponent
 
 
   ],

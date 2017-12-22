@@ -20,6 +20,19 @@ var routeExample = require('../Models/VacanteModel'); //copiar el modelo de la t
 
 
 routeExample.methods(['get','put','post','delete','search']);
+
+routeExample.before('get', function(req, res, next) {
+   // req.query.populate = 'responsable';   // you could delegate to restful
+     req.query.populate = ['responsable','id_perfil'];   // you could delegate to restful
+    next();
+
+});
+/*routeExample.before('get', function(req, res, next) {
+    req.query.populate = 'responsable';   // you could delegate to restful
+    // req.query.populate = 'id_perfil';   // you could delegate to restful
+    next();
+
+});*/
 routeExample.register(router,'/vacante'); //nombre ruta para acceder por web
 
 
