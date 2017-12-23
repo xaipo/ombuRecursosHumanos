@@ -9,19 +9,17 @@ const PlanCapacitacionSchema = mongoose.Schema({
     id: {
         type: mongoose.Schema.ObjectId
     },
-    id_categoriatrabajo: {
+    categoriatrabajo: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        ref:'CategoriaTrabajo'
     },
     descripcion: {
-        type: String,
-        required: true
+        type: String
     },
     parametro:{
-        type: Array,
-        required: true
+        type: Array
     }
 
-});
+},{collection: 'plancapacitacion'});
 
-module.exports = restful.model('PlanCapacitacionModel', PlanCapacitacionSchema);
+module.exports = restful.model('PlanCapacitacion', PlanCapacitacionSchema);

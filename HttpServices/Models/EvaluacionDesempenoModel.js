@@ -6,22 +6,18 @@ var mongoose = restful.mongoose;
 
 //EvaluacionDesempeno schema
 const EvaluacionDesempenoSchema = mongoose.Schema({
-    id: {
-        type: mongoose.Schema.ObjectId
-    },
-    id_categoriatrabajo: {
+
+    categoriatrabajo: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        ref:'CategoriaTrabajo'
     },
     descripcion: {
-        type: String,
-        required: true
+        type: String
     },
     parametro:{
-        type: Array,
-        required: true
+        type: Array
     }
 
-});
+},{collection: 'evaluaciondesempeno'});
 
-module.exports = restful.model('EvaluacionDesempenoModel', EvaluacionDesempenoSchema);
+module.exports = restful.model('EvaluacionDesempeno', EvaluacionDesempenoSchema);

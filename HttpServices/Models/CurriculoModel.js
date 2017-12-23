@@ -19,9 +19,6 @@ const CurriculoSchema = mongoose.Schema({
         //type: [SubTrabajoCurriculoSchema]
         //ref:'SubTrabajoCurriculoModel'
     },
-    salario: {
-        type:Array
-    },
     personal_cargo: {
         type: Array
     },

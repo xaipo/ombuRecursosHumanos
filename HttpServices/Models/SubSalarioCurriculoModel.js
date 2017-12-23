@@ -9,20 +9,16 @@ var mongoose = restful.mongoose;
 const SubSalarioCurriculoSchema = mongoose.Schema({
 
     frecuencia_pago: {
-        type: String,
-        required: true
+        type: String
     },
     salario: {
-        type: number,
-        required: true
+        type: number
     },
     observaciones: {
-        type: String,
-        required: false
+        type: String
     },
     estado: { //0: activo - 1: inactivo
-        type: Uint8Array,
-        required: true
+        type: boolean
     }
 
 });

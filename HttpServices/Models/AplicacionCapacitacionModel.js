@@ -10,21 +10,19 @@ const AplicacionCapacitacionSchema = mongoose.Schema({
     id: {
         type: mongoose.Schema.ObjectId
     },
-    id_capacitacion: {
+    capacitacion: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        ref:'PlanCapacitacion'
     },
-    id_empleado: {
+    empleado: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        ref:'Empleado'
     },
     fecha: {
-        type: Date,
-        required: true
+        type: Date
     },
-    parametro_respuesta:{
-        type: Array,
-        required: true
+    parametros:{
+        type: Array
     }
 
 });

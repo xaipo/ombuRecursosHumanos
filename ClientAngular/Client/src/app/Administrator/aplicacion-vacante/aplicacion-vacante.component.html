@@ -1,0 +1,154 @@
+<div class="ui-g">
+  <div class="ui-g-12">
+    <h4>APLICACION VACANTE</h4>
+  </div>
+</div>
+
+
+<div class="ui-g">
+  <div class="ui-g-12">
+    <div class="ui-widget-header" style="padding:4px 10px;border-bottom: 0 none">
+      <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
+      <input #gb type="text" pInputText size="100%" placeholder="Global Filter">
+    </div>
+    <p-dataTable [value]="listado" selectionMode="single" [(selection)]="selected" (onRowSelect)="onRowSelect($event)"
+                 [paginator]="true" rows="10" [responsive]="true" [globalFilter]="gb" #dt>
+      <p-header>
+        <div class="ui-helper-clearfix" style="width:100%">
+          <button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAdd()"
+                  label="Nuevo"></button>
+          APLICACION VACANTE
+          <button type="button" pButton icon="fa-file-o" iconPos="left" label="All Data" (click)="dt.exportCSV()"
+                  style="float:right"></button>
+        </div>
+      </p-header>
+      <p-column field="id_aspirante.primer_apellido" header="Aspirante" [sortable]="true" [filter]="true" filterPlaceholder="Search"
+                filterMatchMode="contains"></p-column>
+      <p-column field="id_aspirante.primer_nombre" header="Aspirante" [sortable]="true" [filter]="true" filterPlaceholder="Search"
+                filterMatchMode="contains"></p-column>
+      <p-column field="id_vacante.id_perfil.nombre" header="Vacante" [sortable]="true" [filter]="true" filterPlaceholder="Search"
+                filterMatchMode="contains"></p-column>
+      <p-column field="descripcion" header="Descripcion" [sortable]="true" [filter]="true" filterPlaceholder="Search"
+                filterMatchMode="contains"></p-column>
+      <p-column field="fecha_solicitud" header="Fecha" [sortable]="true" [filter]="true"
+                filterPlaceholder="Search" filterMatchMode="contains"></p-column>
+      <p-column field="cv_adjunto" header="Cv_adjunto" [sortable]="true" [filter]="true" filterPlaceholder="Search"
+                filterMatchMode="contains"></p-column>
+      <p-column field="estado.name" header="Estado" [sortable]="true" [filter]="true"
+                filterPlaceholder="Search" filterMatchMode="contains"></p-column>
+
+    </p-dataTable>
+  </div>
+</div>
+<p-dialog header="EMPLEADO Detalles" [(visible)]="displayDialog" [responsive]="true" showEffect="fade"
+          [modal]="true" width="70%">
+  <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="actual">
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-2"><label>Aspirante</label></div>
+      <div class="ui-grid-col-4">
+        <p-autoComplete [(ngModel)]="empleado2" [suggestions]="filteredObjSingle2" (completeMethod)="filterSingle2($event)" field="apellido"  [size]="30"
+                        placeholder="Empleado" [minLength]="1"  >
+          <ng-template let-value2 pTemplate="item2">
+            <div>{{value2.primer_apellido }} {{value2.primer_nombre }}</div>
+          </ng-template>
+        </p-autoComplete>
+      </div>
+      <div class="ui-grid-col-4" style="margin-left: 20px">{{empleado2 ? empleado2.primer_apellido||empleado2 : ''}} {{empleado2 ? empleado2.primer_nombre||empleado2 : ''}}</div>
+    </div>
+
+
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-2"><label>Vacante</label></div>
+      <div class="ui-grid-col-4">
+        <p-autoComplete [(ngModel)]="empleado" [suggestions]="filteredObjSingle" (completeMethod)="filterSingle($event)" field="nombre"  [size]="30"
+                        placeholder="Perfil" [minLength]="1"  >
+          <ng-template let-value pTemplate="item">
+            <div>{{value.descripcion }} </div>
+          </ng-template>
+        </p-autoComplete>
+      </div>
+      <div class="ui-grid-col-4" style="margin-left: 20px">{{empleado ? empleado.descripcion||empleado : ''}} </div>
+    </div>
+
+
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-2"><label style="padding-left: 5%" for="descripcion">Descripcion</label></div>
+      <div class="ui-grid-col-4"><input pInputText id="descripcion" [(ngModel)]="actual.descripcion"/></div>
+
+      <div class="ui-grid-col-2"><label style="padding-left: 5%">Fecha Solicitud</label></div>
+      <div class="ui-grid-col-4">
+        <p-calendar [(ngModel)]="actual.fecha_solicitud" [showIcon]="true" [monthNavigator]="true"
+                    [yearNavigator]="true" yearRange="1940:2070" [locale]="es" dateFormat="dd/mm/yy"></p-calendar>
+      </div>
+    </div>
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-2"><label style="padding-left: 5%" for="genero">Cv Adjunto</label></div>
+      <div class="ui-grid-col-4"><input pInputText id="genero" [(ngModel)]="actual.cv_adjunto"/></div>
+
+      <div class="ui-grid-col-2"><label style="padding-left: 5%" for="Estado">Estado</label></div>
+      <p-dropdown [options]="estados" id="Estado" [(ngModel)]="actual.estado" placeholder="Estado" optionLabel="name"></p-dropdown>
+    </div>
+
+
+
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-12">
+        <p-dataTable [value]="listadoCont" selectionMode="single" [(selection)]="selectedCont"
+                     (onRowSelect)="onRowSelectCont($event)" [paginator]="true" rows="5" [responsive]="true">
+          <p-header>
+            PUBLICACIONES
+            <div class="ui-helper-clearfix" style="width:25%">
+              <button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAddCont()"
+                      label="Nuevo"></button>
+            </div>
+          </p-header>
+
+          <p-column field="id_etapa.descripcion" header="Etapa" [sortable]="true"></p-column>
+          <p-column field="nota" header="Nota" [sortable]="true"></p-column>
+          <p-column field="descripcion" header="Descripcion" [sortable]="true"></p-column>
+          <p-column field="estado.name" header="Estado" [sortable]="true"></p-column>
+        </p-dataTable>
+      </div>
+
+    </div>
+
+  </div>
+  <p-footer>
+    <div class="ui-dialog-buttonpane ui-helper-clearfix">
+      <button type="button" pButton icon="fa-close" (click)="close()" label="Cerrar"></button>
+      <button type="button" pButton icon="fa-check" (click)="save()" label="Guardar"></button>
+    </div>
+  </p-footer>
+</p-dialog>
+
+
+<p-dialog header=" Detalle Etapa" [(visible)]="displayDialogCont" [responsive]="true" showEffect="fade"
+          [modal]="true" width="500">
+  <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="contacto">
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-3"><label style="padding-left: 5%" for="Etapa2">Etapas</label></div>
+      <p-dropdown [options]="etapas" id="Etapa2" [(ngModel)]="contacto.id_etapa" placeholder="Etapa" optionLabel="descripcion" [style]="{'width':'100%'}"></p-dropdown>
+    </div>
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-3"><label style="padding-left: 5%" for="Nota">Nota</label></div>
+      <div class="ui-grid-col-9"><input pInputText id="Nota" [(ngModel)]="contacto.nota"/>
+      </div>
+    </div>
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-3"><label style="padding-left: 5%" for="descripcion2">Descripión</label></div>
+      <div class="ui-grid-col-9"><input pInputText id="descripcion2" [(ngModel)]="contacto.descripcion"/>
+      </div>
+    </div>
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-3"><label style="padding-left: 5%" for="estado2">Estado</label></div>
+      <p-dropdown [options]="estados2" id="estado2" [(ngModel)]="contacto.estado" placeholder="Estado" optionLabel="name" [style]="{'width':'100%'}"></p-dropdown>
+    </div>
+
+  </div>
+  <p-footer>
+    <div class="ui-dialog-buttonpane ui-helper-clearfix">
+      <button type="button" pButton icon="fa-close" (click)="deleteCont()" label="Eliminar"></button>
+      <button type="button" pButton icon="fa-check" (click)="saveCont()" label="Guardar"></button>
+    </div>
+  </p-footer>
+</p-dialog>

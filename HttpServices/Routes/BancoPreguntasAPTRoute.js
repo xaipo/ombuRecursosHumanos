@@ -9,7 +9,9 @@ var router= express.Router();
 // </editor-fold>
 // <editor-fold defaultstate="collapsed" desc="Modelos">
 var routeExample = require('../Models/BancoPreguntasAPTModel'); //copiar el modelo de la tabla
-
+var modelVacante = require('../Models/VacanteModel')
+var modelAspirante = require('../Models/AspiranteModel');
+var modelEtapa=require('../Models/EtapaModel')
 // </editor-fold>
 
 // <editor-fold defaultstate="collapsed" desc="Obtener Productos">
@@ -29,6 +31,29 @@ routeExample.before('get', function(req, res, next) {
 });
 
 // </editor-fold>
+router.get('/bancoPreguntasAPTPopulated', function (req, res) {
+
+    routeExample.find({ })
+        .populate({ path: 'id_vacante',
+            model: modelVacante})
+        .populate({ path: 'id_etapa',
+            model: modelEtapa})
+        .exec(function (err, person) {
+            if (err) return handleError(err);
+
+                    res.send(person)
+
+
+            //console.log('The author is %s', story.author.name);
+
+            // prints "The author is Ian Fleming"
+        });
+
+
+    // Space Ghost is a talk show host.
+
+
+});
 
 //Return route
 module.exports=router;

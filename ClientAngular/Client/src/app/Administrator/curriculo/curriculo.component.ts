@@ -5,13 +5,22 @@ import {CurriculoService} from '../../services/curriculo.service';
 import {EmpleadoService} from '../../services/empleado.service';
 import {Curriculo} from '../../models/curriculo';
 
+import {PerfilTrabajoService} from '../../services/perfil-trabajo.service';
+import {ModalidadTrabajoService} from '../../services/modalidad-trabajo.service';
+import {CategoriaTrabajoService} from '../../services/categoria-trabajo.service';
+import {DepartamentoService} from '../../services/departamento.service';
+
 @Component({
   selector: 'app-curriculo',
   templateUrl: './curriculo.component.html',
   styleUrls: ['./curriculo.component.css'],
   providers: [
     CurriculoService,
-    EmpleadoService
+    EmpleadoService,
+    PerfilTrabajoService,
+    ModalidadTrabajoService,
+    CategoriaTrabajoService,
+    DepartamentoService
   ]
 })
 export class CurriculoComponent implements OnInit {
@@ -54,7 +63,11 @@ export class CurriculoComponent implements OnInit {
   constructor(private _route:ActivatedRoute,
               private _router:Router,
               private _curriculoService:CurriculoService,
-              private _empleadoService:EmpleadoService) {
+              private _empleadoService:EmpleadoService,
+              private _perfilTrabajoService:PerfilTrabajoService,
+              private _categoriaTrabajoService:CategoriaTrabajoService,
+              private _modalidadTrabajoService:ModalidadTrabajoService,
+              private _departamentoService:DepartamentoService) {
     this.actual = new Curriculo(this.any, this.any, this.any, this.any, this.any, this.any);
     this.listado = [];
     this.getAll();
@@ -92,12 +105,16 @@ export class CurriculoComponent implements OnInit {
     this.actual = new Curriculo(this.any, this.any, this.any, this.any, this.any, this.any);
     this.displayDialog = true;
     this.empleado = null;
-
   }
 
 
   save() {
+
     let listado = [...this.listado];
+    this.actual.trabajo = this.listadoTrab;
+    this.actual.personal_cargo = this.listadoPers;
+    this.actual.experiencia_laboral = this.listadoExpe;
+    this.actual.educacion = this.listadoEduc;
     if (this.newObj) {
       // funcion save
 
@@ -107,6 +124,16 @@ export class CurriculoComponent implements OnInit {
           if (response) {
             this.status = "success";
             this.actual = new Curriculo(this.any, this.any, this.any, this.any, this.any, this.any);
+            this.trabajo = new DescripObjTrab('', '', '', '', '', '','', '', '', '', '', '');;
+            this.personal = new DescripObjPers('','');
+            this.experiencia = new DescripObjExpe('','','','');
+            this.educacion = new DescripObjEduc('','','','');
+            this.listadoEduc = [];
+            this.listadoExpe = [];
+            this.listadoPers = [];
+            this.listadoTrab = [];
+
+
             this.getAll();
             //listado.push(this.actual);
           } else {
@@ -144,6 +171,7 @@ export class CurriculoComponent implements OnInit {
     this.displayDialog = false;
 
 
+
     //this.listado = listado;
 
   }
@@ -165,6 +193,10 @@ export class CurriculoComponent implements OnInit {
     this.actual = this.cloneObj(event.data);
     this.displayDialog = true;
     this.empleado = this.actual.empleado;
+    this.listadoEduc = this.actual.educacion;
+    this.listadoExpe = this.actual.experiencia_laboral;
+    this.listadoPers = this.actual.personal_cargo;
+    this.listadoTrab = this.actual.trabajo;
   }
 
   cloneObj(obj:Curriculo):Curriculo {
@@ -179,9 +211,7 @@ export class CurriculoComponent implements OnInit {
     return this.listado.indexOf(this.selected);
   }
 
-  // FUNCIONES para el AUTOCOMPLETAR  **********************************************************************************
-
-  //country: any;
+  // FUNCIONES para el AUTOCOMPLETAR  EMPLEADO **********************************************************************************
   objs:any[];
   filteredObjSingle:any[];
   public empleado:any;
@@ -206,6 +236,131 @@ export class CurriculoComponent implements OnInit {
     return filtered;
   }
 
+  // FUNCIONES para el AUTOCOMPLETAR  PERSONA A CARGO ******************************************************************
+  objsPers:any[];
+  filteredObjSinglePers:any[];
+  public persona:any;
+
+  filterSinglePers(event) {
+    let query = event.query;
+    this._empleadoService.getAll().subscribe(objs => {
+      //var auxObjs = objs;
+      this.filteredObjSinglePers = this.filter(query, objs);
+    });
+  }
+
+  filterPers(query, objs:any[]):any[] {
+    //in a real application, make a request to a remote url with the query and return filtered results, for demo we filter at client side
+    let filtered:any[] = [];
+    for (let i = 0; i < objs.length; i++) {
+      let empleado = objs[i];
+      if (empleado.apellido.toLowerCase().indexOf(query.toLowerCase()) == 0) {
+        filtered.push(empleado);
+      }
+    }
+    return filtered;
+  }
+
+  // FUNCIONES para el AUTOCOMPLETAR  PERFIL **************************************************************************
+  objsPerf:any[];
+  filteredObjSinglePerf:any[];
+  public perfil:any;
+
+  filterSinglePerf(event) {
+    let query = event.query;
+    this._perfilTrabajoService.getAll().subscribe(objs => {
+      //var auxObjs = objs;
+      this.filteredObjSinglePerf = this.filterPerf(query, objs);
+    });
+  }
+
+  filterPerf(query, objs:any[]):any[] {
+    //in a real application, make a request to a remote url with the query and return filtered results, for demo we filter at client side
+    let filtered:any[] = [];
+    for (let i = 0; i < objs.length; i++) {
+      let perfil = objs[i];
+      if (perfil.nombre.toLowerCase().indexOf(query.toLowerCase()) == 0) {
+        filtered.push(perfil);
+      }
+    }
+    return filtered;
+  }
+
+  // FUNCIONES para el AUTOCOMPLETAR MODALIDAD ******************************************************************
+  objsModa:any[];
+  filteredObjSingleModa:any[];
+  public modalidad:any;
+
+  filterSingleModa(event) {
+    let query = event.query;
+    this._modalidadTrabajoService.getAll().subscribe(objs => {
+      //var auxObjs = objs;
+      this.filteredObjSingleModa = this.filterModa(query, objs);
+    });
+  }
+
+  filterModa(query, objs:any[]):any[] {
+    //in a real application, make a request to a remote url with the query and return filtered results, for demo we filter at client side
+    let filtered:any[] = [];
+    for (let i = 0; i < objs.length; i++) {
+      let modalidad = objs[i];
+      if (modalidad.nombre.toLowerCase().indexOf(query.toLowerCase()) == 0) {
+        filtered.push(modalidad);
+      }
+    }
+    return filtered;
+  }
+
+  // FUNCIONES para el AUTOCOMPLETAR CATEGORIA TRABAJO ******************************************************************
+  objsCate:any[];
+  filteredObjSingleCate:any[];
+  public categoria:any;
+
+  filterSingleCate(event) {
+    let query = event.query;
+    this._categoriaTrabajoService.getAll().subscribe(objs => {
+      //var auxObjs = objs;
+      this.filteredObjSingleCate = this.filterCate(query, objs);
+    });
+  }
+
+  filterCate(query, objs:any[]):any[] {
+    //in a real application, make a request to a remote url with the query and return filtered results, for demo we filter at client side
+    let filtered:any[] = [];
+    for (let i = 0; i < objs.length; i++) {
+      let categoria = objs[i];
+      if (categoria.nombre.toLowerCase().indexOf(query.toLowerCase()) == 0) {
+        filtered.push(categoria);
+      }
+    }
+    return filtered;
+  }
+
+  // FUNCIONES para el AUTOCOMPLETAR DEPARTAMENTO ******************************************************************
+  objsDepa:any[];
+  filteredObjSingleDepa:any[];
+  public departamento:any;
+
+  filterSingleDepa(event) {
+    let query = event.query;
+    this._departamentoService.getAll().subscribe(objs => {
+      //var auxObjs = objs;
+      this.filteredObjSingleDepa = this.filterDepa(query, objs);
+    });
+  }
+
+  filterDepa(query, objs:any[]):any[] {
+    //in a real application, make a request to a remote url with the query and return filtered results, for demo we filter at client side
+    let filtered:any[] = [];
+    for (let i = 0; i < objs.length; i++) {
+      let departamento = objs[i];
+      if (departamento.nombre.toLowerCase().indexOf(query.toLowerCase()) == 0) {
+        filtered.push(departamento);
+      }
+    }
+    return filtered;
+  }
+
 // Funciones para TRABAJOS ******************************************************************************************
   showDialogToAddTrab() {
     this.newObjTrab = true;
@@ -215,6 +370,11 @@ export class CurriculoComponent implements OnInit {
   }
 
   saveTrab() {
+    this.trabajo.perfil = this.perfil;
+    this.trabajo.categoriatrabajo = this.categoria;
+    this.trabajo.modalidad = this.modalidad;
+    this.trabajo.departamento = this.departamento;
+
     let listadoTrab = [...this.listadoTrab];
     if (this.newObjTrab)
       listadoTrab.push(this.trabajo);
@@ -223,7 +383,13 @@ export class CurriculoComponent implements OnInit {
 
     this.listadoTrab = listadoTrab;
     this.trabajo = new DescripObjTrab('', '', '', '', '', '','', '', '', '', '', '');
+    this.perfil = null;
+    this.categoria = null;
+    this.modalidad = null;
+    this.departamento = null;
     this.displayDialogTrab = false;
+
+
   }
 
   deleteTrab() {
@@ -231,11 +397,21 @@ export class CurriculoComponent implements OnInit {
     this.listadoTrab = this.listadoTrab.filter((val, i) => i != index);
     this.trabajo = null;
     this.displayDialogTrab = false;
+
+    this.perfil = null;
+    this.categoria = null;
+    this.modalidad = null;
+    this.departamento = null;
   }
 
   onRowSelectTrab(event) {
     this.newObjTrab = false;
-    this.trabajo = this.cloneObjTrab(event.data);
+    this.trabajo = this.cloneObjTrab(event.data)
+    this.perfil = this.trabajo.perfil;
+    this.categoria = this.trabajo.categoriatrabajo;
+    this.modalidad = this.trabajo.modalidad;
+    this.departamento = this.trabajo.departamento;
+
     this.displayDialogTrab = true;
   }
 
@@ -260,15 +436,20 @@ export class CurriculoComponent implements OnInit {
   }
 
   savePers() {
+    this.personal.empleado = this.persona;
     let listadoPers = [...this.listadoPers];
-    if (this.newObjPers)
+    if (this.newObjPers){
       listadoPers.push(this.personal);
-    else
+    }
+    else{
       listadoPers[this.findSelectedIndexPers()] = this.personal;
+    }
+
 
     this.listadoPers = listadoPers;
     this.personal = new DescripObjPers('', '');
     this.displayDialogPers = false;
+    this.persona = null;
   }
 
   deletePers() {
@@ -281,7 +462,9 @@ export class CurriculoComponent implements OnInit {
   onRowSelectPers(event) {
     this.newObjPers = false;
     this.personal = this.cloneObjPers(event.data);
+    this.persona = this.personal.empleado;
     this.displayDialogPers = true;
+
   }
 
   cloneObjPers(obj:any):any {

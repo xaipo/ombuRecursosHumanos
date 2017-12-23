@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { routing, appRoutingProviders } from './app.router';
 
 // npPrime
+<<<<<<< HEAD
 import { DataTableModule, SharedModule } from 'primeng/primeng';
 import { ButtonModule } from 'primeng/primeng';
 import { DialogModule } from 'primeng/primeng';
@@ -15,6 +16,19 @@ import { DataListModule } from 'primeng/primeng';
 import { CalendarModule } from 'primeng/primeng';
 import { InputSwitchModule } from 'primeng/primeng';
 import { GrowlModule } from 'primeng/primeng';
+=======
+import {DataTableModule,SharedModule} from 'primeng/primeng';
+import {ButtonModule} from 'primeng/primeng';
+import {DialogModule} from 'primeng/primeng';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {InputTextModule} from 'primeng/primeng';
+import {PanelModule} from 'primeng/primeng';
+import {DataListModule} from 'primeng/primeng';
+import {CalendarModule} from 'primeng/primeng';
+import {InputSwitchModule} from 'primeng/primeng';
+import {GrowlModule} from 'primeng/primeng';
+import {TabViewModule} from 'primeng/primeng';
+>>>>>>> origin/master
 
 
 // Componentes
@@ -35,12 +49,27 @@ import { EmpleadoComponent } from './Administrator/empleado/empleado.component';
 import { EmpresaComponent } from './Administrator/empresa/empresa.component';
 import { DepartamentoComponent } from './Administrator/departamento/departamento.component';
 import { CurriculoComponent } from './Administrator/curriculo/curriculo.component';
+
+import { InduccionComponent } from './Administrator/induccion/induccion.component';
+import { EvaluacionDesempenoComponent } from './Administrator/evaluacion-desempeno/evaluacion-desempeno.component';
+import { PlanCapacitacionComponent } from './Administrator/plan-capacitacion/plan-capacitacion.component';
+import { ApicacionInduccionComponent } from './Administrator/apicacion-induccion/apicacion-induccion.component';
+import { ApicacionDesempenoComponent } from './Administrator/apicacion-desempeno/apicacion-desempeno.component';
+import { ApicacionCapacitacionComponent } from './Administrator/apicacion-capacitacion/apicacion-capacitacion.component';
+
+
+
 import { VacanteComponent } from './Administrator/vacante/vacante.component';
 import { DropdownModule } from 'primeng/primeng';
 import { AspiranteComponent } from './Administrator/aspirante/aspirante.component';
 import { EtapaComponent } from './Administrator/etapa/etapa.component';
+<<<<<<< HEAD
 import { PreguntasAptComponent } from './Administrator/preguntas-apt/preguntas-apt.component';
 import { PreguntasTecComponent } from './Administrator/preguntas-tec/preguntas-tec.component';
+=======
+import { AplicacionVacanteComponent } from './Administrator/aplicacion-vacante/aplicacion-vacante.component';
+
+>>>>>>> origin/master
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,11 +87,26 @@ import { PreguntasTecComponent } from './Administrator/preguntas-tec/preguntas-t
     EmpresaComponent,
     DepartamentoComponent,
     CurriculoComponent,
+
+    InduccionComponent,
+    EvaluacionDesempenoComponent,
+    PlanCapacitacionComponent,
+    ApicacionInduccionComponent,
+    ApicacionDesempenoComponent,
+    ApicacionCapacitacionComponent,
+
     VacanteComponent,
     AspiranteComponent,
     EtapaComponent,
+<<<<<<< HEAD
     PreguntasAptComponent,
     PreguntasTecComponent
+=======
+    AplicacionVacanteComponent
+
+
+
+>>>>>>> origin/master
   ],
   imports: [
     BrowserModule,
@@ -84,7 +128,11 @@ import { PreguntasTecComponent } from './Administrator/preguntas-tec/preguntas-t
     AutoCompleteModule,
     InputSwitchModule,
     GrowlModule,
+
+    TabViewModule,
+
     DropdownModule
+
   ],
   providers: [
     appRoutingProviders

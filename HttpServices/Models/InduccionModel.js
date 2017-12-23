@@ -6,12 +6,12 @@ var mongoose = restful.mongoose;
 
 //Induccion schema
 const InduccionSchema = mongoose.Schema({
-    id: {
+    /*id: {
         type: mongoose.Schema.ObjectId
-    },
-    id_categoriatrabajo: {
+    },*/
+    categoriatrabajo: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        ref:'CategoriaTrabajo'
     },
     descripcion: {
         type: String,
@@ -22,6 +22,6 @@ const InduccionSchema = mongoose.Schema({
         required: true
     }
 
-});
+},{collection: 'induccion'});
 
-module.exports = restful.model('InduccionModel', InduccionSchema);
+module.exports = restful.model('Induccion', InduccionSchema);

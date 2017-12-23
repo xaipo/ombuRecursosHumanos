@@ -19,6 +19,11 @@ var routeExample = require('../Models/EvaluacionDesempenoModel'); //copiar el mo
 
 
 routeExample.methods(['get','put','post','delete','search']);
+routeExample.before('get', function(req, res, next) {
+ req.query.populate = 'categoriatrabajo';   // you could delegate to restful
+ //req.query.populate = 'trabajo';
+ next();
+});
 routeExample.register(router,'/evaluacionDesempeno'); //nombre ruta para acceder por web
 
 

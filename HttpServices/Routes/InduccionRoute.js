@@ -19,6 +19,12 @@ var routeExample = require('../Models/InduccionModel'); //copiar el modelo de la
 
 
 routeExample.methods(['get','put','post','delete','search']);
+routeExample.before('get', function(req, res, next) {
+ req.query.populate = 'categoriatrabajo';   // you could delegate to restful
+ //req.query.populate = 'trabajo';
+ next();
+});
+
 routeExample.register(router,'/induccion'); //nombre ruta para acceder por web
 
 

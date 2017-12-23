@@ -7,18 +7,16 @@ var mongoose = restful.mongoose;
 
 //BancoPreguntasAPT schema
 const BancoPreguntasAPTSchema = mongoose.Schema({
-    id: {
-        type: mongoose.Schema.ObjectId
-    },
+
     id_vacante: {
         type: mongoose.Schema.ObjectId,
         required: true,
-        ref:'vacantes'
+        ref:'Vacantes'
     },
     id_etapa: {
         type: mongoose.Schema.ObjectId,
         required: true,
-        ref:'etapas'
+        ref:'Etapas'
     },
     pregunta: {
         type: String,

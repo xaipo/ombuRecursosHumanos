@@ -7,6 +7,9 @@ var mongoose = restful.mongoose;
 //Aspirante schema
 const AspiranteSchema = mongoose.Schema({
 
+    id:{
+        type:mongoose.Schema.ObjectId
+    },
     primer_nombre: {
         type: String,
         required: true
