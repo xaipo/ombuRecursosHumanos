@@ -21,7 +21,12 @@ var routeExample = require('../Models/BancoPreguntasAPTModel'); //copiar el mode
 routeExample.methods(['get','put','post','delete','search']);
 routeExample.register(router,'/bancoPreguntasAPT'); //nombre ruta para acceder por web
 
+routeExample.before('get', function(req, res, next) {
+    // req.query.populate = 'responsable';   // you could delegate to restful
+    req.query.populate = ['id_etapa','id_vacante'];   // you could delegate to restful
+    next();
 
+});
 
 // </editor-fold>
 

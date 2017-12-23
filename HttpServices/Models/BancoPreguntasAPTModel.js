@@ -7,16 +7,16 @@ var mongoose = restful.mongoose;
 
 //BancoPreguntasAPT schema
 const BancoPreguntasAPTSchema = mongoose.Schema({
-    id: {
-        type: mongoose.Schema.ObjectId
-    },
+
     id_vacante: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        required: true,
+        ref:'Vacantes'
     },
     id_etapa: {
         type: mongoose.Schema.ObjectId,
-        required: true
+        required: true,
+        ref:'Etapas'
     },
     pregunta: {
         type: String,
@@ -29,4 +29,4 @@ const BancoPreguntasAPTSchema = mongoose.Schema({
 
 });
 
-module.exports = restful.model('BancoPreguntasAPTModel', BancoPreguntasAPTSchema);
+module.exports = restful.model('BancoPreguntasAPT', BancoPreguntasAPTSchema);

@@ -36,6 +36,7 @@ import { EmpleadoComponent } from './Administrator/empleado/empleado.component';
 import { EmpresaComponent } from './Administrator/empresa/empresa.component';
 import { DepartamentoComponent } from './Administrator/departamento/departamento.component';
 import { CurriculoComponent } from './Administrator/curriculo/curriculo.component';
+<<<<<<< HEAD
 import { InduccionComponent } from './Administrator/induccion/induccion.component';
 import { EvaluacionDesempenoComponent } from './Administrator/evaluacion-desempeno/evaluacion-desempeno.component';
 import { PlanCapacitacionComponent } from './Administrator/plan-capacitacion/plan-capacitacion.component';
@@ -44,6 +45,13 @@ import { ApicacionDesempenoComponent } from './Administrator/apicacion-desempeno
 import { ApicacionCapacitacionComponent } from './Administrator/apicacion-capacitacion/apicacion-capacitacion.component';
 
 
+=======
+import { VacanteComponent } from './Administrator/vacante/vacante.component';
+import {DropdownModule} from 'primeng/primeng';
+import { AspiranteComponent } from './Administrator/aspirante/aspirante.component';
+import { EtapaComponent } from './Administrator/etapa/etapa.component';
+import { AplicacionVacanteComponent } from './Administrator/aplicacion-vacante/aplicacion-vacante.component';
+>>>>>>> f102ec5fca546c97d595ae216285adf9d1e7cdf0
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,12 +69,19 @@ import { ApicacionCapacitacionComponent } from './Administrator/apicacion-capaci
     EmpresaComponent,
     DepartamentoComponent,
     CurriculoComponent,
+<<<<<<< HEAD
     InduccionComponent,
     EvaluacionDesempenoComponent,
     PlanCapacitacionComponent,
     ApicacionInduccionComponent,
     ApicacionDesempenoComponent,
     ApicacionCapacitacionComponent
+=======
+    VacanteComponent,
+    AspiranteComponent,
+    EtapaComponent,
+    AplicacionVacanteComponent
+>>>>>>> f102ec5fca546c97d595ae216285adf9d1e7cdf0
 
 
   ],
@@ -90,7 +105,11 @@ import { ApicacionCapacitacionComponent } from './Administrator/apicacion-capaci
     AutoCompleteModule,
     InputSwitchModule,
     GrowlModule,
+<<<<<<< HEAD
     TabViewModule
+=======
+    DropdownModule
+>>>>>>> f102ec5fca546c97d595ae216285adf9d1e7cdf0
   ],
   providers: [
     appRoutingProviders

@@ -6,9 +6,7 @@ var mongoose = restful.mongoose;
 
 //Etapa schema
 const EtapaSchema = mongoose.Schema({
-    id: {
-        type: mongoose.Schema.ObjectId
-    },
+
     descripcion: {
         type: String,
         required: true
@@ -16,4 +14,4 @@ const EtapaSchema = mongoose.Schema({
 
 });
 
-module.exports = restful.model('EtapaModel', EtapaSchema);
+module.exports = restful.model('Etapa', EtapaSchema);
