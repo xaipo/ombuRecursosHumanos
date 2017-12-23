@@ -2,59 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebfe8bc7-eaeb-4335-9bdf-b89840fa26b6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/apicacion-capacitacion/apicacion-capacitacion.component.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/apicacion-capacitacion/apicacion-capacitacion.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/apicacion-capacitacion/apicacion-capacitacion.component.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/apicacion-capacitacion/apicacion-capacitacion.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/apicacion-desempeno/apicacion-desempeno.component.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/apicacion-desempeno/apicacion-desempeno.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/apicacion-desempeno/apicacion-desempeno.component.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/apicacion-desempeno/apicacion-desempeno.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/apicacion-induccion/apicacion-induccion.component.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/apicacion-induccion/apicacion-induccion.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/apicacion-induccion/apicacion-induccion.component.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/apicacion-induccion/apicacion-induccion.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/services/aplicacion-capacitacion.service.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/services/aplicacion-capacitacion.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/models/aplicacion-capacitacion.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/services/aplicacion-desempeno.service.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/services/aplicacion-desempeno.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/models/aplicacion-desempeno.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/services/aplicacion-induccion.service.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/services/aplicacion-induccion.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/models/aplicacion-induccion.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/services/evaluacion-desempeno.service.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/services/evaluacion-desempeno.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/models/evaluacion-desempeno.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/induccion/induccion.component.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/induccion/induccion.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/induccion/induccion.component.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/induccion/induccion.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/services/induccion.service.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/services/induccion.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/models/induccion.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/services/plan-capacitacion.service.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/services/plan-capacitacion.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/models/plan-capacitacion.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Models/AplicacionCapacitacionModel.js" afterPath="$PROJECT_DIR$/HttpServices/Models/AplicacionCapacitacionModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Routes/AplicacionCapacitacionRoute.js" afterPath="$PROJECT_DIR$/HttpServices/Routes/AplicacionCapacitacionRoute.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Models/AplicacionDesempenoModel.js" afterPath="$PROJECT_DIR$/HttpServices/Models/AplicacionDesempenoModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Routes/AplicacionDesempenoRoute.js" afterPath="$PROJECT_DIR$/HttpServices/Routes/AplicacionDesempenoRoute.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Models/AplicacionInduccionModel.js" afterPath="$PROJECT_DIR$/HttpServices/Models/AplicacionInduccionModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Routes/AplicacionInduccionRoute.js" afterPath="$PROJECT_DIR$/HttpServices/Routes/AplicacionInduccionRoute.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Models/CurriculoModel.js" afterPath="$PROJECT_DIR$/HttpServices/Models/CurriculoModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Models/EvaluacionDesempenoModel.js" afterPath="$PROJECT_DIR$/HttpServices/Models/EvaluacionDesempenoModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Routes/EvaluacionDesempenoRoute.js" afterPath="$PROJECT_DIR$/HttpServices/Routes/EvaluacionDesempenoRoute.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Models/InduccionModel.js" afterPath="$PROJECT_DIR$/HttpServices/Models/InduccionModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Routes/InduccionRoute.js" afterPath="$PROJECT_DIR$/HttpServices/Routes/InduccionRoute.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Models/PlanCapacitacionModel.js" afterPath="$PROJECT_DIR$/HttpServices/Models/PlanCapacitacionModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Routes/PlanCapacitacionRoute.js" afterPath="$PROJECT_DIR$/HttpServices/Routes/PlanCapacitacionRoute.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Models/SubSalarioCurriculoModel.js" afterPath="$PROJECT_DIR$/HttpServices/Models/SubSalarioCurriculoModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientAngular/Client/src/app/app.module.ts" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientAngular/Client/src/app/app.router.ts" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/app.router.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/curriculo/curriculo.component.html" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/curriculo/curriculo.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/curriculo/curriculo.component.ts" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/curriculo/curriculo.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ombuRecursosHumanos.iws" />
@@ -706,15 +653,22 @@
       <option name="project" value="LOCAL" />
       <updated>1513614251456</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fase 2 y 3">
+      <created>1513994832287</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1513994832287</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14963119" sideWeight="0.7162346" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1403118" sideWeight="0.32718652" order="12" side_tool="true" content_ui="tabs" x="600" y="497" width="585" height="153" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.49367756" order="8" side_tool="false" content_ui="tabs" />
@@ -722,7 +676,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.134594" sideWeight="0.7212856" order="11" side_tool="false" content_ui="tabs" x="13" y="641" width="1898" height="155" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42094016" sideWeight="0.28376535" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -753,7 +706,8 @@
     <MESSAGE value="NG-prime success" />
     <MESSAGE value="fase 1 check. half fase 2 check" />
     <MESSAGE value="v3 mazo... has porfa" />
-    <option name="LAST_COMMIT_MESSAGE" value="v3 mazo... has porfa" />
+    <MESSAGE value="fase 2 y 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="fase 2 y 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -785,6 +739,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -834,6 +789,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="116" column="44" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -841,6 +797,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="22" selection-start-line="13" selection-start-column="8" selection-end-line="14" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -862,6 +819,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="103" column="11" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#0;n#p-header#0;n#p-dataTable#0;n#div#0;n#div#1;n#p-tabPanel#0;n#p-tabView#0;n#div#0;n#div#1;n#div#0;n#p-dialog#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#p-header#0;n#p-dataTable#0;n#div#0;n#div#1;n#p-tabPanel#1;n#p-tabView#0;n#div#0;n#div#1;n#div#0;n#p-dialog#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#p-header#0;n#p-dataTable#0;n#div#0;n#div#1;n#p-tabPanel#2;n#p-tabView#0;n#div#0;n#div#1;n#div#0;n#p-dialog#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#p-header#0;n#p-dataTable#0;n#div#0;n#div#1;n#p-tabPanel#3;n#p-tabView#0;n#div#0;n#div#1;n#div#0;n#p-dialog#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#p-dialog#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#p-dialog#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#div#0;n#div#0;n#p-dialog#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#p-dialog#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#div#1;n#div#0;n#p-dialog#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#p-dialog#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#div#2;n#div#0;n#p-dialog#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#p-dialog#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#p-dialog#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#div#4;n#div#0;n#p-dialog#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#p-dialog#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#div#5;n#div#0;n#p-dialog#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#6;n#div#0;n#p-dialog#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#p-dialog#2;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#p-dialog#2;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#p-dialog#2;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#div#0;n#p-dialog#2;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#p-dialog#3;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#p-dialog#3;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#div#0;n#div#0;n#p-dialog#3;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#p-dialog#3;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#div#1;n#div#0;n#p-dialog#3;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#p-dialog#4;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#p-dialog#4;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#div#0;n#div#0;n#p-dialog#4;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#p-dialog#4;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#div#1;n#div#0;n#p-dialog#4;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -869,6 +859,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5483871">
           <caret line="24" column="48" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -897,6 +888,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4341398">
           <caret line="27" column="40" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -911,6 +903,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1399417">
           <caret line="46" column="56" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -918,6 +911,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41129032">
           <caret line="26" column="50" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -925,6 +919,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="47" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -932,6 +927,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0758017">
           <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -939,6 +935,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="1" selection-start-line="9" selection-start-column="2" selection-end-line="49" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -946,6 +943,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="50" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -953,6 +951,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="50" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -960,6 +959,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4798387">
           <caret line="26" column="53" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="53" />
+          <folding>
+            <element signature="e#196#252#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -967,6 +969,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0758017">
           <caret line="46" column="59" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -974,6 +977,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0758017">
           <caret line="46" column="56" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -981,6 +985,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0758017">
           <caret line="46" column="56" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -988,6 +993,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4341398">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,6 +1015,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50268817">
           <caret line="22" column="51" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1016,6 +1023,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50268817">
           <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,6 +1031,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5483871">
           <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,6 +1039,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5483871">
           <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1044,6 +1054,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#AplicacionInduccion#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1051,6 +1064,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#AplicacionDesempeno#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1058,6 +1074,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22849463">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#AplicacionCapacitacion#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1065,6 +1084,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1072,6 +1092,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.170699">
           <caret line="97" column="46" selection-start-line="97" selection-start-column="46" selection-end-line="97" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1079,6 +1100,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13709678">
           <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc;n#PlanCapacitacion#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1086,6 +1110,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13709678">
           <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc;n#EvaluacionDesempeno#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
