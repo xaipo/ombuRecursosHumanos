@@ -4,6 +4,7 @@ import {GLOBAL} from '../../services/global';
 import {AplicacionVacanteService} from '../../services/aplicacion-vacante.service';
 import {AspiranteService} from '../../services/aspirante.service';
 import {VacanteService} from '../../services/vacante.service';
+import {EtapaService} from '../../services/etapa.service';
 import {dateFormatPipe} from '../../pipes/datePipe';
 import {AplicacionVacante} from "../../models/aplicacion-vacante";
 
@@ -14,7 +15,8 @@ import {AplicacionVacante} from "../../models/aplicacion-vacante";
   providers: [
     AspiranteService,
     VacanteService,
-    AplicacionVacanteService
+    AplicacionVacanteService,
+    EtapaService
   ]
 })
 export class AplicacionVacanteComponent implements OnInit {
@@ -25,13 +27,14 @@ export class AplicacionVacanteComponent implements OnInit {
   displayDialog:boolean;
   newObj:boolean;
   any:any;
-estados:any;
-
+  estados:any;
+public etapas:any;
   public contacto:DescripObjCont;
   public selectedCont:DescripObjCont;
   public listadoCont:any = [];
   displayDialogCont:boolean;
   newObjCont:boolean;
+public estados2:any;
 
 
 
@@ -41,12 +44,18 @@ estados:any;
               private _empleadoService:AplicacionVacanteService,
               private _vacante:VacanteService,
               private _aspirante:AspiranteService,
+              private _etapaService:EtapaService,
   ) {
     this.actual = new AplicacionVacante( '', '', '',new Date(), '', 0,  []);
     this.listado = [];
     this.getAll();
-
+    this.getAll2();
     this.estados = [
+      {name: 'Rechazado', code: '0'},
+      {name: 'Aceptado', code: '1'}
+
+    ];
+    this.estados2 = [
       {name: 'Rechazado', code: '0'},
       {name: 'Aceptado', code: '1'}
 
@@ -78,7 +87,19 @@ estados:any;
       }
     );
   }
-
+  getAll2() {
+    this._etapaService.getAll().subscribe(response => {
+        this.etapas = response;
+        console.log(this.etapas);
+      },
+      error=> {
+        var errorMessage = <any>error;
+        if (errorMessage != null) {
+          this.status = 'error';
+        }
+      }
+    );
+  }
   showDialogToAdd() {
     this.newObj = true;
     this.actual = new AplicacionVacante( '', '', '',new Date(), '', 0,  []);
@@ -104,7 +125,8 @@ estados:any;
             this.status = "success";
             this.actual = new  AplicacionVacante( '', '', '',new Date(), '', 0,  []);
             this.listadoCont = [];
-
+            this.empleado='';
+            this.empleado2='';
             this.getAll();
             //listado.push(this.actual);
           } else {
@@ -131,7 +153,8 @@ estados:any;
             //listado[this.findSelectedIndex()] = this.actual;
             this.actual = new AplicacionVacante( '', '', '',new Date(), '', 0,  []);
             this.listadoCont = [];
-
+            this.empleado='';
+            this.empleado2='';
           } else {
             console.log("OBJ _id: error" + JSON.stringify(response));
             this.status = "error";
@@ -159,6 +182,8 @@ estados:any;
   close() {
     this.actual = new AplicacionVacante( '', '', '',new Date(), '', 0,  []);
     this.displayDialog = false;
+    this.empleado='';
+    this.empleado2='';
   }
 
   onRowSelect(event) {
@@ -238,6 +263,54 @@ estados:any;
     }
     return filtered;
   }
+
+
+
+  showDialogToAddCont() {
+    this.newObjCont = true;
+    this.contacto = new DescripObjCont('', '', '', '');
+    this.displayDialogCont = true;
+
+  }
+
+  saveCont() {
+    console.log(this.contacto.id_etapa);
+    let listadoCont = [...this.listadoCont];
+    if (this.newObjCont)
+      listadoCont.push(this.contacto);
+    else
+      listadoCont[this.findSelectedIndexCont()] = this.contacto;
+
+    this.listadoCont = listadoCont;
+    this.contacto = new DescripObjCont('', '', '', '');
+    this.displayDialogCont = false;
+  }
+
+  deleteCont() {
+    let index = this.findSelectedIndexCont();
+    this.listadoCont = this.listadoCont.filter((val, i) => i != index);
+    this.contacto = null;
+    this.displayDialogCont = false;
+  }
+
+  onRowSelectCont(event) {
+    this.newObjCont = false;
+    this.contacto = this.cloneObjCont(event.data);
+    this.displayDialogCont = true;
+  }
+
+  cloneObjCont(obj:any):any {
+    let actual = new DescripObjCont('', '', '', '');
+    for (let prop in obj) {
+      actual[prop] = obj[prop];
+    }
+    return actual;
+  }
+
+  findSelectedIndexCont():number {
+    return this.listadoCont.indexOf(this.selectedCont);
+  }
+
 }
 
 class PrimeObj implements AplicacionVacante {

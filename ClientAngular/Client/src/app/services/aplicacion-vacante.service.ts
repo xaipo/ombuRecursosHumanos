@@ -13,7 +13,7 @@ export class AplicacionVacanteService {
   }
 
   getAll() {
-    return this._http.get(this.url + '/aplicacionVacante')
+    return this._http.get(this.url + '/aplicacionVacantePopulated')
       .map(res => res.json());
   }
 

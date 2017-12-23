@@ -90,7 +90,7 @@
       </div>
 
       <div class="ui-grid-col-2"><label style="padding-left: 5%" for="Estado">Estado</label></div>
-      <p-dropdown [options]="estados" id="Estado" [(ngModel)]="actual.estado_vacante" placeholder="Estado" optionLabel="name"></p-dropdown>
+      <p-dropdown [options]="estados" id="Estado" [(ngModel)]="actual.estado_vacante" placeholder="Estado" optionLabel="name" [style]="{'width':'100%'}"></p-dropdown>
     </div>
 
 
@@ -142,7 +142,7 @@
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-3"><label style="padding-left: 5%" for="tipo">Tipo</label></div>
-      <p-dropdown [options]="tipos" id="tipo" [(ngModel)]="contacto.tipo" placeholder="Tipo" optionLabel="name"></p-dropdown>
+      <p-dropdown [options]="tipos" id="tipo" [(ngModel)]="contacto.tipo" placeholder="Tipo" optionLabel="name" [style]="{'width':'100%'}"></p-dropdown>
 
       </div>
     <div class="ui-grid-row">
