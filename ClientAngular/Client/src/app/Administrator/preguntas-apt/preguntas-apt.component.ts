@@ -140,9 +140,9 @@ export class PreguntasAptComponent implements OnInit {
     this.lstRespuestas = [];
     this.lstRespuestas = event.data.respuestas;
     event.data.id_vacante;
-    let a = this.lstVacantes.filter(x => x._id == event.data.id_vacante);
+    let a = this.lstVacantes.filter(x => x._id == event.data.id_vacante._id);
     this.selectedVacante = a[0];
-    let b = this.lstEtapas.filter(x => x._id == event.data.id_etapa);
+    let b = this.lstEtapas.filter(x => x._id == event.data.id_etapa._id);
     this.selectedEtapas = b[0];
     this.displayDialog = true;
   }

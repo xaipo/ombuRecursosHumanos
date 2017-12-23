@@ -13,7 +13,7 @@ export class PreguntasAptService {
   }
 
   getAll() {
-    return this._http.get(this.url + '/bancoPreguntasAPT')
+    return this._http.get(this.url + '/bancoPreguntasAPTPopulated')
       .map(res => res.json());
   }
 
@@ -34,5 +34,5 @@ export class PreguntasAptService {
     return this._http.put(this.url + '/bancoPreguntasAPT/' + obj_to_update._id, params, { headers: headers })
       .map(res => res.json());
   }
-  
+
 }

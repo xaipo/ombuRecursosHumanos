@@ -8,12 +8,12 @@ import { GLOBAL } from './global';
 export class PreguntasTecService {
   public url: string;
 
-  constructor(private _http: Http) { 
+  constructor(private _http: Http) {
     this.url = GLOBAL.url;
   }
 
   getAll() {
-    return this._http.get(this.url + '/bancoPreguntasTEC')
+    return this._http.get(this.url + '/bancoPreguntasTECPopulated')
       .map(res => res.json());
   }
 

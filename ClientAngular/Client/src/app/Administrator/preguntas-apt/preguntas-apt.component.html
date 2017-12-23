@@ -19,9 +19,9 @@
           </div>
         </p-header>
 
-        <p-column field="id_vacante" header="Vacante" [sortable]="true" [filter]="true" filterPlaceholder="Search" filterMatchMode="contains"
+        <p-column field="id_vacante.descripcion" header="Vacante" [sortable]="true" [filter]="true" filterPlaceholder="Search" filterMatchMode="contains"
           [style]="{'width': '20%'}"></p-column>
-        <p-column field="id_etapa" header="Etapa" [sortable]="true" [filter]="true" filterPlaceholder="Search" filterMatchMode="contains"
+        <p-column field="id_etapa.descripcion" header="Etapa" [sortable]="true" [filter]="true" filterPlaceholder="Search" filterMatchMode="contains"
           [style]="{'width': '20%'}"></p-column>
         <p-column field="pregunta" header="Pregunta" [sortable]="true" [filter]="true" [editable]="true" filterPlaceholder="Search"
           filterMatchMode="contains" [style]="{'width': '60%'}"></p-column>

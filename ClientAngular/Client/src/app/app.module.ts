@@ -4,19 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing, appRoutingProviders } from './app.router';
 
-// npPrime
-<<<<<<< HEAD
-import { DataTableModule, SharedModule } from 'primeng/primeng';
-import { ButtonModule } from 'primeng/primeng';
-import { DialogModule } from 'primeng/primeng';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { InputTextModule } from 'primeng/primeng';
-import { PanelModule } from 'primeng/primeng';
-import { DataListModule } from 'primeng/primeng';
-import { CalendarModule } from 'primeng/primeng';
-import { InputSwitchModule } from 'primeng/primeng';
-import { GrowlModule } from 'primeng/primeng';
-=======
+
+
 import {DataTableModule,SharedModule} from 'primeng/primeng';
 import {ButtonModule} from 'primeng/primeng';
 import {DialogModule} from 'primeng/primeng';
@@ -28,7 +17,7 @@ import {CalendarModule} from 'primeng/primeng';
 import {InputSwitchModule} from 'primeng/primeng';
 import {GrowlModule} from 'primeng/primeng';
 import {TabViewModule} from 'primeng/primeng';
->>>>>>> origin/master
+
 
 
 // Componentes
@@ -63,13 +52,13 @@ import { VacanteComponent } from './Administrator/vacante/vacante.component';
 import { DropdownModule } from 'primeng/primeng';
 import { AspiranteComponent } from './Administrator/aspirante/aspirante.component';
 import { EtapaComponent } from './Administrator/etapa/etapa.component';
-<<<<<<< HEAD
+
 import { PreguntasAptComponent } from './Administrator/preguntas-apt/preguntas-apt.component';
 import { PreguntasTecComponent } from './Administrator/preguntas-tec/preguntas-tec.component';
-=======
+
 import { AplicacionVacanteComponent } from './Administrator/aplicacion-vacante/aplicacion-vacante.component';
 
->>>>>>> origin/master
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -98,15 +87,15 @@ import { AplicacionVacanteComponent } from './Administrator/aplicacion-vacante/a
     VacanteComponent,
     AspiranteComponent,
     EtapaComponent,
-<<<<<<< HEAD
+
     PreguntasAptComponent,
-    PreguntasTecComponent
-=======
+    PreguntasTecComponent,
+
     AplicacionVacanteComponent
 
 
 
->>>>>>> origin/master
+
   ],
   imports: [
     BrowserModule,
