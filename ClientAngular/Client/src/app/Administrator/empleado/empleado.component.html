@@ -11,103 +11,94 @@
       <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
       <input #gb type="text" pInputText size="100%" placeholder="Global Filter">
     </div>
-    <p-dataTable [value]="listado" selectionMode="single" [(selection)]="selected" (onRowSelect)="onRowSelect($event)"
-                 [paginator]="true" rows="10" [responsive]="true" [globalFilter]="gb" #dt>
+    <p-dataTable [value]="listado" selectionMode="single" [(selection)]="selected" (onRowSelect)="onRowSelect($event)" [paginator]="true"
+      rows="10" [responsive]="true" [globalFilter]="gb" #dt>
       <p-header>
         <div class="ui-helper-clearfix" style="width:100%">
-          <button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAdd()"
-                  label="Nuevo"></button>
-          LISTADO EMPLEADOS
-          <button type="button" pButton icon="fa-file-o" iconPos="left" label="All Data" (click)="dt.exportCSV()"
-                  style="float:right"></button>
+          <button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAdd()" label="Nuevo"></button>          LISTADO EMPLEADOS
+          <button type="button" pButton icon="fa-file-o" iconPos="left" label="All Data" (click)="dt.exportCSV()" style="float:right"></button>
         </div>
       </p-header>
 
-      <p-column field="cedula" header="Cédula" [sortable]="true" [filter]="true" filterPlaceholder="Search"
-                filterMatchMode="contains"></p-column>
-      <p-column field="apellido" header="Apellido" [sortable]="true" [filter]="true"
-                filterPlaceholder="Search" filterMatchMode="contains"></p-column>
-      <p-column field="nombre" header="Nombre" [sortable]="true" [filter]="true" filterPlaceholder="Search"
-                filterMatchMode="contains"></p-column>
-      <p-column field="genero" header="Género" [sortable]="true" [filter]="true"
-                filterPlaceholder="Search" filterMatchMode="contains"></p-column>
+      <p-column field="cedula" header="Cédula" [sortable]="true" [filter]="true" filterPlaceholder="Search" filterMatchMode="contains"></p-column>
+      <p-column field="apellido" header="Apellido" [sortable]="true" [filter]="true" filterPlaceholder="Search" filterMatchMode="contains"></p-column>
+      <p-column field="nombre" header="Nombre" [sortable]="true" [filter]="true" filterPlaceholder="Search" filterMatchMode="contains"></p-column>
+      <p-column field="genero" header="Género" [sortable]="true" [filter]="true" filterPlaceholder="Search" filterMatchMode="contains"></p-column>
 
     </p-dataTable>
   </div>
 </div>
 
-<p-dialog header="EMPLEADO Detalles" [(visible)]="displayDialog" [responsive]="true" showEffect="fade"
-          [modal]="true" width="70%">
+<p-dialog header="EMPLEADO Detalles" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true" width="70%">
   <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="actual">
     <div class="ui-grid-row">
       <div class="ui-grid-col-2"><label style="padding-left: 5%" for="cedula">Cédula Identidad</label></div>
-      <div class="ui-grid-col-4"><input pInputText id="cedula" [(ngModel)]="actual.cedula" maxlength="10"/></div>
+      <div class="ui-grid-col-4"><input pInputText id="cedula" [(ngModel)]="actual.cedula" maxlength="10" /></div>
 
       <div class="ui-grid-col-2"><label style="padding-left: 5%" for="email">Email</label></div>
-      <div class="ui-grid-col-4"><input pInputText id="email" [(ngModel)]="actual.email"/></div>
+      <div class="ui-grid-col-4"><input pInputText id="email" [(ngModel)]="actual.email" /></div>
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-2"><label style="padding-left: 5%" for="apellidos">Apellidos</label></div>
-      <div class="ui-grid-col-4"><input pInputText id="apellidos" [(ngModel)]="actual.apellido"/></div>
+      <div class="ui-grid-col-4"><input pInputText id="apellidos" [(ngModel)]="actual.apellido" /></div>
 
       <div class="ui-grid-col-2"><label style="padding-left: 5%" for="nombres">Nombres</label></div>
-      <div class="ui-grid-col-4"><input pInputText id="nombres" [(ngModel)]="actual.nombre"/></div>
+      <div class="ui-grid-col-4"><input pInputText id="nombres" [(ngModel)]="actual.nombre" /></div>
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-2"><label style="padding-left: 5%" for="genero">Género</label></div>
-      <div class="ui-grid-col-4"><input pInputText id="genero" [(ngModel)]="actual.genero"/></div>
+      <div class="ui-grid-col-4"><input pInputText id="genero" [(ngModel)]="actual.genero" /></div>
 
       <div class="ui-grid-col-2"><label style="padding-left: 5%" for="estado_civil">Estado Civil</label></div>
-      <div class="ui-grid-col-4"><input pInputText id="estado_civil" [(ngModel)]="actual.estado_civil"/></div>
+      <div class="ui-grid-col-4"><input pInputText id="estado_civil" [(ngModel)]="actual.estado_civil" /></div>
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-2"><label style="padding-left: 5%" for="nacionalidad">Nacionalidad</label></div>
-      <div class="ui-grid-col-4"><input pInputText id="nacionalidad" [(ngModel)]="actual.nacionalidad"/></div>
+      <div class="ui-grid-col-4"><input pInputText id="nacionalidad" [(ngModel)]="actual.nacionalidad" /></div>
 
       <div class="ui-grid-col-2"><label style="padding-left: 5%">Fecha Nacimiento</label></div>
       <div class="ui-grid-col-4">
-        <p-calendar [(ngModel)]="actual.fecha_nacimiento" [showIcon]="true" [monthNavigator]="true"
-                    [yearNavigator]="true" yearRange="1940:2070" [locale]="es" dateFormat="dd/mm/yy"></p-calendar>
+        <p-calendar [(ngModel)]="actual.fecha_nacimiento" [showIcon]="true" [monthNavigator]="true" [yearNavigator]="true" yearRange="1940:2070"
+          [locale]="es" dateFormat="dd/mm/yy"></p-calendar>
       </div>
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-2"><label style="padding-left: 5%" for="lugar_nacimiento">Lugar Nacimiento</label></div>
-      <div class="ui-grid-col-4"><input pInputText id="lugar_nacimiento" [(ngModel)]="actual.lugar_nacimiento"/></div>
+      <div class="ui-grid-col-4"><input pInputText id="lugar_nacimiento" [(ngModel)]="actual.lugar_nacimiento" /></div>
 
       <div class="ui-grid-col-2"><label style="padding-left: 5%" for="direccion">Dirección</label></div>
-      <div class="ui-grid-col-4"><input pInputText id="direccion" [(ngModel)]="actual.direccion"/></div>
+      <div class="ui-grid-col-4"><input pInputText id="direccion" [(ngModel)]="actual.direccion" /></div>
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-2"><label style="padding-left: 5%" for="ciudad">Ciudad</label></div>
-      <div class="ui-grid-col-4"><input pInputText id="ciudad" [(ngModel)]="actual.ciudad"/></div>
+      <div class="ui-grid-col-4"><input pInputText id="ciudad" [(ngModel)]="actual.ciudad" /></div>
 
       <div class="ui-grid-col-2"><label style="padding-left: 5%" for="provincia">Provincia</label></div>
-      <div class="ui-grid-col-4"><input pInputText id="provincia" [(ngModel)]="actual.provincia"/></div>
+      <div class="ui-grid-col-4"><input pInputText id="provincia" [(ngModel)]="actual.provincia" /></div>
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-2"><label style="padding-left: 5%" for="telefono_domicilio">Fono Domicilio</label></div>
-      <div class="ui-grid-col-4"><input pInputText id="telefono_domicilio" [(ngModel)]="actual.telefono_domicilio"/>
+      <div class="ui-grid-col-4"><input pInputText id="telefono_domicilio" [(ngModel)]="actual.telefono_domicilio" />
       </div>
 
       <div class="ui-grid-col-2"><label style="padding-left: 5%" for="telefono_celular">Fono Celular</label></div>
-      <div class="ui-grid-col-4"><input pInputText id="telefono_celular" [(ngModel)]="actual.telefono_celular"/></div>
+      <div class="ui-grid-col-4"><input pInputText id="telefono_celular" [(ngModel)]="actual.telefono_celular" /></div>
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-2"><label style="padding-left: 5%" for="fotografia">Fotografía</label></div>
-      <div class="ui-grid-col-4"><input pInputText id="fotografia" [(ngModel)]="actual.fotografia"/></div>
+      <div class="ui-grid-col-4"><input pInputText id="fotografia" [(ngModel)]="actual.fotografia" /></div>
 
     </div>
 
 
     <div class="ui-grid-row">
       <div class="ui-grid-col-6">
-        <p-dataTable [value]="listadoCont" selectionMode="single" [(selection)]="selectedCont"
-                     (onRowSelect)="onRowSelectCont($event)" [paginator]="true" rows="5" [responsive]="true">
+        <p-dataTable [value]="listadoCont" selectionMode="single" [(selection)]="selectedCont" (onRowSelect)="onRowSelectCont($event)"
+          [paginator]="true" rows="5" [responsive]="true">
           <p-header>
             CONTACTOS DE EMERGENCIA
             <div class="ui-helper-clearfix" style="width:25%">
-              <button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAddCont()"
-                      label="Nuevo"></button>
+              <button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAddCont()" label="Nuevo"></button>
             </div>
           </p-header>
 
@@ -117,13 +108,12 @@
         </p-dataTable>
       </div>
       <div class="ui-grid-col-6">
-        <p-dataTable [value]="listadoDepe" selectionMode="single" [(selection)]="selectedDepe"
-                     (onRowSelect)="onRowSelectDepe($event)" [paginator]="true" rows="5" [responsive]="true">
+        <p-dataTable [value]="listadoDepe" selectionMode="single" [(selection)]="selectedDepe" (onRowSelect)="onRowSelectDepe($event)"
+          [paginator]="true" rows="5" [responsive]="true">
           <p-header>
             DEPENDIENTES
             <div class="ui-helper-clearfix" style="width:25%">
-              <button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAddDepe()"
-                      label="Nuevo"></button>
+              <button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAddDepe()" label="Nuevo"></button>
             </div>
           </p-header>
 
@@ -144,34 +134,34 @@
   </p-footer>
 </p-dialog>
 
-<p-dialog header="CONTACTO EMERGENCIA Detalle" [(visible)]="displayDialogCont" [responsive]="true" showEffect="fade"
-          [modal]="true" width="500">
+<p-dialog header="CONTACTO EMERGENCIA Detalle" [(visible)]="displayDialogCont" [responsive]="true" showEffect="fade" [modal]="true"
+  width="500">
   <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="contacto">
     <div class="ui-grid-row">
       <div class="ui-grid-col-3"><label style="padding-left: 5%" for="nombre">Nombre</label></div>
-      <div class="ui-grid-col-9"><input pInputText id="nombre" [(ngModel)]="contacto.nombre"/></div>
+      <div class="ui-grid-col-9"><input pInputText id="nombre" [(ngModel)]="contacto.nombre" /></div>
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-3"><label style="padding-left: 5%" for="relacion">Relación</label></div>
-      <div class="ui-grid-col-9"><input pInputText id="relacion" [(ngModel)]="contacto.relacion"/></div>
+      <div class="ui-grid-col-9"><input pInputText id="relacion" [(ngModel)]="contacto.relacion" /></div>
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-3"><label style="padding-left: 5%" for="telefono_domicilio1">Fono Domicilio</label></div>
-      <div class="ui-grid-col-9"><input pInputText id="telefono_domicilio1" [(ngModel)]="contacto.telefono_domicilio"/>
+      <div class="ui-grid-col-9"><input pInputText id="telefono_domicilio1" [(ngModel)]="contacto.telefono_domicilio" />
       </div>
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-3"><label style="padding-left: 5%" for="telefono_celular1">Fono Celular</label></div>
-      <div class="ui-grid-col-9"><input pInputText id="telefono_celular1" [(ngModel)]="contacto.telefono_celular"/>
+      <div class="ui-grid-col-9"><input pInputText id="telefono_celular1" [(ngModel)]="contacto.telefono_celular" />
       </div>
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-3"><label style="padding-left: 5%" for="telefono_trabajo">Fono Trabajo</label></div>
-      <div class="ui-grid-col-9"><input pInputText id="telefono_trabajo" [(ngModel)]="contacto.telefono_trabajo"/></div>
+      <div class="ui-grid-col-9"><input pInputText id="telefono_trabajo" [(ngModel)]="contacto.telefono_trabajo" /></div>
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-3"><label style="padding-left: 5%" for="email1">Email</label></div>
-      <div class="ui-grid-col-9"><input pInputText id="email1" [(ngModel)]="contacto.email"/></div>
+      <div class="ui-grid-col-9"><input pInputText id="email1" [(ngModel)]="contacto.email" /></div>
     </div>
   </div>
   <p-footer>
@@ -182,26 +172,26 @@
   </p-footer>
 </p-dialog>
 
-<p-dialog header="DEPENDIENTES Detalle" [(visible)]="displayDialogDepe" [responsive]="true" showEffect="fade"
-          [modal]="true" width="500">
+<p-dialog header="DEPENDIENTES Detalle" [(visible)]="displayDialogDepe" [responsive]="true" showEffect="fade" [modal]="true"
+  width="500">
   <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="dependiente" style="height: 400px">
     <div class="ui-grid-row">
       <div class="ui-grid-col-3"><label style="padding-left: 5%" for="nombre1">Nombre</label></div>
-      <div class="ui-grid-col-9"><input pInputText id="nombre1" [(ngModel)]="dependiente.nombre"/></div>
+      <div class="ui-grid-col-9"><input pInputText id="nombre1" [(ngModel)]="dependiente.nombre" /></div>
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-3"><label style="padding-left: 5%" for="identificacion">Identificación</label></div>
-      <div class="ui-grid-col-9"><input pInputText id="identificacion" [(ngModel)]="dependiente.identificacion"/></div>
+      <div class="ui-grid-col-9"><input pInputText id="identificacion" [(ngModel)]="dependiente.identificacion" /></div>
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-3"><label style="padding-left: 5%" for="relacion1">Relación</label></div>
-      <div class="ui-grid-col-9"><input pInputText id="relacion1" [(ngModel)]="dependiente.relacion"/></div>
+      <div class="ui-grid-col-9"><input pInputText id="relacion1" [(ngModel)]="dependiente.relacion" /></div>
     </div>
     <div class="ui-grid-row">
       <div class="ui-grid-col-3"><label style="padding-left: 5%">Fecha Nacimiento</label></div>
       <div class="ui-grid-col-9">
-        <p-calendar [(ngModel)]="dependiente.fecha_nacimiento" [showIcon]="true" [monthNavigator]="true"
-                    [yearNavigator]="true" yearRange="1940:2070" [locale]="es" dateFormat="dd/mm/yy"></p-calendar>
+        <p-calendar [(ngModel)]="dependiente.fecha_nacimiento" [showIcon]="true" [monthNavigator]="true" [yearNavigator]="true" yearRange="1940:2070"
+          [locale]="es" dateFormat="dd/mm/yy"></p-calendar>
       </div>
     </div>
   </div>
@@ -213,4 +203,3 @@
     </div>
   </p-footer>
 </p-dialog>
-

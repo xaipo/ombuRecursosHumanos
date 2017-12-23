@@ -160,7 +160,7 @@ export class EmpleadoComponent implements OnInit {
     this.displayDialog = true;
     this.listadoCont = this.actual.contacto_emergencia;
     this.listadoDepe = this.actual.dependientes;
-
+    console.log(this.actual)
 
   }
 

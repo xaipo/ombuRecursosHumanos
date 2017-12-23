@@ -3,11 +3,9 @@
  */
 export class BancoPreguntas2Tec{
   constructor(
-    public _id: any,
     public id_vacante: any,
     public id_etapa: any,
     public pregunta: any,
     public respuestas: any,
-
   ){}
 }
