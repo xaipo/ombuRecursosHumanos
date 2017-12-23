@@ -11,13 +11,12 @@ const AplicacionVacanteSchema = mongoose.Schema({
     },
     id_vacante: {
         type: mongoose.Schema.ObjectId,
-        required: true,
-        ref:'vacantes'
+        ref:'Vacante'
     },
     id_aspirante: {
         type: mongoose.Schema.ObjectId,
-        required: true,
-        ref:'aspirante'
+        ref:'Aspirante'
+
     },
     descripcion: {
         type: String,
@@ -32,7 +31,7 @@ const AplicacionVacanteSchema = mongoose.Schema({
         required: false
     },
     estado: {
-        type: Number,//0:rechazado - 1:aceptado
+        type: Object,//0:rechazado - 1:aceptado
         required: false
     },
     publicacion: {
@@ -42,4 +41,4 @@ const AplicacionVacanteSchema = mongoose.Schema({
 
 });
 
-module.exports = restful.model('AplicacionVacanteModel', AplicacionVacanteSchema);
+module.exports = restful.model('AplicacionVacante', AplicacionVacanteSchema);

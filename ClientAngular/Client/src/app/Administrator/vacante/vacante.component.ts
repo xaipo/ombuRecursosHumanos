@@ -239,6 +239,7 @@ export class VacanteComponent implements OnInit {
     this.actual = this.cloneObj(event.data);
     this.displayDialog = true;
     this.listadoPublicacion = this.actual.publicacion;
+    console.log(this.actual);
     this.empleado=this.actual.id_perfil;
     this.empleado2=this.actual.responsable;
    ;

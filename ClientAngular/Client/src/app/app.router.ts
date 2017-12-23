@@ -20,6 +20,7 @@ import {CurriculoComponent} from "./Administrator/curriculo/curriculo.component"
 import {VacanteComponent} from "./Administrator/vacante/vacante.component";
 import {AspiranteComponent} from "./Administrator/aspirante/aspirante.component";
 import {EtapaComponent} from "./Administrator/etapa/etapa.component";
+import {AplicacionVacanteComponent} from "./Administrator/aplicacion-vacante/aplicacion-vacante.component";
 
 
 const appRoutes:Routes = [
@@ -80,6 +81,9 @@ const appRoutes:Routes = [
       {
         path: 'etapa',
         component: EtapaComponent
+      },{
+        path: 'aplicacionVacante',
+        component: AplicacionVacanteComponent
       },
       {
         path: '**',

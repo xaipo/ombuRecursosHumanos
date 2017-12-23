@@ -22,8 +22,8 @@ routeExample.methods(['get','put','post','delete','search']);
 routeExample.register(router,'/aplicacionVacante'); //nombre ruta para acceder por web
 
 routeExample.before('get', function(req, res, next) {
-    // req.query.populate = 'responsable';   // you could delegate to restful
-    req.query.populate = ['id_aspirante','id_vacante'];   // you could delegate to restful
+    req.query.populate = 'id_vacante';   // you could delegate to restful
+    //req.query.populate = ['id_vacante','id_aspirante'];   // you could delegate to restful
     next();
 
 });

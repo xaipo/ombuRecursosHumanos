@@ -7,7 +7,9 @@ var mongoose = restful.mongoose;
 
 //Vacante schema
 const VacanteSchema = mongoose.Schema({
-
+    id:{
+        type: mongoose.Schema.ObjectId,
+    },
     id_perfil: {
         type: mongoose.Schema.ObjectId,
         ref:'PerfilTrabajo',

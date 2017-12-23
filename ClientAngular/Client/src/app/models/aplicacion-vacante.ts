@@ -3,10 +3,10 @@
  */
 export class AplicacionVacante{
   constructor(
-    public _id: any,
+
     public id_vacante: any,
     public id_aspirante: any,
-    public decripcion: any,
+    public descripcion: any,
     public fecha_solicitud: Date,
     public cv_adjunto: string,
     public estado: number,
