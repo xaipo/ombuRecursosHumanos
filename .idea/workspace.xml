@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ebfe8bc7-eaeb-4335-9bdf-b89840fa26b6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/aplicacion-vacante/aplicacion-vacante.component.html" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/aplicacion-vacante/aplicacion-vacante.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/aplicacion-vacante/aplicacion-vacante.component.ts" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/aplicacion-vacante/aplicacion-vacante.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/aspirante/aspirante.component.html" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/aspirante/aspirante.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/vacante/vacante.component.html" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/vacante/vacante.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientAngular/Client/src/app/services/aplicacion-vacante.service.ts" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/services/aplicacion-vacante.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Routes/AplicacionVacanteRoute.js" afterPath="$PROJECT_DIR$/HttpServices/Routes/AplicacionVacanteRoute.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Routes/BancoPreguntasAPTRoute.js" afterPath="$PROJECT_DIR$/HttpServices/Routes/BancoPreguntasAPTRoute.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Routes/BancoPreguntasTECRoute.js" afterPath="$PROJECT_DIR$/HttpServices/Routes/BancoPreguntasTECRoute.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/package.json" afterPath="$PROJECT_DIR$/HttpServices/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/server.js" afterPath="$PROJECT_DIR$/HttpServices/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientAngular/Client/src/app/app.module.ts" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientAngular/Client/src/app/app.router.ts" afterPath="$PROJECT_DIR$/ClientAngular/Client/src/app/app.router.ts" />
     </list>
     <ignored path="ombuRecursosHumanos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,12 +39,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aplicacion-vacante.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="aplicacion-vacante.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/aplicacion-vacante/aplicacion-vacante.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="68">
               <caret line="88" column="74" lean-forward="false" selection-start-line="88" selection-start-column="74" selection-end-line="88" selection-end-column="74" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ClientAngular/Client/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1666">
+              <caret line="112" column="4" lean-forward="true" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
+              <folding>
+                <element signature="e#860#907#0" expanded="true" />
+                <marker date="1514047761199" expanded="true" signature="4379:4383" ph="[...]" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.router.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ClientAngular/Client/src/app/app.router.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1972">
+              <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+              <folding>
+                <element signature="e#43#93#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,7 +123,6 @@
         <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/test/test.component.html" />
         <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/models/banco-preguntas2.ts" />
         <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/models/banco-preguntas2Tec.ts" />
-        <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/models/publicacion.ts" />
         <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/models/vacante.ts" />
         <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/services/aspirante.service.ts" />
@@ -117,7 +133,6 @@
         <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/models/etapa.ts" />
         <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/etapa/etapa.component.ts" />
         <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/etapa/etapa.component.html" />
-        <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/app.router.ts" />
         <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/models/aplicacionSubDoc.ts" />
         <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/models/aplicacion-vacante.ts" />
         <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/vacante/vacante.component.ts" />
@@ -136,6 +151,8 @@
         <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/aspirante/aspirante.component.html" />
         <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/aplicacion-vacante/aplicacion-vacante.component.ts" />
         <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/aplicacion-vacante/aplicacion-vacante.component.html" />
+        <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/ClientAngular/Client/src/app/app.router.ts" />
       </list>
     </option>
   </component>
@@ -779,7 +796,7 @@
       <workItem from="1513891169211" duration="13179000" />
       <workItem from="1513975127022" duration="16070000" />
       <workItem from="1513993810456" duration="2419000" />
-      <workItem from="1514038836271" duration="7489000" />
+      <workItem from="1514038836271" duration="8009000" />
     </task>
     <task id="LOCAL-00001" summary="prueba Inicial">
       <created>1508943810798</created>
@@ -872,20 +889,28 @@
       <option name="project" value="LOCAL" />
       <updated>1513994774842</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="final fase 2 menos 2 tablas listo para penultimo merge">
+      <created>1514047393759</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1514047393759</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61548000" />
+    <option name="totallyTimeSpent" value="62068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23551106" sideWeight="0.7895323" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33152762" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33152762" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32286024" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27193934" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -977,15 +1002,12 @@
     <MESSAGE value="inicio de etapa" />
     <MESSAGE value="fin etapa" />
     <MESSAGE value="inicio tabla final" />
-    <option name="LAST_COMMIT_MESSAGE" value="inicio tabla final" />
+    <MESSAGE value="final fase 2 menos 2 tablas listo para penultimo merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="final fase 2 menos 2 tablas listo para penultimo merge" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/ClientAngular/Client/src/app/app.module.ts</url>
-          <line>21</line>
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/HttpServices/Routes/BancoPreguntasAPTRoute.js</url>
           <line>10</line>
@@ -1043,17 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
           <caret line="76" column="11" lean-forward="true" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ClientAngular/Client/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="80" column="18" lean-forward="false" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
-          <folding>
-            <element signature="e#813#860#0" expanded="true" />
-            <marker date="1514047348729" expanded="true" signature="4578:4582" ph="[...]" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1166,13 +1177,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="35" column="3" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="35" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ClientAngular/Client/src/app/app.router.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1383,9 +1387,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ClientAngular/Client/src/app/Administrator/aplicacion-vacante/aplicacion-vacante.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="68">
           <caret line="88" column="74" lean-forward="false" selection-start-line="88" selection-start-column="74" selection-end-line="88" selection-end-column="74" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClientAngular/Client/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1666">
+          <caret line="112" column="4" lean-forward="true" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
+          <folding>
+            <element signature="e#860#907#0" expanded="true" />
+            <marker date="1514047761199" expanded="true" signature="4379:4383" ph="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClientAngular/Client/src/app/app.router.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding>
+            <element signature="e#43#93#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

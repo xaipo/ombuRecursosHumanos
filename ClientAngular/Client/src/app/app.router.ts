@@ -17,19 +17,18 @@ import {EmpleadoComponent} from "./Administrator/empleado/empleado.component";
 import {EmpresaComponent} from "./Administrator/empresa/empresa.component";
 import {DepartamentoComponent} from "./Administrator/departamento/departamento.component";
 import {CurriculoComponent} from "./Administrator/curriculo/curriculo.component";
-<<<<<<< HEAD
+
 import {EvaluacionDesempenoComponent} from "./Administrator/evaluacion-desempeno/evaluacion-desempeno.component";
 import {InduccionComponent} from "./Administrator/induccion/induccion.component";
 import {PlanCapacitacionComponent} from "./Administrator/plan-capacitacion/plan-capacitacion.component";
 import {ApicacionInduccionComponent} from "./Administrator/apicacion-induccion/apicacion-induccion.component";
 import {ApicacionCapacitacionComponent} from "./Administrator/apicacion-capacitacion/apicacion-capacitacion.component";
 import {ApicacionDesempenoComponent} from "./Administrator/apicacion-desempeno/apicacion-desempeno.component";
-=======
+
 import {VacanteComponent} from "./Administrator/vacante/vacante.component";
 import {AspiranteComponent} from "./Administrator/aspirante/aspirante.component";
 import {EtapaComponent} from "./Administrator/etapa/etapa.component";
 import {AplicacionVacanteComponent} from "./Administrator/aplicacion-vacante/aplicacion-vacante.component";
->>>>>>> f102ec5fca546c97d595ae216285adf9d1e7cdf0
 
 
 const appRoutes:Routes = [
@@ -81,7 +80,7 @@ const appRoutes:Routes = [
         component: CurriculoComponent
       },
       {
-<<<<<<< HEAD
+
         path: 'induccion',
         component: InduccionComponent
       },
@@ -103,8 +102,8 @@ const appRoutes:Routes = [
       },
       {
         path: 'aplicacionDesempeno',
-        component: ApicacionDesempenoComponent
-=======
+        component: ApicacionDesempenoComponent},{
+
         path: 'vacante',
         component: VacanteComponent
       }, {
@@ -117,7 +116,7 @@ const appRoutes:Routes = [
       },{
         path: 'aplicacionVacante',
         component: AplicacionVacanteComponent
->>>>>>> f102ec5fca546c97d595ae216285adf9d1e7cdf0
+
       },
       {
         path: '**',
