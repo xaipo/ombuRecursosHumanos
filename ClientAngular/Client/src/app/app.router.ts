@@ -17,6 +17,12 @@ import {EmpleadoComponent} from "./Administrator/empleado/empleado.component";
 import {EmpresaComponent} from "./Administrator/empresa/empresa.component";
 import {DepartamentoComponent} from "./Administrator/departamento/departamento.component";
 import {CurriculoComponent} from "./Administrator/curriculo/curriculo.component";
+import {EvaluacionDesempenoComponent} from "./Administrator/evaluacion-desempeno/evaluacion-desempeno.component";
+import {InduccionComponent} from "./Administrator/induccion/induccion.component";
+import {PlanCapacitacionComponent} from "./Administrator/plan-capacitacion/plan-capacitacion.component";
+import {ApicacionInduccionComponent} from "./Administrator/apicacion-induccion/apicacion-induccion.component";
+import {ApicacionCapacitacionComponent} from "./Administrator/apicacion-capacitacion/apicacion-capacitacion.component";
+import {ApicacionDesempenoComponent} from "./Administrator/apicacion-desempeno/apicacion-desempeno.component";
 
 
 const appRoutes:Routes = [
@@ -66,6 +72,30 @@ const appRoutes:Routes = [
       {
         path: 'curriculo',
         component: CurriculoComponent
+      },
+      {
+        path: 'induccion',
+        component: InduccionComponent
+      },
+      {
+        path: 'evaluacion',
+        component: EvaluacionDesempenoComponent
+      },
+      {
+        path: 'capacitacion',
+        component: PlanCapacitacionComponent
+      },
+      {
+        path: 'aplicacionInduccion',
+        component: ApicacionInduccionComponent
+      },
+      {
+        path: 'aplicacionCapacitacion',
+        component: ApicacionCapacitacionComponent
+      },
+      {
+        path: 'aplicacionDesempeno',
+        component: ApicacionDesempenoComponent
       },
       {
         path: '**',

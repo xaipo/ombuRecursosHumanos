@@ -5,7 +5,6 @@
 </div>
 
 
-
 <div class="ui-g">
   <div class="ui-g-12">
     <div class="ui-widget-header" style="padding:4px 10px;border-bottom: 0 none">
@@ -31,7 +30,6 @@
       </p-column>
 
 
-
     </p-dataTable>
   </div>
 </div>
@@ -42,22 +40,186 @@
     <div class="ui-grid-row">
       <div class="ui-grid-col-2"><label>Responsable</label></div>
       <div class="ui-grid-col-4">
-        <p-autoComplete [(ngModel)]="empleado" [suggestions]="filteredObjSingle" (completeMethod)="filterSingle($event)" field="apellido"  [size]="30"
-                        placeholder="Empleado" [minLength]="1" [forceSelection]="true" >
+        <p-autoComplete [(ngModel)]="empleado" [suggestions]="filteredObjSingle" (completeMethod)="filterSingle($event)"
+                        field="apellido" [size]="30"
+                        placeholder="Empleado" [minLength]="1" [forceSelection]="true">
           <ng-template let-value pTemplate="item">
             <div>{{value.apellido }} {{value.nombre }}</div>
           </ng-template>
         </p-autoComplete>
       </div>
-      <div class="ui-grid-col-4" style="margin-left: 20px">{{empleado ? empleado.apellido||empleado : ''}} {{empleado ? empleado.nombre||empleado : ''}}</div>
+      <div class="ui-grid-col-4" style="margin-left: 20px">{{empleado ? empleado.apellido||empleado : ''}} {{empleado ?
+        empleado.nombre||empleado : ''}}
+      </div>
     </div>
-    <div class="ui-grid-row">
-      <div class="ui-grid-col-2"><label for="nombre">Nombre</label></div>
-      <div class="ui-grid-col-8"><input pInputText id="nombre" [(ngModel)]="actual.nombre"/></div>
-    </div>
-    <div class="ui-grid-row">
-      <div class="ui-grid-col-2"><label for="descripcion">Descripción</label></div>
-      <div class="ui-grid-col-8"><input pInputText id="descripcion" [(ngModel)]="actual.descripcion"/></div>
+
+    <div class="ui-grid-row" *ngIf="empleado">
+      <div class="ui-grid-col-12">
+        <p-tabView>
+          <p-tabPanel header="Historial Trabajo" leftIcon="fa-list">
+            <div class="ui-grid-row">
+              <div class="ui-grid-col-12">
+                <h4>HISTORIAL DE TRABAJO</h4>
+              </div>
+            </div>
+            <div class="ui-grid-row">
+              <div class="ui-g-12">
+                <p-dataTable [value]="listadoTrab" selectionMode="single" [(selection)]="selectedTrab"
+                             (onRowSelect)="onRowSelectTrab($event)"
+                             [paginator]="true" rows="5" [responsive]="true" #dt>
+                  <p-header>
+                    <div class="ui-helper-clearfix" style="width:100%">
+                      <button type="button" pButton icon="fa-plus" style="float:left; width: 20%"
+                              (click)="showDialogToAddTrab()"
+                              label="Nuevo"></button>
+                      LISTADO HISTORIAL TRABAJO
+                    </div>
+                  </p-header>
+
+
+                  <p-column field="perfil" header="Perfil" [sortable]="true" [filter]="true"
+                            filterPlaceholder="Search"
+                            filterMatchMode="contains">
+                    <ng-template let-col let-obj="rowData" let-ri="rowIndex" pTemplate="body">
+                      <span>{{obj[col.field].nombre}}</span>
+                    </ng-template>
+                  </p-column>
+                  <p-column field="departamento" header="Departamento" [sortable]="true" [filter]="true"
+                            filterPlaceholder="Search"
+                            filterMatchMode="contains">
+                    <ng-template let-col let-obj="rowData" let-ri="rowIndex" pTemplate="body">
+                      <span>{{obj[col.field].nombre}}</span>
+                    </ng-template>
+                  </p-column>
+                  <p-column field="fecha_registro" header="Registro" [sortable]="true" [filter]="true"
+                            filterPlaceholder="Search"
+                            filterMatchMode="contains">
+                  </p-column>
+
+
+                </p-dataTable>
+              </div>
+            </div>
+          </p-tabPanel>
+          <p-tabPanel header="Personal a Cargo" leftIcon="fa-group">
+            <div class="ui-grid-row">
+              <div class="ui-grid-col-12">
+                <h4>PERSONAL A CARGO</h4>
+              </div>
+            </div>
+            <div class="ui-grid-row">
+              <div class="ui-g-12">
+
+                <p-dataTable [value]="listadoPers" selectionMode="single" [(selection)]="selectedPers"
+                             (onRowSelect)="onRowSelectPers($event)"
+                             [paginator]="true" rows="5" [responsive]="true" #dt>
+                  <p-header>
+                    <div class="ui-helper-clearfix" style="width:100%">
+                      <button type="button" pButton icon="fa-plus" style="float:left; width: 20%"
+                              (click)="showDialogToAddPers()"
+                              label="Nuevo"></button>
+                      LISTADO PERSONAL A CARGO
+                    </div>
+                  </p-header>
+
+
+                  <p-column field="empleado" header="Empleado" [sortable]="true" [filter]="true"
+                            filterPlaceholder="Search"
+                            filterMatchMode="contains">
+                    <ng-template let-col let-obj="rowData" let-ri="rowIndex" pTemplate="body">
+                      <span>{{obj[col.field].apellido}} {{obj[col.field].nombre}}</span>
+                    </ng-template>
+                  </p-column>
+                  <p-column field="tipo_subordinacion" header="Sub Ordinación" [sortable]="true" [filter]="true"
+                            filterPlaceholder="Search"
+                            filterMatchMode="contains">
+                  </p-column>
+
+                </p-dataTable>
+              </div>
+            </div>
+          </p-tabPanel>
+          <p-tabPanel header="Experiencia Laboral" leftIcon="fa-cogs">
+            <div class="ui-grid-row">
+              <div class="ui-grid-col-12">
+                <h4>EXPERIENCIA LABORAL</h4>
+              </div>
+            </div>
+            <div class="ui-grid-row">
+              <div class="ui-g-12">
+
+                <p-dataTable [value]="listadoExpe" selectionMode="single" [(selection)]="selectedExpe"
+                             (onRowSelect)="onRowSelectExpe($event)"
+                             [paginator]="true" rows="5" [responsive]="true" #dt>
+                  <p-header>
+                    <div class="ui-helper-clearfix" style="width:100%">
+                      <button type="button" pButton icon="fa-plus" style="float:left; width: 20%"
+                              (click)="showDialogToAddExpe()"
+                              label="Nuevo"></button>
+                      LISTADO EXPERIENCIA LABORAL
+                    </div>
+                  </p-header>
+
+
+                  <p-column field="empresa" header="Empresa" [sortable]="true" [filter]="true"
+                            filterPlaceholder="Search"
+                            filterMatchMode="contains">
+                  </p-column>
+                  <p-column field="cargo" header="Cargo" [sortable]="true" [filter]="true"
+                            filterPlaceholder="Search"
+                            filterMatchMode="contains">
+                  </p-column>
+                  <p-column field="fecha_inicio" header="Inicio" [sortable]="true" [filter]="true"
+                            filterPlaceholder="Search"
+                            filterMatchMode="contains">
+                  </p-column>
+                  <p-column field="fecha_fin" header="Fin" [sortable]="true" [filter]="true"
+                            filterPlaceholder="Search"
+                            filterMatchMode="contains">
+                  </p-column>
+
+                </p-dataTable>
+              </div>
+            </div>
+          </p-tabPanel>
+          <p-tabPanel header="Educación" leftIcon="fa-graduation-cap">
+            <div class="ui-grid-row">
+              <div class="ui-grid-col-12">
+                <h4>NIVEL DE EDUCACIÓN</h4>
+              </div>
+            </div>
+            <div class="ui-grid-row">
+              <div class="ui-g-12">
+
+                <p-dataTable [value]="listadoEduc" selectionMode="single" [(selection)]="selectedEduc"
+                             (onRowSelect)="onRowSelectEduc($event)"
+                             [paginator]="true" rows="5" [responsive]="true" #dt>
+                  <p-header>
+                    <div class="ui-helper-clearfix" style="width:100%">
+                      <button type="button" pButton icon="fa-plus" style="float:left; width: 20%"
+                              (click)="showDialogToAddEduc()"
+                              label="Nuevo"></button>
+                      LISTADO NIVEL EDUCACION
+                    </div>
+                  </p-header>
+
+
+                  <p-column field="nivel_estudio" header="Nivel Estudio" [sortable]="true" [filter]="true"
+                            filterPlaceholder="Search"
+                            filterMatchMode="contains">
+                  </p-column>
+                  <p-column field="instituto" header="Instituto" [sortable]="true" [filter]="true"
+                            filterPlaceholder="Search"
+                            filterMatchMode="contains">
+                  </p-column>
+
+                </p-dataTable>
+              </div>
+            </div>
+          </p-tabPanel>
+        </p-tabView>
+
+      </div>
     </div>
 
   </div>
@@ -65,6 +227,208 @@
     <div class="ui-dialog-buttonpane ui-helper-clearfix">
       <button type="button" pButton icon="fa-close" (click)="close()" label="Cerrar"></button>
       <button type="button" pButton icon="fa-check" (click)="save()" label="Guardar"></button>
+    </div>
+  </p-footer>
+</p-dialog>
+
+
+<p-dialog header="HISTORIAL TRABAJO Detalle" [(visible)]="displayDialogTrab" [responsive]="true" showEffect="fade"
+          [modal]="true" width="800">
+  <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="trabajo" style="height: 300px">
+
+    <div class="ui-grid-row" style="padding-top: 1%">
+      <div class="ui-grid-col-2"><label>Perfil</label></div>
+      <div class="ui-grid-col-4">
+        <p-autoComplete [(ngModel)]="perfil" [suggestions]="filteredObjSinglePerf"
+                        (completeMethod)="filterSinglePerf($event)"
+                        field="nombre" [size]="30"
+                        placeholder="Perfil" [minLength]="1" [forceSelection]="true">
+        </p-autoComplete>
+      </div>
+      <div class="ui-grid-col-2"><label style="margin-left: 5%">Modalidad</label></div>
+      <div class="ui-grid-col-4">
+        <p-autoComplete [(ngModel)]="modalidad" [suggestions]="filteredObjSingleModa"
+                        (completeMethod)="filterSingleModa($event)"
+                        field="nombre" [size]="30"
+                        placeholder="Modalidad Trabajo" [minLength]="1" [forceSelection]="true">
+        </p-autoComplete>
+      </div>
+    </div>
+    <div class="ui-grid-row" style="padding-top: 1%">
+      <div class="ui-grid-col-2"><label>Categoría</label></div>
+      <div class="ui-grid-col-4">
+        <p-autoComplete [(ngModel)]="categoria" [suggestions]="filteredObjSingleCate"
+                        (completeMethod)="filterSingleCate($event)"
+                        field="nombre" [size]="30"
+                        placeholder="Categoría de Trabajo" [minLength]="1" [forceSelection]="true">
+        </p-autoComplete>
+      </div>
+      <div class="ui-grid-col-2"><label style="margin-left: 5%">Departamento</label></div>
+      <div class="ui-grid-col-4">
+        <p-autoComplete [(ngModel)]="departamento" [suggestions]="filteredObjSingleDepa"
+                        (completeMethod)="filterSingleDepa($event)"
+                        field="nombre" [size]="30"
+                        placeholder="Departamento" [minLength]="1" [forceSelection]="true">
+        </p-autoComplete>
+      </div>
+    </div>
+    <div class="ui-grid-row" style="padding-top: 1%">
+      <div class="ui-grid-col-2"><label>Inicio Contrato</label></div>
+      <div class="ui-grid-col-4">
+        <p-calendar [(ngModel)]="trabajo.fecha_iniciocontrato" [showIcon]="true" [monthNavigator]="true"
+                    [yearNavigator]="true" yearRange="1940:2070" [locale]="es" dateFormat="dd/mm/yy"></p-calendar>
+      </div>
+      <div class="ui-grid-col-2"><label style="margin-left: 5%">Fin Contrato</label></div>
+      <div class="ui-grid-col-4">
+        <p-calendar [(ngModel)]="trabajo.fecha_fincontrato" [showIcon]="true" [monthNavigator]="true"
+                    [yearNavigator]="true" yearRange="1940:2070" [locale]="es" dateFormat="dd/mm/yy"></p-calendar>
+      </div>
+    </div>
+    <div class="ui-grid-row" style="padding-top: 1%">
+      <div class="ui-grid-col-2"><label>Fecha Registro</label></div>
+      <div class="ui-grid-col-4">
+        <p-calendar [(ngModel)]="trabajo.fecha_registro" [showIcon]="true" [monthNavigator]="true"
+                    [yearNavigator]="true" yearRange="1940:2070" [locale]="es" dateFormat="dd/mm/yy"></p-calendar>
+      </div>
+    </div>
+    <div class="ui-grid-row" style="padding-top: 1%">
+      <div class="ui-grid-col-2"><label>Frecuencia Pago</label></div>
+      <div class="ui-grid-col-4">
+        <input pInputText id="frecuencia_pago" [(ngModel)]="trabajo.frecuencia_pago"/>
+      </div>
+      <div class="ui-grid-col-2"><label style="margin-left: 5%">Salario</label></div>
+      <div class="ui-grid-col-4">
+        <input pInputText id="salario" [(ngModel)]="trabajo.salario"/>
+      </div>
+    </div>
+    <div class="ui-grid-row" style="padding-top: 1%">
+      <div class="ui-grid-col-2"><label> Activo</label></div>
+      <div class="ui-grid-col-4">
+        <p-inputSwitch onLabel="Sí" offLabel="No" [(ngModel)]="trabajo.estado"></p-inputSwitch>
+      </div>
+      <div class="ui-grid-col-2"><label style="margin-left: 5%">Observaciones</label></div>
+      <div class="ui-grid-col-4">
+        <input pInputText id="observaciones" [(ngModel)]="trabajo.observaciones"/>
+      </div>
+    </div>
+    <div class="ui-grid-row" style="padding-top: 1%">
+      <div class="ui-grid-col-2"><label>Carga Contrato</label></div>
+      <div class="ui-grid-col-4">
+        <input pInputText id="contrato_firmado" [(ngModel)]="trabajo.contrato_firmado"/>
+      </div>
+    </div>
+  </div>
+  <p-footer>
+    <div class="ui-dialog-buttonpane ui-helper-clearfix">
+      <button type="button" pButton icon="fa-close" (click)="deleteTrab()" label="Eliminar"></button>
+      <button type="button" pButton icon="fa-check" (click)="saveTrab()" label="Guardar"></button>
+    </div>
+  </p-footer>
+</p-dialog>
+
+
+<p-dialog header="PERSONAL A CARGO Detalle" [(visible)]="displayDialogPers" [responsive]="true" showEffect="fade"
+          [modal]="true" width="800">
+  <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="personal" style="height: 200px">
+
+    <div class="ui-grid-row" style="padding-top: 1%">
+      <div class="ui-grid-col-2"><label>Personal a Cargo</label></div>
+      <div class="ui-grid-col-4">
+        <p-autoComplete [(ngModel)]="persona" [suggestions]="filteredObjSinglePers"
+                        (completeMethod)="filterSinglePers($event)"
+                        field="apellido" [size]="30"
+                        placeholder="Persona a Cargo" [minLength]="1" [forceSelection]="true">
+          <ng-template let-value pTemplate="item">
+            <div>{{value.apellido }} {{value.nombre }}</div>
+          </ng-template>
+        </p-autoComplete>
+      </div>
+    </div>
+    <div class="ui-grid-row" style="padding-top: 1%">
+      <div class="ui-grid-col-2"><label style="margin-left: 5%">Subordinación</label></div>
+      <div class="ui-grid-col-4">
+        <input pInputText id="tipo_subordinacion" [(ngModel)]="personal.tipo_subordinacion"/>
+      </div>
+    </div>
+  </div>
+  <p-footer>
+    <div class="ui-dialog-buttonpane ui-helper-clearfix">
+      <button type="button" pButton icon="fa-close" (click)="deletePers()" label="Eliminar"></button>
+      <button type="button" pButton icon="fa-check" (click)="savePers()" label="Guardar"></button>
+    </div>
+  </p-footer>
+</p-dialog>
+
+
+<p-dialog header="EXPERIENCIA LABORAL Detalle" [(visible)]="displayDialogExpe" [responsive]="true" showEffect="fade"
+          [modal]="true" width="800">
+  <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="experiencia" style="height: 300px">
+    <div class="ui-grid-row" style="padding-top: 1%">
+      <div class="ui-grid-col-2"><label>Empresa</label></div>
+      <div class="ui-grid-col-4">
+        <input pInputText id="empresa" [(ngModel)]="experiencia.empresa"/>
+      </div>
+      <div class="ui-grid-col-2"><label style="margin-left: 5%">Cargo</label></div>
+      <div class="ui-grid-col-4">
+        <input pInputText id="cargo" [(ngModel)]="experiencia.cargo"/>
+      </div>
+    </div>
+    <div class="ui-grid-row" style="padding-top: 1%">
+      <div class="ui-grid-col-2"><label>Inicio</label></div>
+      <div class="ui-grid-col-4">
+        <p-calendar [(ngModel)]="experiencia.fecha_inicio" [showIcon]="true" [monthNavigator]="true"
+                    [yearNavigator]="true" yearRange="1940:2070" [locale]="es" dateFormat="dd/mm/yy"></p-calendar>
+      </div>
+      <div class="ui-grid-col-2"><label style="margin-left: 5%">Fin</label></div>
+      <div class="ui-grid-col-4">
+        <p-calendar [(ngModel)]="experiencia.fecha_fin" [showIcon]="true" [monthNavigator]="true"
+                    [yearNavigator]="true" yearRange="1940:2070" [locale]="es" dateFormat="dd/mm/yy"></p-calendar>
+      </div>
+    </div>
+  </div>
+
+  <p-footer>
+    <div class="ui-dialog-buttonpane ui-helper-clearfix">
+      <button type="button" pButton icon="fa-close" (click)="deleteExpe()" label="Eliminar"></button>
+      <button type="button" pButton icon="fa-check" (click)="saveExpe()" label="Guardar"></button>
+    </div>
+  </p-footer>
+</p-dialog>
+
+
+<p-dialog header="NIVEL EDUCACION Detalle" [(visible)]="displayDialogEduc" [responsive]="true" showEffect="fade"
+          [modal]="true" width="800">
+  <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="educacion" style="height: 300px">
+
+    <div class="ui-grid-row" style="padding-top: 1%">
+      <div class="ui-grid-col-2"><label>Nivel Estudio</label></div>
+      <div class="ui-grid-col-4">
+        <input pInputText id="nivel" [(ngModel)]="educacion.nivel_estudio"/>
+      </div>
+      <div class="ui-grid-col-2"><label style="margin-left: 5%">Instituto</label></div>
+      <div class="ui-grid-col-4">
+        <input pInputText id="instituto" [(ngModel)]="educacion.instituto"/>
+      </div>
+    </div>
+
+    <div class="ui-grid-row" style="padding-top: 1%">
+      <div class="ui-grid-col-2"><label>Inicio</label></div>
+      <div class="ui-grid-col-4">
+        <p-calendar [(ngModel)]="educacion.fecha_inicio" [showIcon]="true" [monthNavigator]="true"
+                    [yearNavigator]="true" yearRange="1940:2070" [locale]="es" dateFormat="dd/mm/yy"></p-calendar>
+      </div>
+      <div class="ui-grid-col-2"><label style="margin-left: 5%">Fin</label></div>
+      <div class="ui-grid-col-4">
+        <p-calendar [(ngModel)]="educacion.fecha_fin" [showIcon]="true" [monthNavigator]="true"
+                    [yearNavigator]="true" yearRange="1940:2070" [locale]="es" dateFormat="dd/mm/yy"></p-calendar>
+      </div>
+    </div>
+  </div>
+
+  <p-footer>
+    <div class="ui-dialog-buttonpane ui-helper-clearfix">
+      <button type="button" pButton icon="fa-close" (click)="deleteEduc()" label="Eliminar"></button>
+      <button type="button" pButton icon="fa-check" (click)="saveEduc()" label="Guardar"></button>
     </div>
   </p-footer>
 </p-dialog>

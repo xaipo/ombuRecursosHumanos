@@ -15,6 +15,7 @@ import {DataListModule} from 'primeng/primeng';
 import {CalendarModule} from 'primeng/primeng';
 import {InputSwitchModule} from 'primeng/primeng';
 import {GrowlModule} from 'primeng/primeng';
+import {TabViewModule} from 'primeng/primeng';
 
 
 // Componentes
@@ -35,6 +36,12 @@ import { EmpleadoComponent } from './Administrator/empleado/empleado.component';
 import { EmpresaComponent } from './Administrator/empresa/empresa.component';
 import { DepartamentoComponent } from './Administrator/departamento/departamento.component';
 import { CurriculoComponent } from './Administrator/curriculo/curriculo.component';
+import { InduccionComponent } from './Administrator/induccion/induccion.component';
+import { EvaluacionDesempenoComponent } from './Administrator/evaluacion-desempeno/evaluacion-desempeno.component';
+import { PlanCapacitacionComponent } from './Administrator/plan-capacitacion/plan-capacitacion.component';
+import { ApicacionInduccionComponent } from './Administrator/apicacion-induccion/apicacion-induccion.component';
+import { ApicacionDesempenoComponent } from './Administrator/apicacion-desempeno/apicacion-desempeno.component';
+import { ApicacionCapacitacionComponent } from './Administrator/apicacion-capacitacion/apicacion-capacitacion.component';
 
 
 @NgModule({
@@ -53,7 +60,13 @@ import { CurriculoComponent } from './Administrator/curriculo/curriculo.componen
     EmpleadoComponent,
     EmpresaComponent,
     DepartamentoComponent,
-    CurriculoComponent
+    CurriculoComponent,
+    InduccionComponent,
+    EvaluacionDesempenoComponent,
+    PlanCapacitacionComponent,
+    ApicacionInduccionComponent,
+    ApicacionDesempenoComponent,
+    ApicacionCapacitacionComponent
 
 
   ],
@@ -76,7 +89,8 @@ import { CurriculoComponent } from './Administrator/curriculo/curriculo.componen
     SharedModule,
     AutoCompleteModule,
     InputSwitchModule,
-    GrowlModule
+    GrowlModule,
+    TabViewModule
   ],
   providers: [
     appRoutingProviders
