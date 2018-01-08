@@ -6,6 +6,6 @@ export class BancoPreguntas2Tec{
     public id_vacante: any,
     public id_etapa: any,
     public pregunta: any,
-    public respuestas: any,
+    public respuestas: any
   ){}
 }

@@ -6,7 +6,7 @@ export class BancoPreguntas2Apt {
     public id_vacante: any,
     public id_etapa: any,
     public pregunta: string,
-    public respuestas: any,
+    public respuestas: any
 
   ) { }
 }

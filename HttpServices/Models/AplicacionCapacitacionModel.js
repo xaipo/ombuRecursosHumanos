@@ -25,6 +25,6 @@ const AplicacionCapacitacionSchema = mongoose.Schema({
         type: Array
     }
 
-});
+},{collection: 'aplicacionCapacitacion'});
 
 module.exports = restful.model('AplicacionCapacitacionModel', AplicacionCapacitacionSchema);

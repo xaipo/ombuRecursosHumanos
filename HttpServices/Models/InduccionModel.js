@@ -14,12 +14,10 @@ const InduccionSchema = mongoose.Schema({
         ref:'CategoriaTrabajo'
     },
     descripcion: {
-        type: String,
-        required: true
+        type: String
     },
-    parametro:{
-        type: Array,
-        required: true
+    parametros:{
+        type: Array
     }
 
 },{collection: 'induccion'});

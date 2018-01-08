@@ -39,7 +39,8 @@ export class InduccionComponent implements OnInit {
 
     this.actual = new Induccion(this.any, this.any, '',  []);
     this.listado = [];
-    this.getAll();}
+    this.getAll();
+  }
 
   ngOnInit() {
   }
@@ -74,7 +75,7 @@ export class InduccionComponent implements OnInit {
       if (this.newObj) {
         // funcion save
         this.actual.parametros = this.listadoPara;
-        this.actual.categoria = this.categoria._id;
+        this.actual.categoriatrabajo = this.categoria._id;
         this._induccionService.save(this.actual).subscribe(
             response => {
             if (response) {
@@ -141,7 +142,7 @@ export class InduccionComponent implements OnInit {
     this.actual = this.cloneObj(event.data);
     this.displayDialog = true;
     this.listadoPara = this.actual.parametros;
-    this.categoria = this.actual.categoria;
+    this.categoria = this.actual.categoriatrabajo;
   }
 
   cloneObj(obj:Induccion):Induccion {
@@ -231,12 +232,12 @@ export class InduccionComponent implements OnInit {
 
 class PrimeObj implements Induccion {
 
-  constructor(public _id, public categoria, public descripcion, public parametros) {
+  constructor(public _id, public categoriatrabajo, public descripcion, public parametros) {
   }
 }
 
 class ParamObj {
 
-  constructor(public parametro) {
+  constructor(public param) {
   }
 }

@@ -17,44 +17,41 @@ const UserSchema = mongoose.Schema({
 
     id_empleado: {
         type: mongoose.Schema.ObjectId,
-        required : false
+        ref:'Empleado'
     },
     id_rol: {
         type: mongoose.Schema.ObjectId,
-        required : true
+        ref:'Rol'
     },
     id_empresa: {
         type: mongoose.Schema.ObjectId,
-        required : true
+        ref:'Empresa'
     },
     nombres_usuario: {
-        type: String,
-        required:true
+        type: String
     },
     username: {
-        type: String,
-        required:true
+        type: String
     },
     password: {
-        type: String,
-        required: true
+        type: String
     },
     estado: {
-        type: String,
-        required: true
+        type: String
     }
 
 });
 
-//module.exports = restful.model('User', categoriaSchema);
+//module.exports = restful.model('User', UserSchema);
 
 // fin copiar  all ************************************************************
 
-const User = module.exports = mongoose.model('User', UserSchema);
-
-module.exports = restful.model('User', UserSchema);
 
 
+module.exports = mongoose.model('User', UserSchema);
+
+//const User = module.exports = restful.model('User', UserSchema);
+const User = mongoose.model('User', UserSchema);
 
 module.exports.getUserById = function (id, callback) {
     User.findById(id, callback);

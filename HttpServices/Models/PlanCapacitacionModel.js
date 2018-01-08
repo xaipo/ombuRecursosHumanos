@@ -16,7 +16,7 @@ const PlanCapacitacionSchema = mongoose.Schema({
     descripcion: {
         type: String
     },
-    parametro:{
+    parametros:{
         type: Array
     }
 

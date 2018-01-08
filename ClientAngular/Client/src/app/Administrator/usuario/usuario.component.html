@@ -1,0 +1,104 @@
+<div class="ui-g">
+  <div class="ui-g-12">
+    <h4>USUARIOS</h4>
+  </div>
+</div>
+
+
+<div class="ui-g">
+  <div class="ui-g-12">
+    <div class="ui-widget-header" style="padding:4px 10px;border-bottom: 0 none">
+      <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
+      <input #gb type="text" pInputText size="100%" placeholder="Global Filter">
+    </div>
+    <p-dataTable [value]="listado" selectionMode="single" [(selection)]="selected" (onRowSelect)="onRowSelect($event)"
+                 [paginator]="true" rows="10" [responsive]="true" [globalFilter]="gb" #dt>
+      <p-header>
+        <div class="ui-helper-clearfix" style="width:100%">
+          <button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAdd()"
+                  label="Nuevo"></button>
+          LISTADO USUARIOS
+        </div>
+      </p-header>
+
+      <p-column field="username" header="Username" [sortable]="true" [filter]="true" filterPlaceholder="Search"
+                filterMatchMode="contains"></p-column>
+
+        <p-column field="id_empleado" header="Empleado" [sortable]="true" [filter]="true" filterPlaceholder="Search"
+                  filterMatchMode="contains">
+            <ng-template let-col let-obj="rowData" let-ri="rowIndex" pTemplate="body">
+                <span>{{obj[col.field].apellido}} {{obj[col.field].nombre}}</span>
+            </ng-template>
+        </p-column>
+        <p-column field="id_rol.nombre" header="Rol" [sortable]="true" [filter]="true" filterPlaceholder="Search"
+                  filterMatchMode="contains"></p-column>
+        <p-column field="id_empresa.nombre" header="Empresa" [sortable]="true" [filter]="true" filterPlaceholder="Search"
+                  filterMatchMode="contains"></p-column>
+
+
+
+    </p-dataTable>
+  </div>
+</div>
+
+<p-dialog header="USUARIO Detalles" [(visible)]="displayDialog" [responsive]="true" showEffect="fade"
+          [modal]="true" width="1000">
+  <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="actual">
+      <div class="ui-grid-row">
+          <div class="ui-grid-col-2"><label>Empleado</label></div>
+          <div class="ui-grid-col-4">
+              <p-autoComplete [(ngModel)]="empleado" [suggestions]="filteredObjSingle" (completeMethod)="filterSingle($event)" field="apellido"  [size]="30"
+                              placeholder="Empleado" [minLength]="1" [forceSelection]="true" >
+                  <ng-template let-value pTemplate="item">
+                      <div>{{value.apellido }} {{value.nombre }}</div>
+                  </ng-template>
+              </p-autoComplete>
+          </div>
+          <div class="ui-grid-col-4" style="margin-left: 20px">{{empleado ? empleado.apellido||empleado : ''}} {{empleado ? empleado.nombre||empleado : ''}}</div>
+      </div>
+      <div class="ui-grid-row">
+          <div class="ui-grid-col-2"><label>Rol</label></div>
+          <div class="ui-grid-col-4">
+              <p-autoComplete [(ngModel)]="rol" [suggestions]="filteredObjSingleRol" (completeMethod)="filterSingleRol($event)" field="nombre"  [size]="30"
+                              placeholder="Rol" [minLength]="1" [forceSelection]="true" >
+              </p-autoComplete>
+          </div>
+      </div>
+
+      <div class="ui-grid-row">
+          <div class="ui-grid-col-2"><label>Empresa</label></div>
+          <div class="ui-grid-col-4">
+              <p-autoComplete [(ngModel)]="empresa" [suggestions]="filteredObjSingleEmpr" (completeMethod)="filterSingleEmpr($event)" field="nombre"  [size]="30"
+                              placeholder="Empresa" [minLength]="1" [forceSelection]="true" >
+              </p-autoComplete>
+          </div>
+      </div>
+
+      <div class="ui-grid-row">
+          <div class="ui-grid-col-2"><label for="nombres_usuario">Nombre</label></div>
+          <div class="ui-grid-col-8"><input pInputText id="nombres_usuario" [(ngModel)]="actual.nombres_usuario"/></div>
+      </div>
+
+      <div class="ui-grid-row">
+          <div class="ui-grid-col-2"><label for="username">Username</label></div>
+          <div class="ui-grid-col-8"><input pInputText id="username" [(ngModel)]="actual.username"/></div>
+      </div>
+
+      <div class="ui-grid-row">
+          <div class="ui-grid-col-2"><label for="password">Password</label></div>
+          <div class="ui-grid-col-8"><input pInputText id="password" [(ngModel)]="actual.password"/></div>
+      </div>
+
+      <div class="ui-grid-row">
+          <div class="ui-grid-col-2"><label for="estado_usuario">Estado</label></div>
+          <div class="ui-grid-col-8"><input pInputText id="estado_usuario" [(ngModel)]="actual.estado"/></div>
+      </div>
+
+  </div>
+  <p-footer>
+    <div class="ui-dialog-buttonpane ui-helper-clearfix">
+      <button type="button" pButton icon="fa-close" (click)="close()" label="Cerrar"></button>
+      <button type="button" pButton icon="fa-check" (click)="save()" label="Guardar"></button>
+    </div>
+  </p-footer>
+</p-dialog>

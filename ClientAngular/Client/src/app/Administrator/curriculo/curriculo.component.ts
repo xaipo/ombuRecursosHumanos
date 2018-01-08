@@ -9,6 +9,7 @@ import {PerfilTrabajoService} from '../../services/perfil-trabajo.service';
 import {ModalidadTrabajoService} from '../../services/modalidad-trabajo.service';
 import {CategoriaTrabajoService} from '../../services/categoria-trabajo.service';
 import {DepartamentoService} from '../../services/departamento.service';
+import {dateFormatPipe} from '../../pipes/datePipe';
 
 @Component({
   selector: 'app-curriculo',
@@ -405,6 +406,10 @@ export class CurriculoComponent implements OnInit {
   }
 
   onRowSelectTrab(event) {
+    var datePipe = new dateFormatPipe();
+    event.data['fecha_iniciocontrato']=datePipe.transform(event.data['fecha_iniciocontrato']);
+    event.data['fecha_fincontrato']=datePipe.transform(event.data['fecha_fincontrato']);
+    event.data['fecha_registro']=datePipe.transform(event.data['fecha_registro']);
     this.newObjTrab = false;
     this.trabajo = this.cloneObjTrab(event.data)
     this.perfil = this.trabajo.perfil;
@@ -507,6 +512,9 @@ export class CurriculoComponent implements OnInit {
   }
 
   onRowSelectExpe(event) {
+    var datePipe = new dateFormatPipe();
+    event.data['fecha_inicio']=datePipe.transform(event.data['fecha_inicio']);
+    event.data['fecha_fin']=datePipe.transform(event.data['fecha_fin']);
     this.newObjExpe = false;
     this.experiencia = this.cloneObjExpe(event.data);
     this.displayDialogExpe = true;
@@ -552,6 +560,9 @@ export class CurriculoComponent implements OnInit {
   }
 
   onRowSelectEduc(event) {
+    var datePipe = new dateFormatPipe();
+    event.data['fecha_inicio']=datePipe.transform(event.data['fecha_inicio']);
+    event.data['fecha_fin']=datePipe.transform(event.data['fecha_fin']);
     this.newObjEduc = false;
     this.educacion = this.cloneObjEduc(event.data);
     this.displayDialogEduc = true;

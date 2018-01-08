@@ -57,6 +57,7 @@ import { PreguntasAptComponent } from './Administrator/preguntas-apt/preguntas-a
 import { PreguntasTecComponent } from './Administrator/preguntas-tec/preguntas-tec.component';
 
 import { AplicacionVacanteComponent } from './Administrator/aplicacion-vacante/aplicacion-vacante.component';
+import { UsuarioComponent } from './Administrator/usuario/usuario.component';
 
 
 @NgModule({
@@ -91,7 +92,9 @@ import { AplicacionVacanteComponent } from './Administrator/aplicacion-vacante/a
     PreguntasAptComponent,
     PreguntasTecComponent,
 
-    AplicacionVacanteComponent
+    AplicacionVacanteComponent,
+
+    UsuarioComponent
 
 
 

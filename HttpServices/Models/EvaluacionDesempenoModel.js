@@ -14,7 +14,7 @@ const EvaluacionDesempenoSchema = mongoose.Schema({
     descripcion: {
         type: String
     },
-    parametro:{
+    parametros:{
         type: Array
     }
 

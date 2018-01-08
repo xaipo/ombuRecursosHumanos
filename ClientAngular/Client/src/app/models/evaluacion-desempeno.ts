@@ -4,7 +4,7 @@
 export class EvaluacionDesempeno{
   constructor(
     public _id: any,
-    public categoria: any,
+    public categoriatrabajo: any,
     public descripcion: string,
     public parametros: any
   ){}

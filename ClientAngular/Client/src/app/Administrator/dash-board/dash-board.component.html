@@ -1,48 +1,96 @@
 <p-growl [(value)]="message"></p-growl>
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
+    <div class="container-fluid">
 
-    <ul class="nav navbar-nav  " style="text-align: center;">
+        <ul class="nav navbar-nav  " style="text-align: center;">
 
-      <a class="navbar-brand " style="text-align: center" href="/dashboard">Recursos Humanos</a>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-    <!--   <li><a ><span class="glyphicon glyphicon-user"></span> {{user.username}}</a></li> -->
-      <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Loguot</a></li>
-    </ul>
-  </div>
+            <a class="navbar-brand " style="text-align: center" href="/dashboard">Recursos Humanos</a>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <!--   <li><a ><span class="glyphicon glyphicon-user"></span> {{user.username}}</a></li> -->
+            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </ul>
+    </div>
 </nav>
 
 
-
-
-
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
-  <a href="/dashboard"><img src="assets/download.png" height="50px" width="50px" class="center-block"></a>
-  <br>
-  <br>
-  <br>
-  <a href="/dashboard">Dashboard</a>
-  <a href="#">Usuarios</a>
-  <a href="/dashboard/perfilTrabajo">Perfil Trabajo</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-  <li class="dropdown navbar-inverse">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
-      <span class="caret"></span></a>
-    <ul class="dropdown-menu navbar-inverse">
-      <li><a href="#">Page 1-1</a></li>
-      <li><a href="#">Page 1-2</a></li>
-      <li><a href="#">Page 1-3</a></li>
-    </ul>
-  </li>
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <a href="/dashboard"><img src="assets/download.png" height="50px" width="50px" class="center-block"></a>
+    <br>
+    <br>
+    <br>
+    <a href="/dashboard">Home</a>
+    <a href="/dashboard/usuario">Usuarios</a>
+    <li class="dropdown navbar-inverse">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Empresa<span class="caret"></span></a>
+        <ul class="dropdown-menu navbar-inverse">
+            <li><a href="/dashboard/empresa">Empresa</a></li>
+            <li><a href="/dashboard/departamento">Departamento</a></li>
+
+        </ul>
+    </li>
+
+    <li class="dropdown navbar-inverse">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin Trabajo<span class="caret"></span></a>
+        <ul class="dropdown-menu navbar-inverse">
+            <li><a href="/dashboard/categoriaTrabajo">Categoria</a></li>
+            <li><a href="/dashboard/horarioTrabajo">Horario</a></li>
+            <li><a href="/dashboard/modalidadTrabajo">Modalidad</a></li>
+            <li><a href="/dashboard/perfilTrabajo">Perfil</a></li>
+            <li><a href="/dashboard/bancopreguntasPerfil">Preguntas Perfil</a></li>
+        </ul>
+    </li>
+
+    <li class="dropdown navbar-inverse">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin Empleado<span class="caret"></span></a>
+        <ul class="dropdown-menu navbar-inverse">
+            <li><a href="/dashboard/empleado">Empleado</a></li>
+            <li><a href="/dashboard/curriculo">Curriculo</a></li>
+        </ul>
+    </li>
+
+    <li class="dropdown navbar-inverse">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin Aspirante<span class="caret"></span></a>
+        <ul class="dropdown-menu navbar-inverse">
+            <li><a href="/dashboard/aspirante">Aspirante</a></li>
+            <li><a href="/dashboard/vacante">Vacante</a></li>
+            <li><a href="/dashboard/etapa">Etapa</a></li>
+            <li><a href="/dashboard/aplicacionVacante">Aplicacion Vacante</a></li>
+            <li><a href="/dashboard/preguntas-apt">Preguntas APT</a></li>
+            <li><a href="/dashboard/preguntas-tec">Preguntas TEX</a></li>
+        </ul>
+    </li>
+
+    <li class="dropdown navbar-inverse">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin Induccion<span class="caret"></span></a>
+        <ul class="dropdown-menu navbar-inverse">
+            <li><a href="/dashboard/induccion">Induccion</a></li>
+            <li><a href="/dashboard/aplicacionInduccion">Aplicacion Induccion</a></li>
+        </ul>
+    </li>
+
+    <li class="dropdown navbar-inverse">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin Evaluacion<span class="caret"></span></a>
+        <ul class="dropdown-menu navbar-inverse">
+            <li><a href="/dashboard/evaluacion">Evaluacion Desempeño</a></li>
+            <li><a href="/dashboard/aplicacionDesempeno">Aplicacion Evaluacion</a></li>
+        </ul>
+    </li>
+
+    <li class="dropdown navbar-inverse">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin Capacitacion<span class="caret"></span></a>
+        <ul class="dropdown-menu navbar-inverse">
+            <li><a href="/dashboard/capacitacion">Plan Capacitacion</a></li>
+            <li><a href="/dashboard/aplicacionCapacitacion">Aplicacion Capacitacion</a></li>
+        </ul>
+    </li>
+
 </div>
 
 
 <span class="brand" style="font-size:30px;cursor:pointer" (click)="openNav()">&#10095; Menú</span>
 <div class="container">
-  <app-root></app-root>
+    <app-root></app-root>
 </div>
 

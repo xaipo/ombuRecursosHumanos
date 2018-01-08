@@ -24,6 +24,6 @@ const AplicacionInduccionSchema = mongoose.Schema({
         type: Array
     }
 
-});
+},{collection: 'aplicacionInduccion'});
 
 module.exports = restful.model('AplicacionInduccionModel', AplicacionInduccionSchema);

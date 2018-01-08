@@ -1,6 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var MapPolyfill = /** @class */ (function () {
+var MapPolyfill = (function () {
     function MapPolyfill() {
         this.size = 0;
         this._values = [];

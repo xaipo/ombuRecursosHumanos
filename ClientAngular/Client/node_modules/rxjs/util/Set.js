@@ -1,10 +1,9 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var root_1 = require("./root");
+var root_1 = require('./root');
 function minimalSetImpl() {
     // THIS IS NOT a full impl of Set, this is just the minimum
     // bits of functionality we need for this library.
-    return /** @class */ (function () {
+    return (function () {
         function MinimalSet() {
             this._values = [];
         }

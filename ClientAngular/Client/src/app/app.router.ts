@@ -24,6 +24,7 @@ import {PlanCapacitacionComponent} from "./Administrator/plan-capacitacion/plan-
 import {ApicacionInduccionComponent} from "./Administrator/apicacion-induccion/apicacion-induccion.component";
 import {ApicacionCapacitacionComponent} from "./Administrator/apicacion-capacitacion/apicacion-capacitacion.component";
 import {ApicacionDesempenoComponent} from "./Administrator/apicacion-desempeno/apicacion-desempeno.component";
+import {UsuarioComponent} from "./Administrator/usuario/usuario.component";
 
 import {VacanteComponent} from "./Administrator/vacante/vacante.component";
 import {AspiranteComponent} from "./Administrator/aspirante/aspirante.component";
@@ -36,6 +37,11 @@ const appRoutes:Routes = [
   {
     path: 'dashboard', component: DashBoardComponent,
     children: [
+      {
+        path: 'usuario',
+        component: UsuarioComponent
+      },
+
       {
         path: 'admin',
         component: TestComponent
@@ -103,8 +109,9 @@ const appRoutes:Routes = [
       },
       {
         path: 'aplicacionDesempeno',
-        component: ApicacionDesempenoComponent},{
-
+        component: ApicacionDesempenoComponent
+      },
+      {
         path: 'vacante',
         component: VacanteComponent
       }, {
@@ -114,11 +121,13 @@ const appRoutes:Routes = [
       {
         path: 'etapa',
         component: EtapaComponent
-      },{
+      },
+      {
         path: 'aplicacionVacante',
         component: AplicacionVacanteComponent
 
-      },{
+      },
+      {
         path: 'preguntas-apt',
         component: PreguntasAptComponent
       },
@@ -126,6 +135,7 @@ const appRoutes:Routes = [
         path: 'preguntas-tec',
         component: PreguntasTecComponent
       },
+
       {
         path: '**',
         component: InicialComponent

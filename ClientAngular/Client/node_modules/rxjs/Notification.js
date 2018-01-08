@@ -1,6 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var Observable_1 = require("./Observable");
+var Observable_1 = require('./Observable');
 /**
  * Represents a push-based event or value that an {@link Observable} can emit.
  * This class is particularly useful for operators that manage notifications,
@@ -15,7 +14,7 @@ var Observable_1 = require("./Observable");
  *
  * @class Notification<T>
  */
-var Notification = /** @class */ (function () {
+var Notification = (function () {
     function Notification(kind, value, error) {
         this.kind = kind;
         this.value = value;

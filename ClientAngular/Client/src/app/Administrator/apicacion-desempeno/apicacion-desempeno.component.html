@@ -1,3 +1,130 @@
-<p>
-  apicacion-desempeno works!
-</p>
+<div class="ui-g">
+  <div class="ui-g-12">
+    <h4>APLICACION EVALUACION DE DESEMPENO</h4>
+  </div>
+</div>
+
+
+<div class="ui-g">
+  <div class="ui-g-12">
+    <div class="ui-widget-header" style="padding:4px 10px;border-bottom: 0 none">
+      <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
+      <input #gb type="text" pInputText size="100%" placeholder="Global Filter">
+    </div>
+    <p-dataTable [value]="listado" selectionMode="single" [(selection)]="selected"
+                 (onRowSelect)="onRowSelect($event)"
+                 [paginator]="true" rows="10" [responsive]="true" [globalFilter]="gb" #dt>
+      <p-header>
+        <div class="ui-helper-clearfix" style="width:100%">
+          <button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAdd()"
+                  label="Nuevo"></button>
+          LISTADO EVALUACIONES DESEMPENO APLICADAS
+        </div>
+      </p-header>
+
+      <p-column field="empleado" header="Empleado" [sortable]="true" [filter]="true" filterPlaceholder="Search"
+                filterMatchMode="contains">
+        <ng-template let-col let-obj="rowData" let-ri="rowIndex" pTemplate="body">
+          <span>{{obj[col.field].apellido}} {{obj[col.field].nombre}}</span>
+        </ng-template>
+      </p-column>
+      <p-column field="evaluacion.descripcion" header="Evaluacion Desemp" [sortable]="true" [filter]="true"
+                filterPlaceholder="Search"
+                filterMatchMode="contains"></p-column>
+    </p-dataTable>
+  </div>
+</div>
+
+<p-dialog header="APLICACION EVALUACION DESEMPENO Detalles" [(visible)]="displayDialog" [responsive]="true" showEffect="fade"
+          [modal]="true" width="1000">
+  <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="actual">
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-2"><label>Empleado</label></div>
+      <div class="ui-grid-col-4">
+        <p-autoComplete [(ngModel)]="empleado" [suggestions]="filteredObjSingleEmpl"
+                        (completeMethod)="filterSingleEmpl($event)"
+                        field="apellido" [size]="30"
+                        placeholder="Empleado" [minLength]="1" [forceSelection]="true">
+          <ng-template let-value pTemplate="item">
+            <div>{{value.apellido }} {{value.nombre }}</div>
+          </ng-template>
+        </p-autoComplete>
+      </div>
+      <div class="ui-grid-col-4" style="margin-left: 20px">{{empleado ? empleado.apellido||empleado : ''}}
+        {{empleado ?
+        empleado.nombre||empleado : ''}}
+      </div>
+    </div>
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-2"><label>Evaluacion Desemp.</label></div>
+      <div class="ui-grid-col-4">
+        <p-autoComplete [(ngModel)]="evaluacion" [suggestions]="filteredObjSingle"
+                        (completeMethod)="filterSingle($event)" field="descripcion" [size]="30"
+                        placeholder="Evaluacion" [minLength]="1"></p-autoComplete>
+      </div>
+    </div>
+    <div class="ui-grid-row" style="padding-top: 1%">
+      <div class="ui-grid-col-2"><label>Fecha</label></div>
+      <div class="ui-grid-col-4">
+        <p-calendar [(ngModel)]="actual.fecha" [showIcon]="true" [monthNavigator]="true"
+                    [yearNavigator]="true" yearRange="1940:2070" [locale]="es"
+                    dateFormat="dd/mm/yy"></p-calendar>
+      </div>
+    </div>
+
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-6">
+        <p-dataTable [value]="listadoPara" selectionMode="single" [(selection)]="selectedPara"
+                     (onRowSelect)="onRowSelectPara($event)" [paginator]="true" rows="5" [responsive]="true">
+          <p-header>
+            PARAMETRO
+            <div class="ui-helper-clearfix" style="width:25%">
+              <button type="button" pButton icon="fa-plus" style="float:left"
+                      (click)="showDialogToAddPara()"
+                      label="Nuevo"></button>
+            </div>
+          </p-header>
+
+          <p-column field="param" header="Parametro" [sortable]="true"></p-column>
+          <p-column field="calificacion" header="Calificacion" [sortable]="true"></p-column>
+
+
+        </p-dataTable>
+      </div>
+
+    </div>
+
+  </div>
+  <p-footer>
+    <div class="ui-dialog-buttonpane ui-helper-clearfix">
+      <button type="button" pButton icon="fa-close" (click)="close()" label="Cerrar"></button>
+      <button type="button" pButton icon="fa-check" (click)="save()" label="Guardar"></button>
+    </div>
+  </p-footer>
+</p-dialog>
+
+<p-dialog header="Parámetro Aplicación Detalle" [(visible)]="displayDialogPara" [responsive]="true" showEffect="fade"
+          [modal]="true" width="500" >
+  <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="parametro" style="height: 200px">
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-3"><label>Evaluacion</label></div>
+      <div class="ui-grid-col-8">
+        <p-autoComplete [(ngModel)]="param" [suggestions]="filteredParam"
+                        (completeMethod)="filterSingleParam($event)" [size]="30"
+                        placeholder="Parametros" [minLength]="1"></p-autoComplete>
+      </div>
+    </div>
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-3"><label for="resp_parametro">Calificacion</label></div>
+      <div class="ui-grid-col-9"><input pInputText id="resp_parametro" [(ngModel)]="parametro.calificacion"/>
+      </div>
+    </div>
+
+  </div>
+  <p-footer>
+    <div class="ui-dialog-buttonpane ui-helper-clearfix">
+      <button type="button" pButton icon="fa-close" (click)="deletePara()" label="Eliminar"></button>
+      <button type="button" pButton icon="fa-check" (click)="savePara()" label="Guardar"></button>
+    </div>
+  </p-footer>
+</p-dialog>
