@@ -119,7 +119,6 @@ router.get('/getAllUsers', function (req, res) {
         });
 });
 
-
 //Profile
 router.get('/profile', passport.authenticate('jwt', {session: false}), function (req, res, next) {
     res.json({user: req.user});

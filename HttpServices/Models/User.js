@@ -48,10 +48,13 @@ const UserSchema = mongoose.Schema({
 
 
 
+
+const User = module.exports = mongoose.model('User', UserSchema);
+
 module.exports = mongoose.model('User', UserSchema);
 
-//const User = module.exports = restful.model('User', UserSchema);
-const User = mongoose.model('User', UserSchema);
+
+//const User = mongoose.model('User', UserSchema);
 
 module.exports.getUserById = function (id, callback) {
     User.findById(id, callback);
@@ -71,7 +74,6 @@ module.exports.addUser = function (newUser, callback) {
         });
     });
 }
-
 
 module.exports.comparePass = function (candidatePassword, hash, callback) {
     bcrypt.compare(candidatePassword, hash,function (err, isMatch)  {

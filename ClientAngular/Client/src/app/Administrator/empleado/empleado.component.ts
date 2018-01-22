@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Router, ActivatedRoute, Params} from '@angular/router';
 import {GLOBAL} from '../../services/global';
 import {EmpleadoService} from '../../services/empleado.service';
+import {UploadService} from '../../services/upload.service';
 import {Empleado} from '../../models/empleado';
 import {dateFormatPipe} from '../../pipes/datePipe';
 
@@ -11,7 +12,8 @@ import {dateFormatPipe} from '../../pipes/datePipe';
   templateUrl: './empleado.component.html',
   styleUrls: ['./empleado.component.css'],
   providers: [
-    EmpleadoService
+    EmpleadoService,
+      UploadService
   ]
 })
 export class EmpleadoComponent implements OnInit {
@@ -23,6 +25,11 @@ export class EmpleadoComponent implements OnInit {
   displayDialog:boolean;
   newObj:boolean;
   any:any;
+
+  public url: string;
+  public imageUnknow: string;
+  public idToUpload:any;
+  public selectImage:boolean;
 
 
   public contacto:DescripObjCont;
@@ -41,10 +48,13 @@ export class EmpleadoComponent implements OnInit {
 
   constructor(private _route:ActivatedRoute,
               private _router:Router,
-              private _empleadoService:EmpleadoService) {
+              private _empleadoService:EmpleadoService,
+              private _uploadService: UploadService) {
     this.actual = new Empleado(this.any, '', '', '', '', '', '', this.any, '', '', '', '', '', '', '', '', [], []);
     this.listado = [];
     this.getAll();
+    this.url = GLOBAL.url;
+    this.imageUnknow = "../../images/defaultMug.jpg";
   }
 
   ngOnInit() {
@@ -78,7 +88,7 @@ export class EmpleadoComponent implements OnInit {
     this.newObj = true;
     this.actual = new Empleado(this.any, '', '', '', '', '', '', this.any, '', '', '', '', '', '', '', '', [], []);
     this.displayDialog = true;
-
+    this.actual.fotografia = 'unknow-001.png';
     this.listadoCont = [];
     this.listadoDepe = [];
   }
@@ -86,18 +96,42 @@ export class EmpleadoComponent implements OnInit {
 
   save() {
     let listado = [...this.listado];
+
     if (this.newObj) {
       // dependiente save
+
       this.actual.contacto_emergencia = this.listadoCont;
       this.actual.dependientes = this.listadoDepe;
       this._empleadoService.save(this.actual).subscribe(
           response => {
           if (response) {
-            this.status = "success";
-            this.actual = new Empleado(this.any, '', '', '', '', '', '', this.any, '', '', '', '', '', '', '', '', [], []);
-            this.listadoCont = [];
-            this.listadoDepe = [];
-            this.getAll();
+
+
+            if(this.selectImage==true){
+              //Subida de imagen
+              this._uploadService.makeFileRequest(this.url+'/upload-image-empleado/'+response._id,[],this.filesToUpload,'image')
+                  .then((result:any) => {
+
+                    this.status = "success";
+                    this.actual = new Empleado(this.any, '', '', '', '', '', '', this.any, '', '', '', '', '', '', '', '', [], []);
+                    this.listadoCont = [];
+                    this.listadoDepe = [];
+                    this.getAll();
+                    this.filesToUpload= [];
+                    this.displayDialog = false;
+                  });
+            }else{
+             this.status = "success";
+             this.actual = new Empleado(this.any, '', '', '', '', '', '', this.any, '', '', '', '', '', '', '', '', [], []);
+             this.listadoCont = [];
+             this.listadoDepe = [];
+             this.getAll();
+              this.filesToUpload= [];
+              this.displayDialog = false;
+            }
+
+
+
             //listado.push(this.actual);
           } else {
             this.status = "error";
@@ -116,12 +150,37 @@ export class EmpleadoComponent implements OnInit {
       this._empleadoService.update(this.actual).subscribe(
           response => {
           if (response) {
-            this.status = "success";
-            this.getAll()
-            //listado[this.findSelectedIndex()] = this.actual;
-            this.actual = new Empleado(this.any, '', '', '', '', '', '', this.any, '', '', '', '', '', '', '', '', [], []);
-            this.listadoCont = [];
-            this.listadoDepe = [];
+
+            console.log("idd: "+this.idToUpload);
+
+            if(this.selectImage==true){
+            //Subida de imagen *******************************
+           this._uploadService.makeFileRequest(this.url+'/upload-image-empleado/'+this.idToUpload,[],this.filesToUpload,'image')
+                .then((result:any) => {
+
+                  this.status = "success";
+                  this.getAll()
+                  this.actual = new Empleado(this.any, '', '', '', '', '', '', this.any, '', '', '', '', '', '', '', '', [], []);
+                  this.listadoCont = [];
+                  this.listadoDepe = [];
+                  //this.filesToUpload = null;
+                 this.selectImage = false;
+                 this.filesToUpload= [];
+                 this.displayDialog = false;
+                });
+            //fin subida imagen ******************************
+            }else{
+              this.status = "success";
+              this.actual = new Empleado(this.any, '', '', '', '', '', '', this.any, '', '', '', '', '', '', '', '', [], []);
+              this.listadoCont = [];
+              this.listadoDepe = [];
+              this.getAll();
+              this.filesToUpload= [];
+              this.displayDialog = false;
+            }
+
+
+
           } else {
             console.log("OBJ _id: error" + JSON.stringify(response));
             this.status = "error";
@@ -135,8 +194,9 @@ export class EmpleadoComponent implements OnInit {
     }
 
     //this.listado = listado;
-    this.actual = new Empleado(this.any, '', '', '', '', '', '', this.any, '', '', '', '', '', '', '', '', [], []);
-    this.displayDialog = false;
+    //this.actual = new Empleado(this.any, '', '', '', '', '', '', this.any, '', '', '', '', '', '', '', '', [], []);
+    //this.filesToUpload= [];
+    //this.displayDialog = false;
   }
 
   delete() {
@@ -157,10 +217,14 @@ export class EmpleadoComponent implements OnInit {
     event.data['fecha_nacimiento']=datePipe.transform(event.data['fecha_nacimiento']);
     this.newObj = false;
     this.actual = this.cloneObj(event.data);
+    if(this.actual.fotografia == ""){
+      this.actual.fotografia = 'unknow-001.png';
+    }
     this.displayDialog = true;
     this.listadoCont = this.actual.contacto_emergencia;
     this.listadoDepe = this.actual.dependientes;
-    console.log(this.actual)
+    this.idToUpload = this.actual._id;
+    console.log(this.actual);
 
   }
 
@@ -268,6 +332,15 @@ export class EmpleadoComponent implements OnInit {
 
   findSelectedIndexDepe():number {
     return this.listadoDepe.indexOf(this.selectedDepe);
+  }
+
+
+  //funciones para imagenes ********************************************************************************************
+  public filesToUpload: Array<File>;
+  fileChangeEvent(fileInput:any){
+    this.filesToUpload = <Array<File>>fileInput.target.files;
+    console.log(this.filesToUpload);
+    this.selectImage = true;
   }
 
 

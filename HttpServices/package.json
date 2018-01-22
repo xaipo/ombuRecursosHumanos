@@ -11,13 +11,13 @@
     "jsonwebtoken": "7.4.1",
     "jwt-simple": "^0.5.1",
     "moment": "^2.19.3",
-    "mongodb": "^3.0.0-rc0",
-    "mongoose": "^4.13.6",
+    "mongodb": "^3.0.1",
+    "mongoose": "^4.13.9",
     "node-restful": "^0.2.4",
     "passport": "^0.4.0",
     "passport-jwt": "^2.2.1"
   },
   "devDependencies": {
-    "nodemon": "^1.12.4"
+    "nodemon": "^1.14.11"
   }
 }
