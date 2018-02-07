@@ -11,76 +11,59 @@ const AspiranteSchema = mongoose.Schema({
         type:mongoose.Schema.ObjectId
     },
     primer_nombre: {
-        type: String,
-        required: true
+        type: String
     },
     segundo_nombre: {
-        type: String,
-        required: true
+        type: String
     },
     primer_apellido: {
-        type: String,
-        required: true
+        type: String
     },
     segundo_apellido: {
-        type: String,
-        required: true
+        type: String
     },
     cedula: {
-        type: String,
-        required: true
+        type: String
     },
     genero: {
-        type: String,
-        required: true
+        type: String
     },
     estado_civil: {
-        type: String,
-        required: true
+        type: String
     },
     nacionalidad: {
-        type: String,
-        required: true
+        type: String
     },
     fecha_nacimiento: {
-        type: Date,
-        required: true
+        type: Date
     },
     lugar_nacimiento: {
-        type: String,
-        required: true
+        type: String
     },
     fotografia: {
-        type: String,
-        required: false
+        type: String
     },
     estado: {
-        type: Object,//0:aspirante - 1:elegible. 2:contratado, 3:finfunciones
-        required: true
+        type: Object//0:aspirante - 1:elegible. 2:contratado, 3:finfunciones
+
     },
     direccion: {
-        type: String,
-        required: true
+        type: String
     },
     ciudad: {
-        type: String,
-        required: true
+        type: String
     },
     provincia: {
-        type: String,
-        required: true
+        type: String
     },
     telefono_domicilio: {
-        type: String,
-        required: false
+        type: String
     },
     telefono_celular: {
-        type: String,
-        required: false
+        type: String
     },
     email: {
-        type: String,
-        required: false
+        type: String
     }
 
 });

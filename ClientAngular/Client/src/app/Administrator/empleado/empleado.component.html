@@ -41,6 +41,7 @@
           width="70%">
     <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="actual">
         <div class="ui-g-3">
+
             <div class="image_for_edit" *ngIf="actual.fotografia && actual.fotografia!='null'">
                 <img src="{{url + '/get-image-file/' + actual.fotografia}}" style="height: 200px"/>
             </div>

@@ -27,8 +27,6 @@
                 filterMatchMode="contains"></p-column>
       <p-column field="id_vacante.id_perfil.nombre" header="Vacante" [sortable]="true" [filter]="true" filterPlaceholder="Search"
                 filterMatchMode="contains"></p-column>
-      <p-column field="descripcion" header="Descripcion" [sortable]="true" [filter]="true" filterPlaceholder="Search"
-                filterMatchMode="contains"></p-column>
       <p-column field="fecha_solicitud" header="Fecha" [sortable]="true" [filter]="true"
                 filterPlaceholder="Search" filterMatchMode="contains"></p-column>
       <p-column field="cv_adjunto" header="Cv_adjunto" [sortable]="true" [filter]="true" filterPlaceholder="Search"
@@ -39,11 +37,11 @@
     </p-dataTable>
   </div>
 </div>
-<p-dialog header="EMPLEADO Detalles" [(visible)]="displayDialog" [responsive]="true" showEffect="fade"
+<p-dialog header="APLICACION VACANTE Detalles" [(visible)]="displayDialog" [responsive]="true" showEffect="fade"
           [modal]="true" width="70%">
   <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="actual">
     <div class="ui-grid-row">
-      <div class="ui-grid-col-2"><label>Aspirante</label></div>
+      <div class="ui-grid-col-2" style="padding-left: 5%"><label>Aspirante</label></div>
       <div class="ui-grid-col-4">
         <p-autoComplete [(ngModel)]="empleado2" [suggestions]="filteredObjSingle2" (completeMethod)="filterSingle2($event)" field="apellido"  [size]="30"
                         placeholder="Empleado" [minLength]="1"  >
@@ -57,10 +55,10 @@
 
 
     <div class="ui-grid-row">
-      <div class="ui-grid-col-2"><label>Vacante</label></div>
+      <div class="ui-grid-col-2" style="padding-left: 5%"><label>Vacante</label></div>
       <div class="ui-grid-col-4">
         <p-autoComplete [(ngModel)]="empleado" [suggestions]="filteredObjSingle" (completeMethod)="filterSingle($event)" field="nombre"  [size]="30"
-                        placeholder="Perfil" [minLength]="1"  >
+                        placeholder="Vacante" [minLength]="1"  >
           <ng-template let-value pTemplate="item">
             <div>{{value.descripcion }} </div>
           </ng-template>
@@ -81,10 +79,23 @@
       </div>
     </div>
     <div class="ui-grid-row">
-      <div class="ui-grid-col-2"><label style="padding-left: 5%" for="genero">Cv Adjunto</label></div>
-      <div class="ui-grid-col-4"><input pInputText id="genero" [(ngModel)]="actual.cv_adjunto"/></div>
+      <div class="ui-grid-col-2"><label style="padding-left: 5%" >Cv Adjunto</label></div>
+      <div class="ui-grid-col-1">
 
-      <div class="ui-grid-col-2"><label style="padding-left: 5%" for="Estado">Estado</label></div>
+        <input type="file" value="Buscar" placeholder="Subir Archivo" (change)="fileChangeEvent($event)"/>
+
+      <br/>
+        <div class="image_for_edit" *ngIf="actual.cv_adjunto && actual.cv_adjunto!='null' && actual.cv_adjunto!=''">
+          <a href="{{url + '/get-curriculo/' + actual.cv_adjunto}}" target="_blank">
+            <button pButton type="button"  label="Descargar"  class="ui-button-danger"></button>
+          </a>
+        </div>
+
+
+
+      </div>
+      <div class="ui-grid-col-3"></div>
+      <div class="ui-grid-col-2"><label style="padding-left: 5%" >Estado</label></div>
       <p-dropdown [options]="estados" id="Estado" [(ngModel)]="actual.estado" placeholder="Estado" optionLabel="name"></p-dropdown>
     </div>
 

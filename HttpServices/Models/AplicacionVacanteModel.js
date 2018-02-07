@@ -6,9 +6,9 @@ var mongoose = restful.mongoose;
 
 //AplicacionVacante schema
 const AplicacionVacanteSchema = mongoose.Schema({
-    id: {
+   /* id: {
         type: mongoose.Schema.ObjectId
-    },
+    },*/
     id_vacante: {
         type: mongoose.Schema.ObjectId,
         ref:'Vacante'
@@ -23,8 +23,8 @@ const AplicacionVacanteSchema = mongoose.Schema({
         required: false
     },
     fecha_solicitud: {
-        type: String,
-        required: false
+        type: Date
+
     },
     cv_adjunto: {
         type: String,

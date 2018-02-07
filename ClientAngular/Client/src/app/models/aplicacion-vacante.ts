@@ -3,7 +3,7 @@
  */
 export class AplicacionVacante{
   constructor(
-
+    public _id:any,
     public id_vacante: any,
     public id_aspirante: any,
     public descripcion: any,

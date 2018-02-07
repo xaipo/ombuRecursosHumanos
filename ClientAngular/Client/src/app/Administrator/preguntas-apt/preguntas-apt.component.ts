@@ -45,6 +45,9 @@ export class PreguntasAptComponent implements OnInit {
     }, {
       label: 'incorrecta',
       value: 0
+    }, {
+      label: 'abierta',
+      value: 2
     }]
   }
 
@@ -152,8 +155,10 @@ export class PreguntasAptComponent implements OnInit {
     this.descRespuesta = event.data.respuesta;
     if (event.data.correcta == 1) {
       this.selectedOpciones = this.lstOpciones[0];
-    } else {
+    } else if(event.data.correcta == 0) {
       this.selectedOpciones = this.lstOpciones[1];
+    } else if(event.data.correcta == 2){
+      this.selectedOpciones = this.lstOpciones[2];
     }
     this.displayDialogR = true;
     this.objRespuestas = event.data;
